@@ -10,19 +10,37 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+
       - name: Configure Git Credentials
         run: |
           git config user.name github-actions[bot]
           git config user.email 41898282+github-actions[bot]@users.noreply.github.com
+
       - uses: actions/setup-python@v5
         with:
           python-version: 3.x
+
+      - name: Export PYTHONPATH
+        run: echo "PYTHONPATH=${PYTHONPATH}:$(pwd):$(pwd)/src" >> $GITHUB_ENV
+
       - run: echo "cache_id=$(date --utc '+%V')" >> $GITHUB_ENV 
+
       - uses: actions/cache@v4
         with:
           key: mkdocs-material-${{ env.cache_id }}
           path: ~/.cache 
           restore-keys: |
             mkdocs-material-
-      - run: pip install mkdocs mkdocs-material 'mkdocstrings[python]' mkdocs-gen-files mkdocs-literate-nav mkdocs-include-markdown-plugin
-      - run: mkdocs gh-deploy --force
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          if [ -f docs/requirements.txt ]; then pip install -r docs/requirements.txt; fi
+          pip install mkdocs mkdocs-material 'mkdocstrings[python]' mkdocs-gen-files mkdocs-literate-nav mkdocs-include-markdown-plugin
+
+      - name: Generate metric tables
+        run: |
+          if [ -f docs/gen_metric_tables.py ]; then python docs/gen_metric_tables.py; fi
+
+      - name: Deploy docs
+        run: mkdocs gh-deploy --force
