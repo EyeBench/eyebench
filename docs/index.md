@@ -172,11 +172,6 @@ results/eyebench_benchmark_results/{metric}.csv
     - `src/configs/config.py` → `ModelMapping`
 
 3. Define its default parameters and search space in `src/run/multi_run/search_spaces.py`.
-4. Verify integration:
-
-```bash
-bash src/run/multi_run/model_checker.sh
-```
 
 ---
 

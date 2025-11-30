@@ -38,9 +38,5 @@ jobs:
           if [ -f docs/requirements.txt ]; then pip install -r docs/requirements.txt; fi
           pip install mkdocs mkdocs-material 'mkdocstrings[python]' mkdocs-gen-files mkdocs-literate-nav mkdocs-include-markdown-plugin
 
-      - name: Generate metric tables
-        run: |
-          if [ -f docs/gen_metric_tables.py ]; then python docs/gen_metric_tables.py; fi
-
       - name: Deploy docs
         run: mkdocs gh-deploy --force
