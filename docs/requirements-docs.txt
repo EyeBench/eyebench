@@ -1,6 +1,4 @@
 # Minimal dependencies for building documentation
-# These are stubs/minimal versions to satisfy imports without installing heavy ML dependencies
-
 # Core documentation tools
 mkdocs>=1.5.0
 mkdocs-material>=9.0.0
@@ -9,27 +7,25 @@ mkdocs-gen-files>=0.5.0
 mkdocs-literate-nav>=0.6.0
 mkdocs-include-markdown-plugin>=6.0.0
 
-# Minimal dependencies for imports (CPU-only, no CUDA)
-# These allow mkdocstrings to parse the source without needing full ML stack
+# Essential Python dependencies (lightweight versions)
 pandas
 numpy
-typing-extensions
 pyyaml
+typing-extensions
 
-# PyTorch CPU-only (lightweight) - installed separately in workflow
-# torch --index-url https://download.pytorch.org/whl/cpu
-
-# Transformers and other ML libs (minimal versions)
+# ML libraries (will use CPU-only torch from workflow)
 transformers
 scikit-learn
 pytorch-lightning
 
-# Other project dependencies that may be imported
+# Other imports that appear in source code
 hydra-core
 wandb
 datasets
 beartype
 typed-argument-parser
 loguru
+pyarrow
+
 
 
