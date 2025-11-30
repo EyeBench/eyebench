@@ -1,0 +1,34 @@
+
+\begin{table}[ht]
+\centering
+\caption{Model performance on the \textbf{Reading Comprehension Skill} task on \textbf{CopCo} for the \textbf{validation} set.}
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{@{}l|ccc|ccc|ccc|ccc|@{}}
+\toprule
+\multirow{2}{*}{\textbf{Method}} & \multicolumn{3}{c|}{\textbf{Unseen Reader}} & \multicolumn{3}{c|}{\textbf{Unseen Text}} & \multicolumn{3}{c|}{\textbf{Unseen Text \& Reader}} & \multicolumn{3}{c|}{\textbf{Average}} \\
+\cmidrule(lr){2-4} \cmidrule(lr){5-7} \cmidrule(lr){8-10} \cmidrule(lr){11-13}
+  & \textbf{RMSE} & \textbf{MAE} & \textbf{R²} & \textbf{RMSE} & \textbf{MAE} & \textbf{R²} & \textbf{RMSE} & \textbf{MAE} & \textbf{R²} & \textbf{RMSE} & \textbf{MAE} & \textbf{R²} \\
+\midrule
+Majority Class / Chance & 2.82\textsubscript{±0.1} & 2.36\textsubscript{±0.1} & -0.06\textsubscript{±0.0} & 2.48\textsubscript{±0.0} & 1.98\textsubscript{±0.0} & -0.08\textsubscript{±0.1} & 2.58\textsubscript{±0.1} & 2.11\textsubscript{±0.1} & -0.1\textsubscript{±0.0} & 2.65\textsubscript{±0.0} & 2.17\textsubscript{±0.1} & -0.03\textsubscript{±0.0} \\
+Reading Speed & 2.82\textsubscript{±0.1} & 2.38\textsubscript{±0.1} & -0.07\textsubscript{±0.0} & 2.44\textsubscript{±0.0} & 1.95\textsubscript{±0.1} & -0.04\textsubscript{±0.0} & 2.62\textsubscript{±0.1} & 2.17\textsubscript{±0.1} & -0.14\textsubscript{±0.1} & 2.66\textsubscript{±0.0} & 2.19\textsubscript{±0.1} & -0.03\textsubscript{±0.0} \\
+Text-Only Roberta & 2.77\textsubscript{±0.1} & 2.38\textsubscript{±0.1} & -0.02\textsubscript{±0.0} & 2.46\textsubscript{±0.1} & 1.99\textsubscript{±0.0} & -0.05\textsubscript{±0.0} & 2.55\textsubscript{±0.1} & 2.17\textsubscript{±0.1} & \textbf{-0.07\textsubscript{±0.0}} & 2.62\textsubscript{±0.1} & 2.2\textsubscript{±0.0} & -0.0\textsubscript{±0.0} \\
+\midrule
+Logistic Regression~\cite{meziere2023using} & 3.02\textsubscript{±0.1} & 2.58\textsubscript{±0.1} & -0.23\textsubscript{±0.1} & 2.49\textsubscript{±0.0} & 1.98\textsubscript{±0.0} & -0.08\textsubscript{±0.1} & 2.71\textsubscript{±0.1} & 2.3\textsubscript{±0.1} & -0.22\textsubscript{±0.1} & 2.78\textsubscript{±0.1} & 2.3\textsubscript{±0.0} & -0.13\textsubscript{±0.1} \\
+SVM~\cite{hollenstein2023zuco} & 2.97\textsubscript{±0.1} & 2.47\textsubscript{±0.1} & -0.19\textsubscript{±0.1} & 2.31\textsubscript{±0.1} & 1.71\textsubscript{±0.0} & 0.05\textsubscript{±0.1} & 2.63\textsubscript{±0.1} & \textbf{2.1\textsubscript{±0.1}} & -0.15\textsubscript{±0.1} & 2.68\textsubscript{±0.1} & 2.12\textsubscript{±0.1} & -0.05\textsubscript{±0.0} \\
+Random Forest~\cite{makowski2024detection} & 2.86\textsubscript{±0.1} & \textbf{2.34\textsubscript{±0.1}} & -0.1\textsubscript{±0.0} & \textbf{1.82\textsubscript{±0.1}} & \textbf{1.38\textsubscript{±0.1}} & \textbf{0.41\textsubscript{±0.1}} & 2.78\textsubscript{±0.2} & 2.25\textsubscript{±0.2} & -0.29\textsubscript{±0.1} & \textbf{2.52\textsubscript{±0.1}} & \textbf{1.97\textsubscript{±0.1}} & \textbf{0.07\textsubscript{±0.0}} \\
+\midrule
+AhnRNN~\citep{ahn2020towards} & \textbf{2.76\textsubscript{±0.1}} & 2.37\textsubscript{±0.1} & \textbf{-0.01\textsubscript{±0.0}} & 2.46\textsubscript{±0.1} & 2.01\textsubscript{±0.1} & -0.05\textsubscript{±0.0} & 2.55\textsubscript{±0.1} & 2.16\textsubscript{±0.1} & -0.08\textsubscript{±0.0} & 2.62\textsubscript{±0.1} & 2.2\textsubscript{±0.0} & -0.0\textsubscript{±0.0} \\
+AhnCNN~\citep{ahn2020towards} & \textbf{2.76\textsubscript{±0.1}} & 2.38\textsubscript{±0.1} & \textbf{-0.01\textsubscript{±0.0}} & 2.46\textsubscript{±0.1} & 2.0\textsubscript{±0.1} & -0.05\textsubscript{±0.0} & 2.55\textsubscript{±0.1} & 2.16\textsubscript{±0.1} & \textbf{-0.07\textsubscript{±0.0}} & 2.62\textsubscript{±0.1} & 2.2\textsubscript{±0.0} & 0.0\textsubscript{±0.0} \\
+BEyeLSTM~\citep{reich_inferring_2022} & \textbf{2.76\textsubscript{±0.1}} & 2.38\textsubscript{±0.1} & \textbf{-0.01\textsubscript{±0.0}} & 2.45\textsubscript{±0.1} & 2.0\textsubscript{±0.1} & -0.05\textsubscript{±0.0} & 2.56\textsubscript{±0.1} & 2.17\textsubscript{±0.1} & -0.08\textsubscript{±0.1} & 2.62\textsubscript{±0.1} & 2.2\textsubscript{±0.1} & -0.0\textsubscript{±0.0} \\
+PLM-AS~\citep{Yang2023PLMASPL} & \textbf{2.76\textsubscript{±0.1}} & 2.37\textsubscript{±0.1} & -0.02\textsubscript{±0.0} & 2.46\textsubscript{±0.1} & 2.0\textsubscript{±0.1} & -0.05\textsubscript{±0.0} & \textbf{2.54\textsubscript{±0.1}} & 2.13\textsubscript{±0.1} & \textbf{-0.07\textsubscript{±0.0}} & 2.62\textsubscript{±0.1} & 2.19\textsubscript{±0.0} & -0.0\textsubscript{±0.0} \\
+PLM-AS-RM~\citep{haller2022eye} & 2.79\textsubscript{±0.1} & 2.39\textsubscript{±0.1} & -0.04\textsubscript{±0.0} & 2.47\textsubscript{±0.1} & 2.0\textsubscript{±0.1} & -0.06\textsubscript{±0.0} & 2.63\textsubscript{±0.1} & 2.22\textsubscript{±0.1} & -0.15\textsubscript{±0.1} & 2.65\textsubscript{±0.0} & 2.22\textsubscript{±0.1} & -0.03\textsubscript{±0.0} \\
+RoBERTEye-W~\citep{Shubi2024Finegrained} & 2.77\textsubscript{±0.1} & 2.37\textsubscript{±0.1} & -0.02\textsubscript{±0.0} & 2.44\textsubscript{±0.0} & 1.98\textsubscript{±0.0} & -0.04\textsubscript{±0.0} & 2.55\textsubscript{±0.1} & 2.15\textsubscript{±0.1} & \textbf{-0.07\textsubscript{±0.0}} & 2.61\textsubscript{±0.1} & 2.18\textsubscript{±0.0} & 0.0\textsubscript{±0.0} \\
+RoBERTEye-F~\citep{Shubi2024Finegrained} & 2.77\textsubscript{±0.1} & 2.4\textsubscript{±0.1} & -0.03\textsubscript{±0.0} & 2.45\textsubscript{±0.0} & 1.98\textsubscript{±0.0} & -0.05\textsubscript{±0.0} & \textbf{2.54\textsubscript{±0.1}} & 2.15\textsubscript{±0.1} & \textbf{-0.07\textsubscript{±0.1}} & 2.62\textsubscript{±0.1} & 2.2\textsubscript{±0.0} & -0.0\textsubscript{±0.0} \\
+MAG-Eye~\citep{Shubi2024Finegrained} & \textbf{2.76\textsubscript{±0.1}} & 2.37\textsubscript{±0.1} & \textbf{-0.01\textsubscript{±0.0}} & 2.46\textsubscript{±0.1} & 1.99\textsubscript{±0.1} & -0.05\textsubscript{±0.0} & 2.55\textsubscript{±0.1} & 2.18\textsubscript{±0.1} & -0.08\textsubscript{±0.0} & 2.62\textsubscript{±0.1} & 2.2\textsubscript{±0.0} & 0.0\textsubscript{±0.0} \\
+PostFusion-Eye~\citep{Shubi2024Finegrained} & 2.86\textsubscript{±0.2} & 2.49\textsubscript{±0.1} & -0.08\textsubscript{±0.0} & 2.52\textsubscript{±0.1} & 2.06\textsubscript{±0.1} & -0.11\textsubscript{±0.1} & 2.66\textsubscript{±0.1} & 2.34\textsubscript{±0.1} & -0.17\textsubscript{±0.1} & 2.71\textsubscript{±0.1} & 2.3\textsubscript{±0.1} & -0.07\textsubscript{±0.0} \\
+
+\bottomrule
+\end{tabular}%
+}
+\label{tab:task-copco_rcs-val-regime}
+\end{table}

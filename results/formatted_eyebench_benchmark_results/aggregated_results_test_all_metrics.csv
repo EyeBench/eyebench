@@ -1,0 +1,16 @@
+Model,Layout,Saccade/Fixation,Word-Level,Trial-Level,Linguistic,Embeddings,Avg Normalized Score,Mean Rank
+Majority Class / Chance,-,-,-,-,-,-,0.367,10.1
+Reading Speed,-,-,-,\checkmark,-,-,0.421,10.29
+Text-Only Roberta,-,-,-,-,-,\checkmark,0.672,6.1
+Logistic Regression~\cite{meziere2023using},-,-,-,\checkmark,-,-,0.571,7.67
+SVM~\cite{hollenstein2023zuco},-,-,-,\checkmark,-,-,0.521,7.38
+Random Forest~\cite{makowski2024detection},-,\checkmark,-,\checkmark,\checkmark,-,0.788,4.48
+AhnRNN~\citep{ahn2020towards},\checkmark,\checkmark,-,-,-,-,0.36,9.48
+AhnCNN~\citep{ahn2020towards},\checkmark,\checkmark,-,-,-,-,0.531,6.95
+BEyeLSTM~\citep{reich_inferring_2022},\checkmark,\checkmark,\checkmark,\checkmark,\checkmark,-,0.414,9.1
+PLM-AS~\citep{Yang2023PLMASPL},-,\checkmark,-,-,-,\checkmark,0.494,8.0
+PLM-AS-RM~\citep{haller2022eye},-,\checkmark,\checkmark,-,-,\checkmark,0.475,8.95
+RoBERTEye-W~\citep{Shubi2024Finegrained},\checkmark,-,\checkmark,\checkmark,\checkmark,\checkmark,0.757,4.43
+RoBERTEye-F~\citep{Shubi2024Finegrained},\checkmark,\checkmark,\checkmark,\checkmark,\checkmark,\checkmark,0.654,6.81
+MAG-Eye~\citep{Shubi2024Finegrained},\checkmark,-,\checkmark,\checkmark,\checkmark,\checkmark,0.686,5.62
+PostFusion-Eye~\citep{Shubi2024Finegrained},\checkmark,\checkmark,\checkmark,\checkmark,\checkmark,\checkmark,0.546,9.81

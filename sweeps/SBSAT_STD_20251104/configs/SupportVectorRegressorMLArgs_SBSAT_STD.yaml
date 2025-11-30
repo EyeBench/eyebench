@@ -1,0 +1,77 @@
+hyper_args:
+  base_model: SupportVectorRegressorMLModel
+  base_models:
+  - AhnCNNModel
+  - AhnRNNModel
+  - BEyeLSTMModel
+  - PLMASModel
+  - MAGModel
+  - PLMASFModel
+  - PostFusionModel
+  - Roberteye
+  - Roberteye
+  - Roberteye
+  - SupportVectorRegressorMLModel
+  - XGBoostRegressorMLModel
+  - RandomForestRegressorMLModel
+  - LinearRegressionRegressorMLModel
+  - LinearRegressionRegressorMLModel
+  - DummyRegressorMLModel
+  data_task: SBSAT_STD
+  data_tasks:
+  - SBSAT_STD
+  folds:
+  - 0
+  - 1
+  - 2
+  - 3
+  gpu_count: 1
+  model: SupportVectorRegressorMLArgs
+  models:
+  - AhnCNN
+  - AhnRNN
+  - BEyeLSTMArgs
+  - PLMASArgs
+  - MAG
+  - PLMASfArgs
+  - PostFusion
+  - Roberta
+  - RoberteyeFixation
+  - RoberteyeWord
+  - SupportVectorRegressorMLArgs
+  - XGBoostRegressorMLArgs
+  - RandomForestRegressorMLArgs
+  - LinearRegressionArgs
+  - LinearMeziereArgs
+  - DummyRegressorMLArgs
+  num_duplicates_per_gpu: 1
+  run_cap: 1000
+  search_algorithm: grid
+  slurm_cpus: 10
+  slurm_mailto: shubi@campus.technion.ac.il
+  slurm_mem: 75G
+  trainer: TrainerML
+  trainers:
+  - TrainerDL
+  - TrainerDL
+  - TrainerDL
+  - TrainerDL
+  - TrainerDL
+  - TrainerDL
+  - TrainerDL
+  - TrainerDL
+  - TrainerDL
+  - TrainerDL
+  - TrainerML
+  - TrainerML
+  - TrainerML
+  - TrainerML
+  - TrainerML
+  - TrainerML
+  wandb_entity: EyeRead
+  wandb_project: SBSAT_STD_20251104
+sweep_ids:
+- a2lb4xg0
+- 2a5wb7cd
+- f99wb83v
+- b5p5wb1h

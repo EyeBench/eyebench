@@ -1,0 +1,6 @@
+- +model=MAG
+- +data=CopCo_RCS
+- +trainer=TrainerDL
+- data.fold_index=1
+- trainer.devices=1
+- trainer.wandb_job_type=MAG_CopCo_RCS

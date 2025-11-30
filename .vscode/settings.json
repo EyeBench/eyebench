@@ -1,0 +1,148 @@
+{
+    "hidefiles.configurationType": "local",
+    "hidefiles.globalConfig": {
+        "profiles": [
+            {
+                "hidden": [
+                    "preprocessing.log",
+                    ".gitattributes",
+                    ".gitignore",
+                    ".pre-commit-config.yaml",
+                    "mkdocs.yml",
+                    "src/__init__.py",
+                    "src/__pycache__/",
+                    ".ruff_cache/",
+                    ".github/",
+                    "src/data/__pycache__/",
+                    "src/models/__pycache__/",
+                    "src/run/single_run/__pycache__/",
+                    "src/configs/__pycache__/",
+                    "src/configs/model_args/__pycache__/",
+                    "src/configs/model_args/__init__.py",
+                    "src/configs/__init__.py",
+                    "src/configs/model_args/ml_model_specific_args/__pycache__/",
+                    "src/configs/model_args/ml_model_specific_args/__init__.py",
+                    "src/configs/model_args/model_specific_args/__pycache__/",
+                    "src/configs/model_args/model_specific_args/__init__.py",
+                    "colorized_texts.html",
+                    "src/data/datamodules/__pycache__/",
+                    "src/data/datasets/__pycache__/",
+                    "src/data/preprocessing/__pycache__/",
+                    "src/configs/model_args/model_specific_args/other/__pycache__/",
+                    "src/data/utils/__pycache__/",
+                    "src/run/multi_run/__pycache__/",
+                    "src/configs/models/__pycache__/",
+                    "src/configs/models/dl/__pycache__/",
+                    "src/configs/models/ml/__pycache__/",
+                    "src/configs/models/ml/__init__.py",
+                    "src/configs/models/dl/other/__pycache__/",
+                    "src/configs/models/dl/__init__.py",
+                    "src/configs/models/__init__.py",
+                    "src/models/other/__pycache__/",
+                    "src/models/other/__pycache__/",
+                    "lightning_logs/",
+                    "wandb/"
+                ],
+                "name": "WorkMode",
+                "description": "",
+                "detail": "",
+                "peek": []
+            },
+            {
+                "name": "Default",
+                "detail": "",
+                "description": "Test",
+                "hidden": [
+                    ".vscode/",
+                    ".gitattributes",
+                    ".gitignore",
+                    ".pre-commit-config.yaml",
+                    "mkdocs.yml",
+                    "preprocessing.log",
+                    ".ruff_cache/",
+                    ".github/",
+                    "docs/",
+                    "src/__pycache__/",
+                    "src/__init__.py"
+                ]
+            },
+            {
+                "name": "Strict",
+                "detail": "Hide everything not immediately required",
+                "hidden": [
+                    "$Default"
+                ]
+            },
+            {
+                "hidden": [
+                    ".github/",
+                    ".ruff_cache/",
+                    "bash_sweep_ml/",
+                    "sweep_configs/",
+                    "sweep_ids_and_hyper_args/",
+                    "decoding_EMSR.yaml",
+                    ".pylintrc",
+                    ".pre-commit-config.yaml",
+                    ".gitattributes",
+                    ".gitignore",
+                    "question-prediction-sub-task-2/",
+                    "question-prediction-sub-task-1/",
+                    "question-prediction/",
+                    "outputs/",
+                    ".vscode/",
+                    ".gitignore",
+                    "src/__pycache__/",
+                    "src/configs/__pycache__/",
+                    "src/configs/model_args/__pycache__/",
+                    "src/models/__pycache__/",
+                    "notebooks/__pycache__/",
+                    "src/configs/models/__pycache__/",
+                    "src/configs/models/__init__.py",
+                    "src/configs/__init__.py",
+                    "src/data/__pycache__/",
+                    "colorized_texts.html",
+                    "src/__init__.py"
+                ],
+                "name": "Shubi",
+                "description": "",
+                "detail": "",
+                "peek": []
+            }
+        ]
+    },
+    "files.exclude": {
+        "**/.git": true,
+        "**/.svn": true,
+        "**/.hg": true,
+        "**/CVS": true,
+        "**/.DS_Store": true
+    },
+    "hidefiles.selectedProfile": "Show All Files",
+    "r.lsp.promptToInstall": false,
+    "cSpell.words": [
+        "BSCII",
+        "COPCO",
+        "DIDEC",
+        "EMTEC",
+        "FAKENEWSPERCEPTION",
+        "HKCC",
+        "Inte",
+        "MECO",
+        "OASST",
+        "Parag",
+        "POTEC",
+        "proba",
+        "SBSAT",
+        "ZUCO"
+    ],
+    "python.analysis.autoImportCompletions": true,
+    "python.analysis.typeCheckingMode": "basic",
+    "git.ignoreLimitWarning": true,
+    "python-envs.pythonProjects": [
+        {
+            "path": "",
+            "envManager": "ms-python.python:conda",
+            "packageManager": "ms-python.python:conda"
+        }
+    ]
+}

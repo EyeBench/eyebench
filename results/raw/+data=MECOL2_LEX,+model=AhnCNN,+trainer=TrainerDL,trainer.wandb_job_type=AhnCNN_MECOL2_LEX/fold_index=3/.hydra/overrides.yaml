@@ -1,0 +1,6 @@
+- +model=AhnCNN
+- +data=MECOL2_LEX
+- +trainer=TrainerDL
+- data.fold_index=3
+- trainer.devices=1
+- trainer.wandb_job_type=AhnCNN_MECOL2_LEX

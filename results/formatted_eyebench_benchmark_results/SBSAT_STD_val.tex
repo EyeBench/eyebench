@@ -1,0 +1,34 @@
+
+\begin{table}[ht]
+\centering
+\caption{Model performance on the \textbf{Subjective Text Difficulty} task on \textbf{SBSAT} for the \textbf{validation} set.}
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{@{}l|ccc|ccc|ccc|ccc|@{}}
+\toprule
+\multirow{2}{*}{\textbf{Method}} & \multicolumn{3}{c|}{\textbf{Unseen Reader}} & \multicolumn{3}{c|}{\textbf{Unseen Text}} & \multicolumn{3}{c|}{\textbf{Unseen Text \& Reader}} & \multicolumn{3}{c|}{\textbf{Average}} \\
+\cmidrule(lr){2-4} \cmidrule(lr){5-7} \cmidrule(lr){8-10} \cmidrule(lr){11-13}
+  & \textbf{RMSE} & \textbf{MAE} & \textbf{R²} & \textbf{RMSE} & \textbf{MAE} & \textbf{R²} & \textbf{RMSE} & \textbf{MAE} & \textbf{R²} & \textbf{RMSE} & \textbf{MAE} & \textbf{R²} \\
+\midrule
+Majority Class / Chance & 0.73\textsubscript{±0.1} & 0.55\textsubscript{±0.1} & -0.21\textsubscript{±0.2} & 0.68\textsubscript{±0.0} & \textbf{0.5\textsubscript{±0.1}} & -0.09\textsubscript{±0.0} & 0.64\textsubscript{±0.0} & \textbf{0.48\textsubscript{±0.1}} & -0.36\textsubscript{±0.1} & 0.7\textsubscript{±0.0} & \textbf{0.51\textsubscript{±0.0}} & -0.05\textsubscript{±0.0} \\
+Reading Speed & 0.68\textsubscript{±0.0} & 0.52\textsubscript{±0.0} & -0.06\textsubscript{±0.0} & 0.77\textsubscript{±0.1} & 0.66\textsubscript{±0.1} & -0.48\textsubscript{±0.3} & 0.79\textsubscript{±0.1} & 0.67\textsubscript{±0.1} & -1.37\textsubscript{±0.7} & 0.74\textsubscript{±0.0} & 0.61\textsubscript{±0.0} & -0.17\textsubscript{±0.1} \\
+Text-Only Roberta & 0.67\textsubscript{±0.0} & 0.57\textsubscript{±0.0} & -0.03\textsubscript{±0.1} & \textbf{0.67\textsubscript{±0.0}} & 0.55\textsubscript{±0.0} & -0.06\textsubscript{±0.0} & 0.62\textsubscript{±0.0} & 0.52\textsubscript{±0.0} & -0.32\textsubscript{±0.2} & 0.66\textsubscript{±0.0} & 0.55\textsubscript{±0.0} & 0.06\textsubscript{±0.0} \\
+\midrule
+Logistic Regression~\cite{meziere2023using} & 0.71\textsubscript{±0.0} & 0.55\textsubscript{±0.0} & -0.16\textsubscript{±0.0} & 0.77\textsubscript{±0.1} & 0.66\textsubscript{±0.1} & -0.55\textsubscript{±0.4} & 0.78\textsubscript{±0.1} & 0.63\textsubscript{±0.1} & -1.28\textsubscript{±0.7} & 0.75\textsubscript{±0.0} & 0.61\textsubscript{±0.0} & -0.22\textsubscript{±0.1} \\
+SVM~\cite{hollenstein2023zuco} & 0.7\textsubscript{±0.0} & 0.5\textsubscript{±0.1} & -0.11\textsubscript{±0.1} & 0.72\textsubscript{±0.0} & 0.52\textsubscript{±0.0} & -0.2\textsubscript{±0.1} & 0.65\textsubscript{±0.1} & 0.49\textsubscript{±0.1} & -0.47\textsubscript{±0.2} & 0.7\textsubscript{±0.0} & \textbf{0.51\textsubscript{±0.0}} & -0.06\textsubscript{±0.0} \\
+Random Forest~\cite{makowski2024detection} & 0.64\textsubscript{±0.0} & \textbf{0.49\textsubscript{±0.0}} & 0.05\textsubscript{±0.1} & 0.77\textsubscript{±0.0} & 0.61\textsubscript{±0.0} & -0.4\textsubscript{±0.2} & 0.81\textsubscript{±0.1} & 0.66\textsubscript{±0.1} & -1.37\textsubscript{±0.5} & 0.73\textsubscript{±0.0} & 0.57\textsubscript{±0.0} & -0.15\textsubscript{±0.1} \\
+\midrule
+AhnRNN~\citep{ahn2020towards} & 0.72\textsubscript{±0.0} & 0.59\textsubscript{±0.0} & -0.2\textsubscript{±0.1} & \textbf{0.67\textsubscript{±0.0}} & 0.53\textsubscript{±0.0} & -0.05\textsubscript{±0.0} & 0.61\textsubscript{±0.0} & 0.49\textsubscript{±0.0} & -0.26\textsubscript{±0.2} & 0.68\textsubscript{±0.0} & 0.55\textsubscript{±0.0} & -0.0\textsubscript{±0.0} \\
+AhnCNN~\citep{ahn2020towards} & 0.72\textsubscript{±0.0} & 0.59\textsubscript{±0.0} & -0.18\textsubscript{±0.1} & \textbf{0.67\textsubscript{±0.0}} & 0.53\textsubscript{±0.0} & \textbf{-0.03\textsubscript{±0.0}} & 0.6\textsubscript{±0.0} & 0.49\textsubscript{±0.0} & -0.22\textsubscript{±0.1} & 0.68\textsubscript{±0.0} & 0.54\textsubscript{±0.0} & 0.02\textsubscript{±0.0} \\
+BEyeLSTM~\citep{reich_inferring_2022} & 0.67\textsubscript{±0.0} & 0.51\textsubscript{±0.0} & -0.03\textsubscript{±0.0} & 0.68\textsubscript{±0.0} & 0.54\textsubscript{±0.1} & -0.09\textsubscript{±0.0} & \textbf{0.59\textsubscript{±0.0}} & 0.49\textsubscript{±0.0} & \textbf{-0.17\textsubscript{±0.1}} & 0.66\textsubscript{±0.0} & 0.52\textsubscript{±0.0} & 0.05\textsubscript{±0.1} \\
+PLM-AS~\citep{Yang2023PLMASPL} & 0.69\textsubscript{±0.0} & 0.56\textsubscript{±0.0} & -0.09\textsubscript{±0.1} & 0.71\textsubscript{±0.0} & 0.57\textsubscript{±0.0} & -0.19\textsubscript{±0.1} & 0.66\textsubscript{±0.0} & 0.53\textsubscript{±0.0} & -0.53\textsubscript{±0.3} & 0.69\textsubscript{±0.0} & 0.56\textsubscript{±0.0} & -0.04\textsubscript{±0.0} \\
+PLM-AS-RM~\citep{haller2022eye} & 1.2\textsubscript{±0.1} & 1.05\textsubscript{±0.1} & -2.33\textsubscript{±0.4} & 1.18\textsubscript{±0.1} & 1.02\textsubscript{±0.1} & -2.24\textsubscript{±0.4} & 1.12\textsubscript{±0.2} & 1.02\textsubscript{±0.2} & -3.18\textsubscript{±1.0} & 1.2\textsubscript{±0.0} & 1.03\textsubscript{±0.0} & -2.14\textsubscript{±0.3} \\
+RoBERTEye-W~\citep{Shubi2024Finegrained} & 0.64\textsubscript{±0.0} & 0.53\textsubscript{±0.0} & 0.05\textsubscript{±0.1} & \textbf{0.67\textsubscript{±0.0}} & 0.54\textsubscript{±0.0} & -0.07\textsubscript{±0.0} & 0.61\textsubscript{±0.0} & 0.5\textsubscript{±0.0} & -0.3\textsubscript{±0.2} & \textbf{0.65\textsubscript{±0.0}} & 0.53\textsubscript{±0.0} & \textbf{0.09\textsubscript{±0.0}} \\
+RoBERTEye-F~\citep{Shubi2024Finegrained} & \textbf{0.62\textsubscript{±0.0}} & 0.52\textsubscript{±0.0} & \textbf{0.1\textsubscript{±0.1}} & 0.68\textsubscript{±0.0} & 0.56\textsubscript{±0.0} & -0.1\textsubscript{±0.1} & 0.65\textsubscript{±0.0} & 0.55\textsubscript{±0.0} & -0.48\textsubscript{±0.3} & \textbf{0.65\textsubscript{±0.0}} & 0.54\textsubscript{±0.0} & \textbf{0.09\textsubscript{±0.0}} \\
+MAG-Eye~\citep{Shubi2024Finegrained} & 0.64\textsubscript{±0.0} & 0.53\textsubscript{±0.0} & 0.05\textsubscript{±0.1} & \textbf{0.67\textsubscript{±0.0}} & 0.52\textsubscript{±0.0} & -0.04\textsubscript{±0.0} & 0.61\textsubscript{±0.0} & 0.49\textsubscript{±0.0} & -0.26\textsubscript{±0.1} & \textbf{0.65\textsubscript{±0.0}} & 0.52\textsubscript{±0.0} & \textbf{0.09\textsubscript{±0.0}} \\
+PostFusion-Eye~\citep{Shubi2024Finegrained} & 0.7\textsubscript{±0.1} & 0.57\textsubscript{±0.0} & -0.13\textsubscript{±0.2} & 0.68\textsubscript{±0.0} & 0.55\textsubscript{±0.0} & -0.08\textsubscript{±0.0} & 0.63\textsubscript{±0.0} & 0.52\textsubscript{±0.0} & -0.34\textsubscript{±0.2} & 0.68\textsubscript{±0.0} & 0.55\textsubscript{±0.0} & 0.0\textsubscript{±0.0} \\
+
+\bottomrule
+\end{tabular}%
+}
+\label{tab:task-sbsat_std-val-regime}
+\end{table}

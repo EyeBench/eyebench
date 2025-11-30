@@ -1,0 +1,6 @@
+- +model=AhnRNN
+- +data=IITBHGC_CV
+- +trainer=TrainerDL
+- data.fold_index=1
+- trainer.devices=1
+- trainer.wandb_job_type=AhnRNN_IITBHGC_CV

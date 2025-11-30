@@ -1,0 +1,6 @@
+- +model=PostFusion
+- +data=CopCo_RCS
+- +trainer=TrainerDL
+- data.fold_index=1
+- trainer.devices=1
+- trainer.wandb_job_type=PostFusion_CopCo_RCS

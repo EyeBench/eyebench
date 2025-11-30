@@ -1,0 +1,6 @@
+- +model=RoberteyeWord
+- +data=SBSAT_STD
+- +trainer=TrainerDL
+- data.fold_index=3
+- trainer.devices=1
+- trainer.wandb_job_type=RoberteyeWord_SBSAT_STD

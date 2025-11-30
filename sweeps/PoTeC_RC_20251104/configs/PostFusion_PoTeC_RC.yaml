@@ -1,0 +1,77 @@
+hyper_args:
+  base_model: PostFusionModel
+  base_models:
+  - AhnCNNModel
+  - AhnRNNModel
+  - BEyeLSTMModel
+  - PLMASModel
+  - MAGModel
+  - PLMASFModel
+  - PostFusionModel
+  - Roberteye
+  - Roberteye
+  - Roberteye
+  - SupportVectorMachineMLModel
+  - XGBoostMLModel
+  - RandomForestMLModel
+  - LogisticRegressionMLModel
+  - LogisticRegressionMLModel
+  - DummyClassifierMLModel
+  data_task: PoTeC_RC
+  data_tasks:
+  - PoTeC_RC
+  folds:
+  - 0
+  - 1
+  - 2
+  - 3
+  gpu_count: 1
+  model: PostFusion
+  models:
+  - AhnCNN
+  - AhnRNN
+  - BEyeLSTMArgs
+  - PLMASArgs
+  - MAG
+  - PLMASfArgs
+  - PostFusion
+  - Roberta
+  - RoberteyeFixation
+  - RoberteyeWord
+  - SupportVectorMachineMLArgs
+  - XGBoostMLArgs
+  - RandomForestMLArgs
+  - LogisticRegressionMLArgs
+  - LogisticMeziereArgs
+  - DummyClassifierMLArgs
+  num_duplicates_per_gpu: 1
+  run_cap: 1000
+  search_algorithm: grid
+  slurm_cpus: 10
+  slurm_mailto: shubi@campus.technion.ac.il
+  slurm_mem: 75G
+  trainer: TrainerDL
+  trainers:
+  - TrainerDL
+  - TrainerDL
+  - TrainerDL
+  - TrainerDL
+  - TrainerDL
+  - TrainerDL
+  - TrainerDL
+  - TrainerDL
+  - TrainerDL
+  - TrainerDL
+  - TrainerML
+  - TrainerML
+  - TrainerML
+  - TrainerML
+  - TrainerML
+  - TrainerML
+  wandb_entity: EyeRead
+  wandb_project: PoTeC_RC_20251104
+sweep_ids:
+- q4v26ttm
+- ytv0vzo7
+- drfm07ww
+- cr8dk5ra

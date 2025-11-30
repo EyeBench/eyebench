@@ -1,0 +1,40 @@
+
+    \begin{table}[ht]
+    \centering
+    \caption{Model performance across the benchmark tasks and datasets on test data. \textbf{AUROC} (higher is better) for classification tasks and \textbf{RMSE} (lower is better) for regression tasks. The best performing model per task and dataset is shown in \textbf{bold}. Reported values indicate mean~$\pm$~standard error across folds. The tasks belong to two categories, where \woman{} indicates a reader characteristic prediction task and \woman{}+\page{} an interaction of a reader with a text. \newthing{} indicates new tasks and task-dataset combinations introduced in \benchmarkname. \newsetup{} indicates a new experimental setup for the task-dataset combination.}
+    \resizebox{\textwidth}{!}{%
+    \begin{tabular}{@{}l|cccccc|ccc@{}}
+    \toprule
+     & \multicolumn{6}{c|}{\textbf{Classification (AUROC$\uparrow$)}} & \multicolumn{3}{c}{\textbf{Regression (RMSE$\downarrow$)}} \\
+    \addlinespace  & \multicolumn{3}{c}{Reading Comprehension\woman{}+\page{}} & \makecell{\newthing{} Domain\\Expertise \woman{}+\page{}} & \makecell{\newthing{} Claim\\Verification \woman{}+\page{}} & \makecell{Dyslexia\\Detection \woman{}} & \makecell{Subj. Text\\Difficulty \woman{}+\page{}} & \makecell{Reading Comp.\\Skill \woman{}} & \makecell{\newthing{} Vocabulary\\Knowledge \woman{}}\\
+  & OneStop & SB-SAT & PoTeC & PoTeC & IITB-HGC & CopCo & SB-SAT & CopCo & MECO L2\\
+\midrule
+    \addlinespace
+Majority Class / Chance & 50.0\textsubscript{±0.0} & 50.0\textsubscript{±0.0} & 50.0\textsubscript{±0.0} & 51.4\textsubscript{±1.3} & 50.4\textsubscript{±0.3} & 49.9\textsubscript{±0.0} & 0.73\textsubscript{±0.0} & 2.66\textsubscript{±0.1} & 12.45\textsubscript{±0.1}\\
+Reading Speed & 49.6\textsubscript{±0.8} & 50.8\textsubscript{±1.6} & 51.9\textsubscript{±2.2} & 60.4\textsubscript{±1.7} & 57.3\textsubscript{±0.7} & 56.6\textsubscript{±2.1} & 0.77\textsubscript{±0.0} & 2.68\textsubscript{±0.1} & 28.95\textsubscript{±14.3}\\
+Text-Only Roberta & 61.1\textsubscript{±1.0} & 55.9\textsubscript{±2.3} & 56.3\textsubscript{±1.6} & 62.0\textsubscript{±4.0} & \textbf{58.8\textsubscript{±1.5}} & 50.1\textsubscript{±0.4} & 0.72\textsubscript{±0.0} & 2.64\textsubscript{±0.0} & 12.45\textsubscript{±0.1}\\
+\addlinespace[1ex]
+\hline
+\addlinespace[1ex]
+Logistic Regression~\cite{meziere2023using} & 53.0\textsubscript{±0.8} & 52.3\textsubscript{±1.0} & 54.1\textsubscript{±0.7} & 54.0\textsubscript{±1.7} & 54.6\textsubscript{±1.1} & 80.6\textsubscript{±2.3} & 0.82\textsubscript{±0.0} & 2.74\textsubscript{±0.1} & 10.34\textsubscript{±0.0}\\
+SVM~\cite{hollenstein2023zuco} & 50.7\textsubscript{±0.7} & 50.2\textsubscript{±0.9} & 50.6\textsubscript{±0.7} & 54.5\textsubscript{±1.5} & 54.5\textsubscript{±0.6} & 72.5\textsubscript{±1.6} & 0.73\textsubscript{±0.0} & 2.76\textsubscript{±0.1} & 10.94\textsubscript{±0.0}\\
+Random Forest~\cite{makowski2024detection} & 58.0\textsubscript{±0.6} & 52.3\textsubscript{±0.7} & 54.3\textsubscript{±1.2} & 62.3\textsubscript{±3.4} & 56.4\textsubscript{±0.3} & 82.9\textsubscript{±1.5} & 0.77\textsubscript{±0.0} & \textbf{2.51\textsubscript{±0.1}} & \textbf{10.09\textsubscript{±0.0}}\\
+\addlinespace[1ex]
+\hline
+\addlinespace[1ex]
+AhnRNN~\citep{ahn2020towards} & 50.0\textsubscript{±0.0} & 50.0\textsubscript{±0.0} & 50.0\textsubscript{±0.0} & 50.0\textsubscript{±0.1} & 50.9\textsubscript{±0.7} & 50.0\textsubscript{±0.1} & 0.72\textsubscript{±0.0} & 2.63\textsubscript{±0.0} & 12.46\textsubscript{±0.1}\\
+AhnCNN~\citep{ahn2020towards} & 49.7\textsubscript{±0.7} & 50.8\textsubscript{±1.8} & 51.6\textsubscript{±2.0} & 60.6\textsubscript{±3.4} & 52.9\textsubscript{±1.0} & \textbf{83.4\textsubscript{±1.1}} & 0.72\textsubscript{±0.0} & 2.63\textsubscript{±0.0} & 12.27\textsubscript{±0.0}\\
+BEyeLSTM~\citep{reich_inferring_2022} & 52.5\textsubscript{±0.8} & 50.1\textsubscript{±0.5} & 54.7\textsubscript{±1.4} & 51.8\textsubscript{±3.5} & 51.3\textsubscript{±1.2} & 80.2\textsubscript{±1.5} & 1.43\textsubscript{±0.7} & 2.63\textsubscript{±0.0} & 12.68\textsubscript{±0.3}\\
+PLM-AS~\citep{Yang2023PLMASPL} & 56.1\textsubscript{±0.9} & 49.5\textsubscript{±1.1} & 56.5\textsubscript{±0.3} & 51.3\textsubscript{±2.4} & 51.4\textsubscript{±0.6} & 57.9\textsubscript{±4.6} & \textbf{0.71\textsubscript{±0.0}} & 2.64\textsubscript{±0.0} & 12.46\textsubscript{±0.1}\\
+PLM-AS-RM~\citep{haller2022eye} & 58.4\textsubscript{±0.5} & 53.9\textsubscript{±1.1} & \textbf{59.0\textsubscript{±1.2}} & 64.2\textsubscript{±4.0} & 53.4\textsubscript{±1.5} & 69.2\textsubscript{±1.0} & 1.21\textsubscript{±0.0} & 2.67\textsubscript{±0.0} & 31.79\textsubscript{±0.2}\\
+RoBERTEye-W~\citep{Shubi2024Finegrained} & 61.4\textsubscript{±0.9} & \textbf{57.4\textsubscript{±3.7}} & 56.8\textsubscript{±1.2} & 62.5\textsubscript{±7.3} & 58.0\textsubscript{±2.2} & 75.6\textsubscript{±2.3} & \textbf{0.71\textsubscript{±0.0}} & 2.65\textsubscript{±0.0} & 11.16\textsubscript{±0.1}\\
+RoBERTEye-F~\citep{Shubi2024Finegrained} & 61.9\textsubscript{±0.8} & 56.0\textsubscript{±2.7} & 54.7\textsubscript{±2.2} & \textbf{64.5\textsubscript{±3.1}} & 58.4\textsubscript{±1.1} & 70.8\textsubscript{±1.9} & 0.73\textsubscript{±0.0} & 2.66\textsubscript{±0.1} & 11.25\textsubscript{±0.2}\\
+MAG-Eye~\citep{Shubi2024Finegrained} & \textbf{62.9\textsubscript{±0.5}} & 56.0\textsubscript{±2.1} & 58.3\textsubscript{±1.3} & 57.6\textsubscript{±7.1} & 58.0\textsubscript{±2.0} & 53.3\textsubscript{±3.7} & 0.72\textsubscript{±0.0} & 2.64\textsubscript{±0.0} & 12.46\textsubscript{±0.1}\\
+PostFusion-Eye~\citep{Shubi2024Finegrained} & 61.1\textsubscript{±0.6} & 55.4\textsubscript{±2.6} & 53.0\textsubscript{±1.8} & 53.6\textsubscript{±0.9} & 57.5\textsubscript{±1.4} & 73.2\textsubscript{±1.5} & 0.8\textsubscript{±0.1} & 2.79\textsubscript{±0.1} & 14.0\textsubscript{±0.4}\\
+
+\bottomrule
+\end{tabular}%
+}
+\small
+\label{tab:task-results-combined}
+\end{table}

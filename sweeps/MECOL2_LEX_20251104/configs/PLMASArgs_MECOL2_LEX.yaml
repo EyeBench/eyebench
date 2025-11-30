@@ -1,0 +1,77 @@
+hyper_args:
+  base_model: PLMASModel
+  base_models:
+  - AhnCNNModel
+  - AhnRNNModel
+  - BEyeLSTMModel
+  - PLMASModel
+  - MAGModel
+  - PLMASFModel
+  - PostFusionModel
+  - Roberteye
+  - Roberteye
+  - Roberteye
+  - SupportVectorRegressorMLModel
+  - XGBoostRegressorMLModel
+  - RandomForestRegressorMLModel
+  - LinearRegressionRegressorMLModel
+  - LinearRegressionRegressorMLModel
+  - DummyRegressorMLModel
+  data_task: MECOL2_LEX
+  data_tasks:
+  - MECOL2_LEX
+  folds:
+  - 0
+  - 1
+  - 2
+  - 3
+  gpu_count: 1
+  model: PLMASArgs
+  models:
+  - AhnCNN
+  - AhnRNN
+  - BEyeLSTMArgs
+  - PLMASArgs
+  - MAG
+  - PLMASfArgs
+  - PostFusion
+  - Roberta
+  - RoberteyeFixation
+  - RoberteyeWord
+  - SupportVectorRegressorMLArgs
+  - XGBoostRegressorMLArgs
+  - RandomForestRegressorMLArgs
+  - LinearRegressionArgs
+  - LinearMeziereArgs
+  - DummyRegressorMLArgs
+  num_duplicates_per_gpu: 1
+  run_cap: 1000
+  search_algorithm: grid
+  slurm_cpus: 10
+  slurm_mailto: shubi@campus.technion.ac.il
+  slurm_mem: 75G
+  trainer: TrainerDL
+  trainers:
+  - TrainerDL
+  - TrainerDL
+  - TrainerDL
+  - TrainerDL
+  - TrainerDL
+  - TrainerDL
+  - TrainerDL
+  - TrainerDL
+  - TrainerDL
+  - TrainerDL
+  - TrainerML
+  - TrainerML
+  - TrainerML
+  - TrainerML
+  - TrainerML
+  - TrainerML
+  wandb_entity: EyeRead
+  wandb_project: MECOL2_LEX_20251104
+sweep_ids:
+- 2vfqvgw9
+- v3cku8hw
+- vx4cs63w
+- 73ifci6e

@@ -1,0 +1,6 @@
+- +model=AhnRNN
+- +data=OneStop_RC
+- +trainer=TrainerDL
+- data.fold_index=9
+- trainer.devices=1
+- trainer.wandb_job_type=AhnRNN_OneStop_RC

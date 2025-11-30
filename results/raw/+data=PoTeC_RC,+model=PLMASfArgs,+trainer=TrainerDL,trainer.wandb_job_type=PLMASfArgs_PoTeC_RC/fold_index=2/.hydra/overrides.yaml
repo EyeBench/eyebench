@@ -1,0 +1,6 @@
+- +model=PLMASfArgs
+- +data=PoTeC_RC
+- +trainer=TrainerDL
+- data.fold_index=2
+- trainer.devices=1
+- trainer.wandb_job_type=PLMASfArgs_PoTeC_RC

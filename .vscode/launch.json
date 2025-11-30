@@ -1,0 +1,146 @@
+{
+  // Use IntelliSense to learn about possible attributes.
+  // Hover to view descriptions of existing attributes.
+  // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Python Debugger: Current File",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "${file}",
+      "console": "integratedTerminal",
+      "justMyCode": false,
+      "env": {
+        "PYDEVD_WARN_SLOW_RESOLVE_TIMEOUT": "20.0",
+      }
+    },
+    {
+      "name": "Test: DL",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "src/run/single_run/test_dl.py",
+      "console": "integratedTerminal",
+      "justMyCode": false,
+      "args": [
+        "eval_path='outputs/+data=MECOL2_LEX,+model=AhnCNN,+trainer=TrainerDL,trainer.wandb_job_type=AhnCNN_MECOL2_LEX'",
+      ],
+      "env": {
+        "CUDA_VISIBLE_DEVICES": "3",
+        "PYDEVD_WARN_SLOW_RESOLVE_TIMEOUT": "20.0",
+      }
+    },
+    {
+      "name": "Train: DL",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "src/run/single_run/train.py",
+      "console": "integratedTerminal",
+      "justMyCode": false,
+      "args": [
+        "+model=RoberteyeWord", // RoberteyeFixation RoberteyeWord Roberta PostFusion PLMASArgs PLMASfArgs MAG AhnRNN BEyeLSTMArgs
+        "+data=CopCo_RCS",
+        "+trainer=TrainerDL",
+        "trainer.wandb_job_type=DEBUG",
+        // "trainer.overwrite_data=True",
+        "data.fold_index=2",
+        // "trainer.run_mode=DEBUG", // DEBUG FAST_DEV_RUN
+        // "trainer.use_torch_compile=True",
+        // "model.freeze=True"
+      ],
+      "env": {
+        "CUDA_VISIBLE_DEVICES": "1",
+        "PYDEVD_WARN_SLOW_RESOLVE_TIMEOUT": "20.0",
+      }
+    },
+    {
+      "name": "Train: ML",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "src/run/single_run/train.py",
+      "console": "integratedTerminal",
+      "justMyCode": false,
+      "args": [
+        "+model=SupportVectorMachineMLArgs", // SupportVectorRegressorMLArgs DummyRegressorMLArgs  RandomForestRegressorMLArgs LinearMeziereArgs LinearRegressionArgs XGBoostRegressorMLArgs
+        "+data=SBSAT_RC",
+        "+trainer=TrainerML",
+        "data.fold_index=0",
+        "trainer.wandb_job_type=DEBUG",
+        "trainer.overwrite_data=True"
+      ],
+      "env": {
+        "CUDA_VISIBLE_DEVICES": "1",
+        "PYDEVD_WARN_SLOW_RESOLVE_TIMEOUT": "20.0",
+      }
+    },
+    {
+      "name": "Test: ML",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "src/run/single_run/test_ml.py",
+      "console": "integratedTerminal",
+      "justMyCode": false,
+      "args": [ "--data_task", "IITBHGC_CV", "--wandb_project", "IITBHGC_CV_20251104"],
+      "env": {
+        "CUDA_VISIBLE_DEVICES": "2",
+        "PYDEVD_WARN_SLOW_RESOLVE_TIMEOUT": "20.0",
+      }
+    },
+    {
+      "name": "Preprocess Data",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "src/data/preprocessing/preprocess_data.py",
+      "console": "integratedTerminal",
+      "justMyCode": false,
+      "args": [
+        "--dataset",
+        "PoTeC"
+      ],
+      "env": {
+        "PYDEVD_WARN_SLOW_RESOLVE_TIMEOUT": "20.0",
+      }
+    },
+    {
+      "name": "Create folds",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "src/data/preprocessing/create_folds.py",
+      "console": "integratedTerminal",
+      "justMyCode": false,
+      "env": {
+        "PYDEVD_WARN_SLOW_RESOLVE_TIMEOUT": "20.0",
+      },
+      "args": [
+        "--dataset",
+        "PoTeC"
+      ],
+    },
+    {
+      "name": "Union files",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "src/data/preprocessing/union_raw_files.py",
+      "console": "integratedTerminal",
+      "justMyCode": false,
+      "env": {
+        "PYDEVD_WARN_SLOW_RESOLVE_TIMEOUT": "20.0",
+      },
+      "args": [
+        "--dataset",
+        "SBSAT"
+      ],
+    },
+    {
+      "name": "Compute stats",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "src/data/preprocessing/stats.py",
+      "console": "integratedTerminal",
+      "justMyCode": false,
+      "env": {
+        "PYDEVD_WARN_SLOW_RESOLVE_TIMEOUT": "20.0",
+      }
+    }
+  ]
+}

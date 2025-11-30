@@ -1,0 +1,34 @@
+
+\begin{table}[ht]
+\centering
+\caption{Model performance on the \textbf{Dyslexia Detection} task on \textbf{CopCo} for the \textbf{test} set.}
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{@{}l|cc|cc|cc|cc|@{}}
+\toprule
+\multirow{2}{*}{\textbf{Method}} & \multicolumn{2}{c|}{\textbf{Unseen Reader}} & \multicolumn{2}{c|}{\textbf{Unseen Text}} & \multicolumn{2}{c|}{\textbf{Unseen Text \& Reader}} & \multicolumn{2}{c|}{\textbf{Average}} \\
+\cmidrule(lr){2-3} \cmidrule(lr){4-5} \cmidrule(lr){6-7} \cmidrule(lr){8-9}
+  & \textbf{\makecell{Balanced\\Accuracy}} & \textbf{AUROC} & \textbf{\makecell{Balanced\\Accuracy}} & \textbf{AUROC} & \textbf{\makecell{Balanced\\Accuracy}} & \textbf{AUROC} & \textbf{\makecell{Balanced\\Accuracy}} & \textbf{AUROC} \\
+\midrule
+Majority Class / Chance & 50.3\textsubscript{±0.3} & 50.3\textsubscript{±0.3} & 49.6\textsubscript{±0.4} & 49.6\textsubscript{±0.4} & 50.1\textsubscript{±0.1} & 50.1\textsubscript{±0.1} & 49.9\textsubscript{±0.0} & 49.9\textsubscript{±0.0} \\
+Reading Speed & 57.7\textsubscript{±2.2} & 60.7\textsubscript{±2.0} & 54.9\textsubscript{±1.8} & 56.2\textsubscript{±2.0} & 50.6\textsubscript{±2.7} & 50.9\textsubscript{±4.8} & 55.1\textsubscript{±2.1} & 56.6\textsubscript{±2.1} \\
+Text-Only Roberta & 50.0\textsubscript{±0.0} & 47.0\textsubscript{±4.4} & 50.0\textsubscript{±0.0} & 50.0\textsubscript{±0.2} & 50.0\textsubscript{±0.0} & 50.4\textsubscript{±1.1} & 50.0\textsubscript{±0.0} & 50.1\textsubscript{±0.4} \\
+\midrule
+Logistic Regression~\cite{meziere2023using} & 75.5\textsubscript{±3.1} & 83.1\textsubscript{±3.1} & 76.6\textsubscript{±1.6} & 83.3\textsubscript{±1.6} & 63.5\textsubscript{±5.1} & 68.9\textsubscript{±6.6} & 73.8\textsubscript{±2.1} & 80.6\textsubscript{±2.3} \\
+SVM~\cite{hollenstein2023zuco} & 70.7\textsubscript{±2.4} & 70.7\textsubscript{±2.4} & 77.4\textsubscript{±1.7} & 77.4\textsubscript{±1.7} & 64.7\textsubscript{±3.1} & 64.7\textsubscript{±3.1} & 72.5\textsubscript{±1.6} & 72.5\textsubscript{±1.6} \\
+Random Forest~\cite{makowski2024detection} & 69.8\textsubscript{±4.2} & 80.1\textsubscript{±3.6} & \textbf{81.5\textsubscript{±2.2}} & \textbf{91.5\textsubscript{±1.5}} & 59.7\textsubscript{±4.9} & 65.9\textsubscript{±6.6} & 72.7\textsubscript{±1.9} & 82.9\textsubscript{±1.5} \\
+\midrule
+AhnRNN~\citep{ahn2020towards} & 50.0\textsubscript{±0.0} & 50.1\textsubscript{±0.1} & 50.0\textsubscript{±0.0} & 50.0\textsubscript{±0.0} & 50.0\textsubscript{±0.0} & 50.0\textsubscript{±0.1} & 50.0\textsubscript{±0.0} & 50.0\textsubscript{±0.1} \\
+AhnCNN~\citep{ahn2020towards} & \textbf{77.7\textsubscript{±1.8}} & \textbf{85.3\textsubscript{±1.6}} & 77.5\textsubscript{±2.7} & 85.7\textsubscript{±2.3} & \textbf{65.6\textsubscript{±2.4}} & \textbf{74.9\textsubscript{±2.8}} & \textbf{75.0\textsubscript{±0.8}} & \textbf{83.4\textsubscript{±1.1}} \\
+BEyeLSTM~\citep{reich_inferring_2022} & 71.9\textsubscript{±2.1} & 79.4\textsubscript{±2.8} & 76.8\textsubscript{±1.7} & 85.0\textsubscript{±1.3} & 64.7\textsubscript{±5.0} & 69.2\textsubscript{±6.2} & 72.9\textsubscript{±1.3} & 80.2\textsubscript{±1.5} \\
+PLM-AS~\citep{Yang2023PLMASPL} & 55.2\textsubscript{±4.3} & 57.6\textsubscript{±5.9} & 57.3\textsubscript{±3.4} & 58.5\textsubscript{±4.9} & 55.9\textsubscript{±2.2} & 59.4\textsubscript{±0.9} & 56.0\textsubscript{±3.2} & 57.9\textsubscript{±4.6} \\
+PLM-AS-RM~\citep{haller2022eye} & 60.9\textsubscript{±2.8} & 63.9\textsubscript{±4.3} & 71.6\textsubscript{±2.4} & 80.1\textsubscript{±1.9} & 54.6\textsubscript{±1.1} & 55.0\textsubscript{±1.9} & 63.7\textsubscript{±0.9} & 69.2\textsubscript{±1.0} \\
+RoBERTEye-W~\citep{Shubi2024Finegrained} & 70.0\textsubscript{±4.0} & 78.3\textsubscript{±3.2} & 68.5\textsubscript{±3.0} & 76.7\textsubscript{±2.9} & 61.9\textsubscript{±4.6} & 68.2\textsubscript{±5.3} & 67.4\textsubscript{±2.9} & 75.6\textsubscript{±2.3} \\
+RoBERTEye-F~\citep{Shubi2024Finegrained} & 60.6\textsubscript{±2.1} & 71.9\textsubscript{±4.2} & 60.3\textsubscript{±2.4} & 74.7\textsubscript{±1.3} & 54.0\textsubscript{±2.1} & 63.3\textsubscript{±2.3} & 58.9\textsubscript{±1.4} & 70.8\textsubscript{±1.9} \\
+MAG-Eye~\citep{Shubi2024Finegrained} & 47.2\textsubscript{±2.4} & 45.9\textsubscript{±7.5} & 49.7\textsubscript{±0.2} & 54.7\textsubscript{±4.1} & 51.4\textsubscript{±1.2} & 56.1\textsubscript{±1.0} & 50.3\textsubscript{±0.3} & 53.3\textsubscript{±3.7} \\
+PostFusion-Eye~\citep{Shubi2024Finegrained} & 64.7\textsubscript{±4.3} & 73.1\textsubscript{±4.0} & 68.9\textsubscript{±2.3} & 78.1\textsubscript{±1.6} & 57.0\textsubscript{±3.7} & 65.5\textsubscript{±3.4} & 64.4\textsubscript{±2.4} & 73.2\textsubscript{±1.5} \\
+
+\bottomrule
+\end{tabular}%
+}
+\label{tab:task-copco_typ-test-regime}
+\end{table}

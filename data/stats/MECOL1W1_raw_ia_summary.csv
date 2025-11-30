@@ -1,0 +1,35 @@
+column,type,count,percent_null,min,quantile_10,mean,median,quantile_90,max,std,nunique,distribution
+cond,numeric,46746,0.0,1.0,1.0,1.0,1.0,1.0,1.0,0.0,1,{1: 100.0}
+firstpass.dur,categorical,46746,0.0,,,,,,,,11194,
+firstpass.forward.dur,categorical,46746,0.0,,,,,,,,7074,
+firstpass.forward.nfix,categorical,46746,0.0,,,,,,,,59,
+firstpass.nfix,categorical,46746,0.0,,,,,,,,129,
+firstpass.reread.dur,categorical,46746,0.0,,,,,,,,6167,
+firstpass.reread.nfix,categorical,46746,0.0,,,,,,,,89,
+firstrun.reg.in,categorical,46746,0.0,,,,,,,,3,"{'1': 74.9, '0': 24.7, 'NA': 0.3}"
+firstrun.reg.out,categorical,46746,0.0,,,,,,,,3,"{'1': 67.3, '0': 32.4, 'NA': 0.3}"
+firstrun.skip,categorical,46746,0.0,,,,,,,,3,"{'0': 93.2, '1': 6.5, 'NA': 0.3}"
+gopast,categorical,46746,0.0,,,,,,,,12575,
+gopast.sel,categorical,46746,0.0,,,,,,,,10939,
+itemid,numeric,46746,0.0,1.0,2.0,6.409724896247807,6.0,11.0,13.0,3.4523963134474718,13,"{10: 9.3, 4: 9.0, 3: 9.0, 1: 8.9, 9: 8.4, 6: 8.3, 5: 8.3, 8: 7.9, 2: 7.9, 7: 7.8, 11: 7.6, 12: 6.9, 13: 0.6}"
+lang,categorical,46746,0.0,,,,,,,,13,"{'fi': 10.5, 'ge': 9.3, 'ee': 9.3, 'he': 8.8, 'en': 8.7, 'it': 8.1, 'ru': 8.1, 'sp': 7.7, 'no': 7.4, 'du': 7.4, 'gr': 6.3, 'ko': 4.3, 'tr': 4.3}"
+lookback.dur,categorical,46746,0.0,,,,,,,,5466,
+lookback.nfix,categorical,46746,0.0,,,,,,,,112,
+lookfrom.dur,categorical,46746,0.0,,,,,,,,4194,
+lookfrom.nfix,categorical,46746,0.0,,,,,,,,89,
+nrun,categorical,46746,0.0,,,,,,,,20,
+rate,categorical,46746,0.0,,,,,,,,1083,
+reg.in,categorical,46746,0.0,,,,,,,,3,"{'1': 93.8, '0': 5.9, 'NA': 0.3}"
+reg.out,categorical,46746,0.0,,,,,,,,3,"{'1': 94.6, '0': 5.1, 'NA': 0.3}"
+reread,categorical,46746,0.0,,,,,,,,3,"{'1': 52.5, '0': 47.2, 'NA': 0.3}"
+sent,categorical,46746,0.0,,,,,,,,1271,
+sent.nwords,categorical,46746,0.0,,,,,,,,50,
+sentnum,numeric,46746,0.0,1.0,1.0,5.116394985667223,5.0,9.0,16.0,2.841736579169238,16,
+skip,numeric,46746,0.0,0.0,0.0,0.003059085269327857,0.0,0.0,1.0,0.0552249265135628,2,"{0: 99.7, 1: 0.3}"
+subid,categorical,46746,0.0,,,,,,,,580,
+supplementary_id,categorical,46746,0.0,,,,,,,,578,
+tmp,categorical,46746,0.0,,,,,,,,5240,
+total.dur,categorical,46746,0.0,,,,,,,,12047,
+total.nfix,categorical,46746,0.0,,,,,,,,153,
+trialid,numeric,46746,0.0,1.0,2.0,6.325375433192145,6.0,11.0,12.0,3.436059402542664,12,"{10: 9.7, 1: 9.7, 3: 9.1, 4: 9.0, 9: 8.4, 5: 8.3, 6: 8.2, 7: 8.0, 8: 7.7, 2: 7.7, 11: 7.4, 12: 6.8}"
+uniform_id,categorical,46746,0.0,,,,,,,,580,

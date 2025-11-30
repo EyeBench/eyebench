@@ -1,0 +1,6 @@
+- +model=MAG
+- +data=MECOL2_LEX
+- +trainer=TrainerDL
+- data.fold_index=2
+- trainer.devices=1
+- trainer.wandb_job_type=MAG_MECOL2_LEX

@@ -1,0 +1,6 @@
+- +model=RoberteyeFixation
+- +data=PoTeC_DE
+- +trainer=TrainerDL
+- data.fold_index=2
+- trainer.devices=1
+- trainer.wandb_job_type=RoberteyeFixation_PoTeC_DE

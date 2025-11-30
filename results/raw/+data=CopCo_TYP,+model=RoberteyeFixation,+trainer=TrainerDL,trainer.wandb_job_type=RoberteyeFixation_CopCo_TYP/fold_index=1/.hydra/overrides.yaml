@@ -1,0 +1,6 @@
+- +model=RoberteyeFixation
+- +data=CopCo_TYP
+- +trainer=TrainerDL
+- data.fold_index=1
+- trainer.devices=1
+- trainer.wandb_job_type=RoberteyeFixation_CopCo_TYP

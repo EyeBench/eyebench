@@ -1,0 +1,89 @@
+hyper_args:
+  base_model: AhnCNNModel
+  base_models:
+  - AhnCNNModel
+  - AhnRNNModel
+  - BEyeLSTMModel
+  - PLMASModel
+  - MAGModel
+  - PLMASFModel
+  - PostFusionModel
+  - Roberteye
+  - Roberteye
+  - Roberteye
+  - SupportVectorMachineMLModel
+  - XGBoostMLModel
+  - RandomForestMLModel
+  - LogisticRegressionMLModel
+  - LogisticRegressionMLModel
+  - DummyClassifierMLModel
+  data_task: OneStop_RC
+  data_tasks:
+  - OneStop_RC
+  folds:
+  - 0
+  - 1
+  - 2
+  - 3
+  - 4
+  - 5
+  - 6
+  - 7
+  - 8
+  - 9
+  gpu_count: 1
+  model: AhnCNN
+  models:
+  - AhnCNN
+  - AhnRNN
+  - BEyeLSTMArgs
+  - PLMASArgs
+  - MAG
+  - PLMASfArgs
+  - PostFusion
+  - Roberta
+  - RoberteyeFixation
+  - RoberteyeWord
+  - SupportVectorMachineMLArgs
+  - XGBoostMLArgs
+  - RandomForestMLArgs
+  - LogisticRegressionMLArgs
+  - LogisticMeziereArgs
+  - DummyClassifierMLArgs
+  num_duplicates_per_gpu: 1
+  run_cap: 1000
+  search_algorithm: grid
+  slurm_cpus: 10
+  slurm_mailto: shubi@campus.technion.ac.il
+  slurm_mem: 75G
+  trainer: TrainerDL
+  trainers:
+  - TrainerDL
+  - TrainerDL
+  - TrainerDL
+  - TrainerDL
+  - TrainerDL
+  - TrainerDL
+  - TrainerDL
+  - TrainerDL
+  - TrainerDL
+  - TrainerDL
+  - TrainerML
+  - TrainerML
+  - TrainerML
+  - TrainerML
+  - TrainerML
+  - TrainerML
+  wandb_entity: EyeRead
+  wandb_project: OneStop_RC_20251118
+sweep_ids:
+- sb32ii57
+- nywp0t6s
+- ltz2jm66
+- yfabu4ta
+- f4yelogk
+- d1q8up6s
+- r5k1d1gu
+- lcxrhkhu
+- qt1gln66
+- 4phkk13m

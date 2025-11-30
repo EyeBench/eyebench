@@ -1,0 +1,42 @@
+
+\begin{table}[ht]
+\centering
+\caption{Model performance across benchmark tasks grouped into Reader and Reader \& Text categories. \textbf{RMSE} values are presented for all tasks, averaged across folds. Lower RMSE values indicate better performance. Best performing model per task is shown in \textbf{bold}.}
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{@{}l|cc|c|@{}}
+\toprule
+\multirow{2}{*}{\textbf{Method}} & \multicolumn{2}{c|}{\textbf{Reader}} & \multicolumn{1}{c|}{\textbf{Reader \& Text}} \\
+\cmidrule(lr){2-3} \cmidrule(lr){4-4}
+ & \textbf{\textbf{Vocabulary Knowledge} task on \textbf{MECOL2}} & \textbf{\textbf{Reading Comprehension Skill} task on \textbf{CopCo}} & \textbf{\textbf{Subjective Text Difficulty} task on \textbf{SBSAT}} \\
+\midrule
+\addlinespace[1ex]
+\hline
+\addlinespace[1ex]
+Majority Class / Chance & 12.45\textsubscript{±0.1} & 2.65\textsubscript{±0.0} & 0.7\textsubscript{±0.0} \\
+Reading Speed & 28.82\textsubscript{±14.2} & 2.66\textsubscript{±0.0} & 0.74\textsubscript{±0.0} \\
+Text-Only Roberta &  & 2.62\textsubscript{±0.1} & 0.66\textsubscript{±0.0} \\
+\addlinespace[1ex]
+\hline
+\addlinespace[1ex]
+Logistic Regression~\cite{meziere2023using} & 10.32\textsubscript{±0.1} & 2.78\textsubscript{±0.1} & 0.75\textsubscript{±0.0} \\
+SVM~\cite{hollenstein2023zuco} & 10.9\textsubscript{±0.1} & 2.68\textsubscript{±0.1} & 0.7\textsubscript{±0.0} \\
+Random Forest~\cite{makowski2024detection} & \textbf{10.01\textsubscript{±0.1}} & \textbf{2.52\textsubscript{±0.1}} & 0.73\textsubscript{±0.0} \\
+\addlinespace[1ex]
+\hline
+\addlinespace[1ex]
+AhnRNN~\citep{ahn2020towards} &  & 2.62\textsubscript{±0.1} & 0.68\textsubscript{±0.0} \\
+AhnCNN~\citep{ahn2020towards} &  & 2.62\textsubscript{±0.1} & 0.68\textsubscript{±0.0} \\
+BEyeLSTM~\citep{reich_inferring_2022} &  & 2.62\textsubscript{±0.1} & 0.66\textsubscript{±0.0} \\
+PLM-AS~\citep{Yang2023PLMASPL} &  & 2.62\textsubscript{±0.1} & 0.69\textsubscript{±0.0} \\
+PLM-AS-RM~\citep{haller2022eye} &  & 2.65\textsubscript{±0.0} & 1.2\textsubscript{±0.0} \\
+RoBERTEye-W~\citep{Shubi2024Finegrained} &  & 2.61\textsubscript{±0.1} & \textbf{0.65\textsubscript{±0.0}} \\
+RoBERTEye-F~\citep{Shubi2024Finegrained} &  & 2.62\textsubscript{±0.1} & \textbf{0.65\textsubscript{±0.0}} \\
+MAG-Eye~\citep{Shubi2024Finegrained} &  & 2.62\textsubscript{±0.1} & \textbf{0.65\textsubscript{±0.0}} \\
+PostFusion-Eye~\citep{Shubi2024Finegrained} &  & 2.71\textsubscript{±0.1} & 0.68\textsubscript{±0.0} \\
+
+\bottomrule
+\end{tabular}%
+}
+\small
+\label{tab:task-results-val-rmse}
+\end{table}

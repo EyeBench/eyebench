@@ -1,0 +1,6 @@
+- +model=RoberteyeWord
+- +data=PoTeC_DE
+- +trainer=TrainerDL
+- data.fold_index=1
+- trainer.devices=1
+- trainer.wandb_job_type=RoberteyeWord_PoTeC_DE

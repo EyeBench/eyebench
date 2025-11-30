@@ -1,0 +1,6 @@
+- +model=PLMASArgs
+- +data=OneStop_RC
+- +trainer=TrainerDL
+- data.fold_index=4
+- trainer.devices=1
+- trainer.wandb_job_type=PLMASArgs_OneStop_RC

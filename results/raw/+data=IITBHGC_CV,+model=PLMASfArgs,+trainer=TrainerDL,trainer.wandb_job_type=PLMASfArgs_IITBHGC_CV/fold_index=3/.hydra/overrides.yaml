@@ -1,0 +1,6 @@
+- +model=PLMASfArgs
+- +data=IITBHGC_CV
+- +trainer=TrainerDL
+- data.fold_index=3
+- trainer.devices=1
+- trainer.wandb_job_type=PLMASfArgs_IITBHGC_CV

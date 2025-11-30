@@ -1,0 +1,59 @@
+subj,comprehension_accuracy,number_of_speeches,number_of_questions,absolute_reading_time,relative_reading_time,words_per_minute,age,sex,native_language,vision,score_reading_comprehension_test,dyslexia,pseudohomophone_score
+P01,0.92,4,13,25.95,0.40,159.56,29,F,Danish,contact lenses,4.7,no,
+P02,0.83,6,18,14.28,0.21,315.00,62,F,Danish,contact lenses,,no,
+P03,0.95,6,20,18.66,0.25,259.84,23,F,Danish,normal vision,,no,
+P04,0.88,2,8,20.37,0.26,241.08,26,F,Icelandic/Danish (bilingual),contact lenses,4.4,no,
+P05,0.85,7,26,13.88,0.22,282.96,44,F,Danish,glasses,,no,
+P06,0.78,6,18,14.68,0.20,317.86,47,M,Danish,contact lenses,,no,
+P07,0.81,4,16,22.27,0.36,182.90,26,F,Danish,contact lenses,5.1,no,
+P08,0.80,2,5,14.72,0.18,341.94,32,M,Danish,glasses,5.5,no,
+P09,0.50,2,2,18.66,0.20,316.47,39,F,Danish,normal vision,,no,
+P10,0.81,4,16,22.41,0.32,203.39,25,F,Danish,normal vision,,no,
+P11,0.78,6,23,13.62,0.20,317.35,32,F,Danish,glasses,7.0,no,
+P12,0.86,4,14,18.27,0.28,224.21,29,M,Danish,normal vision,,no,
+P13,1.00,3,8,15.36,0.23,260.80,32,M,Danish,glasses,,no,
+P14,0.85,6,20,13.19,0.17,369.21,59,F,Danish,glasses,4.9,no,
+P15,0.87,4,15,19.13,0.31,216.98,25,F,Danish,normal vision,7.1,no,
+P16,0.79,4,14,14.24,0.22,292.93,22,M,Danish,contact lenses,,no,
+P17,1.00,2,7,17.75,0.27,231.80,37,F,Danish,normal vision,,no,
+P18,0.82,4,11,18.50,0.24,277.99,26,F,Danish,normal vision,,no,
+P19,0.62,4,13,16.19,0.24,266.10,21,F,Danish,normal vision,,no,
+P20,0.87,6,23,10.03,0.17,407.17,24,F,Danish,glasses,7.1,no,
+P21,1.00,4,16,14.41,0.24,261.64,26,F,Danish,contact lenses,6.1,no,
+P22,0.80,4,15,18.67,0.26,257.20,23,F,Danish,normal vision,4.7,no,
+P23,1.00,2,7,21.37,0.32,200.04,33,F,Danish,normal vision,5.2,yes,0.4473684210526316
+P24,0.80,2,5,25.81,0.32,203.69,64,F,Danish,glasses,3.5,yes,0.2631578947368421
+P25,0.82,4,11,33.70,0.46,142.00,20,F,Danish,contact lenses,4.9,yes,0.5263157894736842
+P26,0.57,2,7,48.67,0.73,86.73,32,M,Danish,normal vision,3.0,yes,0.3684210526315789
+P27,0.71,4,14,34.87,0.46,137.38,53,M,Danish,glasses,3.3,yes,0.3157894736842105
+P28,0.93,4,14,23.32,0.36,173.31,25,F,Danish,normal vision,4.6,yes,0.34210526315789475
+P29,0.73,3,11,26.49,0.44,143.33,25,F,Danish,normal vision,3.9,yes,0.2894736842105263
+P30,0.93,4,15,26.35,0.35,179.03,61,M,Danish,glasses,3.5,yes,0.18421052631578946
+P31,0.75,2,4,80.30,1.27,61.88,20,M,Danish,glasses,2.3,yes,0.2631578947368421
+P32,1.00,3,9,25.86,0.37,170.34,52,M,Danish,normal vision,4.0,yes,0.2631578947368421
+P33,0.86,2,7,71.36,1.09,59.32,30,F,Danish,normal vision,2.1,yes,0.21052631578947367
+P34,0.62,2,8,37.69,0.59,107.44,56,F,Danish,glasses,3.2,yes,0.5
+P35,0.71,4,14,15.28,0.23,285.08,24,F,Danish,normal vision,4.3,yes,0.42105263157894735
+P36,0.40,2,5,66.57,1.09,58.49,23,F,Danish,normal vision,0.7,yes,0.10526315789473684
+P37,0.58,4,12,16.02,0.23,270.70,25,F,Danish,normal vision,4.8,yes,0.34210526315789475
+P38,0.75,2,8,35.20,0.54,115.45,30,M,Danish,glasses,3.8,yes,0.5263157894736842
+P39,1.00,1,4,36.75,0.39,160.20,32,F,Danish,glasses,3.2,yes,0.3684210526315789
+P40,0.92,4,12,26.07,0.36,173.26,29,M,Danish,normal vision,3.1,yes,0.15789473684210525
+P41,0.88,4,16,24.94,0.40,154.94,51,F,Danish,glasses,4.0,yes,0.2631578947368421
+P42,0.80,5,10,18.75,0.28,224.48,24,F,Danish,contact lenses,4.2,no,
+P43,0.79,7,14,25.83,0.31,213.21,27,F,Danish,contact lenses,3.2,no,
+P44,0.73,6,22,19.07,0.32,208.43,23,F,Czech/Danish (bilingual),normal vision,3.3,no,
+P45,0.82,7,17,22.58,0.34,180.69,26,F,Danish,normal vision,4.9,no,
+P46,0.96,8,27,16.49,0.22,282.71,29,M,Danish,normal vision,6.4,no,
+P47,0.77,4,13,35.34,0.48,130.15,34,M,Spanish/Basque (bilingual),glasses,1.3,no,
+P48,0.78,6,18,15.83,0.23,273.59,30,F,Czech,contact lenses,5.9,no,
+P49,1.00,5,10,21.44,0.31,206.52,29,F,English (UK),glasses,3.2,no,
+P50,0.64,4,11,37.27,0.47,133.30,35,M,Hebrew,glasses,1.2,no,
+P51,0.88,7,16,19.64,0.27,231.88,33,F,German (but fluent in Norwegian also),normal vision,2.3,no,
+P52,0.86,9,22,17.67,0.26,251.12,28,M,Czech/Danish (bilingual),normal vision,3.9,no,
+P53,0.78,6,18,16.48,0.24,261.92,25,F,Danish,normal vision,4.9,no,
+P54,0.80,4,15,23.11,0.39,160.79,22,F,Icelandic,normal vision,2.6,no,
+P55,0.81,6,21,26.78,0.37,169.30,26,M,Portugese,normal vision,2.6,no,
+P56,0.65,10,20,22.13,0.29,216.27,29,F,Hungarian,contact lenses,1.7,no,
+P57,0.67,2,9,22.09,0.39,157.84,30,F,Korean,normal vision,1.7,no,
+P58,0.44,4,16,19.23,0.32,193.94,32,F,Spanish,norrmal vision,1.2,no,

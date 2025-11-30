@@ -1,0 +1,670 @@
+,label,prediction_prob,eval_regime,eval_type,fold_index,unique_paragraph_id,participant_id,unique_trial_id,question,DE_RC,DE,RC
+0,0,"[0.7184875178489524, 0.2815124821510476]",seen_subject_unseen_item,val,0,b1,1,1_b1_tq_1,Was ist RecA?,0_1.0,0,1.0
+1,0,"[0.7095021013031861, 0.29049789869681375]",seen_subject_unseen_item,val,0,b1,2,2_b1_tq_1,Was ist RecA?,0_1.0,0,1.0
+2,0,"[0.7477080150737233, 0.2522919849262766]",seen_subject_unseen_item,val,0,b1,12,12_b1_tq_1,Was ist RecA?,0_1.0,0,1.0
+3,0,"[0.8242300724936491, 0.17576992750635084]",seen_subject_unseen_item,val,0,b1,13,13_b1_tq_1,Was ist RecA?,0_0.0,0,0.0
+4,0,"[0.5045486873602305, 0.49545131263976944]",seen_subject_unseen_item,val,0,b1,14,14_b1_tq_1,Was ist RecA?,0_1.0,0,1.0
+5,0,"[0.6835990358784549, 0.31640096412154506]",seen_subject_unseen_item,val,0,b1,15,15_b1_tq_1,Was ist RecA?,0_1.0,0,1.0
+6,0,"[0.7274878633377412, 0.2725121366622588]",seen_subject_unseen_item,val,0,b1,17,17_b1_tq_1,Was ist RecA?,0_0.0,0,0.0
+7,0,"[0.8118534180892315, 0.18814658191076838]",seen_subject_unseen_item,val,0,b1,18,18_b1_tq_1,Was ist RecA?,0_1.0,0,1.0
+8,0,"[0.7217535643555238, 0.27824643564447615]",seen_subject_unseen_item,val,0,b1,19,19_b1_tq_1,Was ist RecA?,0_1.0,0,1.0
+9,0,"[0.5830981734464337, 0.41690182655356633]",seen_subject_unseen_item,val,0,b1,20,20_b1_tq_1,Was ist RecA?,0_0.0,0,0.0
+10,0,"[0.6461206814850189, 0.3538793185149811]",seen_subject_unseen_item,val,0,b1,23,23_b1_tq_1,Was ist RecA?,0_1.0,0,1.0
+11,0,"[0.8268345344794483, 0.17316546552055173]",seen_subject_unseen_item,val,0,b1,32,32_b1_tq_1,Was ist RecA?,0_1.0,0,1.0
+12,0,"[0.8178141000105825, 0.18218589998941764]",seen_subject_unseen_item,val,0,b1,34,34_b1_tq_1,Was ist RecA?,0_1.0,0,1.0
+13,0,"[0.6677835549893575, 0.3322164450106424]",seen_subject_unseen_item,val,0,b1,37,37_b1_tq_1,Was ist RecA?,0_1.0,0,1.0
+14,0,"[0.804009920757667, 0.19599007924233308]",seen_subject_unseen_item,val,0,b1,38,38_b1_tq_1,Was ist RecA?,0_1.0,0,1.0
+15,0,"[0.7678407887900252, 0.2321592112099748]",seen_subject_unseen_item,val,0,b1,63,63_b1_tq_1,Was ist RecA?,0_1.0,0,1.0
+16,0,"[0.6263769222151829, 0.3736230777848171]",seen_subject_unseen_item,val,0,b1,66,66_b1_tq_1,Was ist RecA?,0_1.0,0,1.0
+17,0,"[0.9230702136938508, 0.07692978630614913]",seen_subject_unseen_item,val,0,b1,67,67_b1_tq_1,Was ist RecA?,0_1.0,0,1.0
+18,0,"[0.6362615737283845, 0.3637384262716155]",seen_subject_unseen_item,val,0,b1,71,71_b1_tq_1,Was ist RecA?,0_1.0,0,1.0
+19,0,"[0.6168601401290976, 0.38313985987090243]",seen_subject_unseen_item,val,0,b1,72,72_b1_tq_1,Was ist RecA?,0_1.0,0,1.0
+20,0,"[0.7934192877493741, 0.20658071225062585]",seen_subject_unseen_item,val,0,b1,73,73_b1_tq_1,Was ist RecA?,0_1.0,0,1.0
+21,0,"[0.5416703072150167, 0.4583296927849833]",seen_subject_unseen_item,val,0,b1,75,75_b1_tq_1,Was ist RecA?,0_1.0,0,1.0
+22,0,"[0.7571970468465417, 0.2428029531534583]",seen_subject_unseen_item,val,0,b1,76,76_b1_tq_1,Was ist RecA?,0_1.0,0,1.0
+23,0,"[0.7338415594158435, 0.26615844058415655]",seen_subject_unseen_item,val,0,b1,77,77_b1_tq_1,Was ist RecA?,0_1.0,0,1.0
+24,0,"[0.6787965336330888, 0.3212034663669113]",seen_subject_unseen_item,val,0,b1,78,78_b1_tq_1,Was ist RecA?,0_1.0,0,1.0
+25,0,"[0.7332733933439777, 0.2667266066560222]",seen_subject_unseen_item,val,0,b1,79,79_b1_tq_1,Was ist RecA?,0_1.0,0,1.0
+26,0,"[0.5123868260314286, 0.4876131739685715]",seen_subject_unseen_item,val,0,b1,81,81_b1_tq_1,Was ist RecA?,0_1.0,0,1.0
+27,0,"[0.6286432263270447, 0.3713567736729553]",seen_subject_unseen_item,val,0,b1,82,82_b1_tq_1,Was ist RecA?,0_1.0,0,1.0
+28,0,"[0.7087810140552006, 0.29121898594479945]",seen_subject_unseen_item,val,0,b1,84,84_b1_tq_1,Was ist RecA?,0_1.0,0,1.0
+29,0,"[0.8071650107806688, 0.19283498921933118]",seen_subject_unseen_item,val,0,b1,85,85_b1_tq_1,Was ist RecA?,0_1.0,0,1.0
+30,0,"[0.7847760723941091, 0.21522392760589099]",seen_subject_unseen_item,val,0,b1,87,87_b1_tq_1,Was ist RecA?,0_1.0,0,1.0
+31,0,"[0.7006938651686981, 0.29930613483130175]",seen_subject_unseen_item,val,0,b1,93,93_b1_tq_1,Was ist RecA?,0_1.0,0,1.0
+32,0,"[0.6180971720825801, 0.38190282791742003]",seen_subject_unseen_item,val,0,b1,101,101_b1_tq_1,Was ist RecA?,0_1.0,0,1.0
+33,0,"[0.8783427903057011, 0.12165720969429886]",seen_subject_unseen_item,val,0,b1,102,102_b1_tq_1,Was ist RecA?,0_1.0,0,1.0
+34,0,"[0.7141476445409061, 0.28585235545909393]",seen_subject_unseen_item,val,0,b1,104,104_b1_tq_1,Was ist RecA?,0_1.0,0,1.0
+35,0,"[0.6596070996169785, 0.34039290038302156]",seen_subject_unseen_item,val,0,b1,105,105_b1_tq_1,Was ist RecA?,0_1.0,0,1.0
+36,0,"[0.624095828286936, 0.37590417171306406]",seen_subject_unseen_item,val,0,b2,1,1_b2_tq_1,Was wird nicht über die Wurzel aufgenommen?,0_1.0,0,1.0
+37,0,"[0.8080890973036343, 0.19191090269636576]",seen_subject_unseen_item,val,0,b2,2,2_b2_tq_1,Was wird nicht über die Wurzel aufgenommen?,0_1.0,0,1.0
+38,0,"[0.703098559871546, 0.29690144012845404]",seen_subject_unseen_item,val,0,b2,12,12_b2_tq_1,Was wird nicht über die Wurzel aufgenommen?,0_1.0,0,1.0
+39,0,"[0.5359552202646077, 0.46404477973539215]",seen_subject_unseen_item,val,0,b2,13,13_b2_tq_1,Was wird nicht über die Wurzel aufgenommen?,0_1.0,0,1.0
+40,0,"[0.7477080150737233, 0.2522919849262766]",seen_subject_unseen_item,val,0,b2,14,14_b2_tq_1,Was wird nicht über die Wurzel aufgenommen?,0_0.0,0,0.0
+41,0,"[0.5426400566007145, 0.45735994339928576]",seen_subject_unseen_item,val,0,b2,15,15_b2_tq_1,Was wird nicht über die Wurzel aufgenommen?,0_1.0,0,1.0
+42,0,"[0.8246378013798725, 0.17536219862012747]",seen_subject_unseen_item,val,0,b2,17,17_b2_tq_1,Was wird nicht über die Wurzel aufgenommen?,0_1.0,0,1.0
+43,0,"[0.8080890973036343, 0.19191090269636576]",seen_subject_unseen_item,val,0,b2,18,18_b2_tq_1,Was wird nicht über die Wurzel aufgenommen?,0_1.0,0,1.0
+44,0,"[0.6907986597650863, 0.30920134023491375]",seen_subject_unseen_item,val,0,b2,19,19_b2_tq_1,Was wird nicht über die Wurzel aufgenommen?,0_1.0,0,1.0
+45,0,"[0.5642755368020329, 0.435724463197967]",seen_subject_unseen_item,val,0,b2,20,20_b2_tq_1,Was wird nicht über die Wurzel aufgenommen?,0_1.0,0,1.0
+46,0,"[0.9124720893141947, 0.08752791068580543]",seen_subject_unseen_item,val,0,b2,23,23_b2_tq_1,Was wird nicht über die Wurzel aufgenommen?,0_1.0,0,1.0
+47,0,"[0.7024199416232304, 0.2975800583767697]",seen_subject_unseen_item,val,0,b2,31,31_b2_tq_1,Was wird nicht über die Wurzel aufgenommen?,0_1.0,0,1.0
+48,0,"[0.8062339731077526, 0.19376602689224737]",seen_subject_unseen_item,val,0,b2,32,32_b2_tq_1,Was wird nicht über die Wurzel aufgenommen?,0_1.0,0,1.0
+49,0,"[0.5530231359239915, 0.44697686407600845]",seen_subject_unseen_item,val,0,b2,34,34_b2_tq_1,Was wird nicht über die Wurzel aufgenommen?,0_1.0,0,1.0
+50,0,"[0.5649769837958749, 0.4350230162041253]",seen_subject_unseen_item,val,0,b2,37,37_b2_tq_1,Was wird nicht über die Wurzel aufgenommen?,0_1.0,0,1.0
+51,1,"[0.3021764853722827, 0.6978235146277172]",seen_subject_unseen_item,val,0,b2,38,38_b2_tq_1,Was wird nicht über die Wurzel aufgenommen?,1_1.0,1,1.0
+52,0,"[0.5625502481674582, 0.4374497518325417]",seen_subject_unseen_item,val,0,b2,63,63_b2_tq_1,Was wird nicht über die Wurzel aufgenommen?,0_0.0,0,0.0
+53,0,"[1.0, 0.0]",seen_subject_unseen_item,val,0,b2,66,66_b2_tq_1,Was wird nicht über die Wurzel aufgenommen?,0_1.0,0,1.0
+54,1,"[0.7545505674708554, 0.2454494325291446]",seen_subject_unseen_item,val,0,b2,67,67_b2_tq_1,Was wird nicht über die Wurzel aufgenommen?,1_1.0,1,1.0
+55,0,"[0.7839937963981185, 0.2160062036018814]",seen_subject_unseen_item,val,0,b2,71,71_b2_tq_1,Was wird nicht über die Wurzel aufgenommen?,0_1.0,0,1.0
+56,1,"[0.6672950978610585, 0.33270490213894155]",seen_subject_unseen_item,val,0,b2,72,72_b2_tq_1,Was wird nicht über die Wurzel aufgenommen?,1_1.0,1,1.0
+57,0,"[0.6103921364950691, 0.38960786350493093]",seen_subject_unseen_item,val,0,b2,73,73_b2_tq_1,Was wird nicht über die Wurzel aufgenommen?,0_1.0,0,1.0
+58,0,"[0.5980822621604029, 0.40191773783959717]",seen_subject_unseen_item,val,0,b2,75,75_b2_tq_1,Was wird nicht über die Wurzel aufgenommen?,0_1.0,0,1.0
+59,1,"[0.527686758631361, 0.47231324136863906]",seen_subject_unseen_item,val,0,b2,76,76_b2_tq_1,Was wird nicht über die Wurzel aufgenommen?,1_1.0,1,1.0
+60,1,"[0.6513872638964482, 0.34861273610355176]",seen_subject_unseen_item,val,0,b2,77,77_b2_tq_1,Was wird nicht über die Wurzel aufgenommen?,1_1.0,1,1.0
+61,0,"[0.5135661739162825, 0.48643382608371766]",seen_subject_unseen_item,val,0,b2,78,78_b2_tq_1,Was wird nicht über die Wurzel aufgenommen?,0_1.0,0,1.0
+62,1,"[0.4631562333526433, 0.5368437666473567]",seen_subject_unseen_item,val,0,b2,79,79_b2_tq_1,Was wird nicht über die Wurzel aufgenommen?,1_1.0,1,1.0
+63,1,"[0.4490349710676572, 0.5509650289323428]",seen_subject_unseen_item,val,0,b2,81,81_b2_tq_1,Was wird nicht über die Wurzel aufgenommen?,1_1.0,1,1.0
+64,0,"[0.40615126842651994, 0.5938487315734798]",seen_subject_unseen_item,val,0,b2,82,82_b2_tq_1,Was wird nicht über die Wurzel aufgenommen?,0_1.0,0,1.0
+65,0,"[0.5875284380672258, 0.4124715619327743]",seen_subject_unseen_item,val,0,b2,84,84_b2_tq_1,Was wird nicht über die Wurzel aufgenommen?,0_1.0,0,1.0
+66,0,"[0.9163584637268848, 0.08364153627311524]",seen_subject_unseen_item,val,0,b2,85,85_b2_tq_1,Was wird nicht über die Wurzel aufgenommen?,0_1.0,0,1.0
+67,0,"[0.37444483668769674, 0.6255551633123033]",seen_subject_unseen_item,val,0,b2,87,87_b2_tq_1,Was wird nicht über die Wurzel aufgenommen?,0_1.0,0,1.0
+68,0,"[0.5551942446164777, 0.4448057553835224]",seen_subject_unseen_item,val,0,b2,93,93_b2_tq_1,Was wird nicht über die Wurzel aufgenommen?,0_1.0,0,1.0
+69,0,"[0.6611046164892684, 0.33889538351073156]",seen_subject_unseen_item,val,0,b2,101,101_b2_tq_1,Was wird nicht über die Wurzel aufgenommen?,0_1.0,0,1.0
+70,1,"[1.0, 0.0]",seen_subject_unseen_item,val,0,b2,102,102_b2_tq_1,Was wird nicht über die Wurzel aufgenommen?,1_1.0,1,1.0
+71,1,"[0.3866603621812046, 0.6133396378187954]",seen_subject_unseen_item,val,0,b2,104,104_b2_tq_1,Was wird nicht über die Wurzel aufgenommen?,1_1.0,1,1.0
+72,1,"[0.5632493640128432, 0.4367506359871567]",seen_subject_unseen_item,val,0,b2,105,105_b2_tq_1,Was wird nicht über die Wurzel aufgenommen?,1_0.0,1,0.0
+73,0,"[0.5572383220855839, 0.4427616779144161]",seen_subject_unseen_item,val,0,p2,1,1_p2_tq_1,Welche Eigenschaft besitzen photonische Kristalle?,0_1.0,0,1.0
+74,0,"[0.7436314003116797, 0.2563685996883203]",seen_subject_unseen_item,val,0,p2,2,2_p2_tq_1,Welche Eigenschaft besitzen photonische Kristalle?,0_1.0,0,1.0
+75,0,"[0.9080890973036343, 0.09191090269636577]",seen_subject_unseen_item,val,0,p2,12,12_p2_tq_1,Welche Eigenschaft besitzen photonische Kristalle?,0_0.0,0,0.0
+76,0,"[0.8166569476767644, 0.18334305232323544]",seen_subject_unseen_item,val,0,p2,13,13_p2_tq_1,Welche Eigenschaft besitzen photonische Kristalle?,0_1.0,0,1.0
+77,0,"[0.7341996133047072, 0.2658003866952927]",seen_subject_unseen_item,val,0,p2,14,14_p2_tq_1,Welche Eigenschaft besitzen photonische Kristalle?,0_0.0,0,0.0
+78,0,"[0.6393974335846452, 0.3606025664153549]",seen_subject_unseen_item,val,0,p2,15,15_p2_tq_1,Welche Eigenschaft besitzen photonische Kristalle?,0_1.0,0,1.0
+79,0,"[0.7964678343978979, 0.20353216560210213]",seen_subject_unseen_item,val,0,p2,17,17_p2_tq_1,Welche Eigenschaft besitzen photonische Kristalle?,0_1.0,0,1.0
+80,0,"[0.8385098251632511, 0.16149017483674882]",seen_subject_unseen_item,val,0,p2,18,18_p2_tq_1,Welche Eigenschaft besitzen photonische Kristalle?,0_1.0,0,1.0
+81,0,"[0.666717800597139, 0.33328219940286097]",seen_subject_unseen_item,val,0,p2,19,19_p2_tq_1,Welche Eigenschaft besitzen photonische Kristalle?,0_1.0,0,1.0
+82,0,"[0.7798271904327123, 0.22017280956728774]",seen_subject_unseen_item,val,0,p2,20,20_p2_tq_1,Welche Eigenschaft besitzen photonische Kristalle?,0_0.0,0,0.0
+83,0,"[0.7155632366934535, 0.2844367633065466]",seen_subject_unseen_item,val,0,p2,23,23_p2_tq_1,Welche Eigenschaft besitzen photonische Kristalle?,0_1.0,0,1.0
+84,0,"[0.7629006988435239, 0.23709930115647615]",seen_subject_unseen_item,val,0,p2,31,31_p2_tq_1,Welche Eigenschaft besitzen photonische Kristalle?,0_1.0,0,1.0
+85,0,"[0.7174092922580333, 0.2825907077419667]",seen_subject_unseen_item,val,0,p2,32,32_p2_tq_1,Welche Eigenschaft besitzen photonische Kristalle?,0_0.0,0,0.0
+86,0,"[0.8519449540004604, 0.14805504599953964]",seen_subject_unseen_item,val,0,p2,34,34_p2_tq_1,Welche Eigenschaft besitzen photonische Kristalle?,0_0.0,0,0.0
+87,0,"[0.7254819064374796, 0.27451809356252055]",seen_subject_unseen_item,val,0,p2,37,37_p2_tq_1,Welche Eigenschaft besitzen photonische Kristalle?,0_0.0,0,0.0
+88,0,"[0.7477080150737233, 0.2522919849262766]",seen_subject_unseen_item,val,0,p2,38,38_p2_tq_1,Welche Eigenschaft besitzen photonische Kristalle?,0_1.0,0,1.0
+89,0,"[0.726399613549153, 0.273600386450847]",seen_subject_unseen_item,val,0,p2,63,63_p2_tq_1,Welche Eigenschaft besitzen photonische Kristalle?,0_1.0,0,1.0
+90,0,"[0.6339414208494263, 0.3660585791505738]",seen_subject_unseen_item,val,0,p2,66,66_p2_tq_1,Welche Eigenschaft besitzen photonische Kristalle?,0_0.0,0,0.0
+91,0,"[0.8976486832139546, 0.10235131678604537]",seen_subject_unseen_item,val,0,p2,67,67_p2_tq_1,Welche Eigenschaft besitzen photonische Kristalle?,0_0.0,0,0.0
+92,0,"[0.5794945923366008, 0.4205054076633992]",seen_subject_unseen_item,val,0,p2,71,71_p2_tq_1,Welche Eigenschaft besitzen photonische Kristalle?,0_1.0,0,1.0
+93,0,"[0.559807360838922, 0.4401926391610781]",seen_subject_unseen_item,val,0,p2,72,72_p2_tq_1,Welche Eigenschaft besitzen photonische Kristalle?,0_0.0,0,0.0
+94,0,"[0.7332678165678561, 0.26673218343214383]",seen_subject_unseen_item,val,0,p2,73,73_p2_tq_1,Welche Eigenschaft besitzen photonische Kristalle?,0_1.0,0,1.0
+95,0,"[0.7031297100435345, 0.2968702899564656]",seen_subject_unseen_item,val,0,p2,75,75_p2_tq_1,Welche Eigenschaft besitzen photonische Kristalle?,0_0.0,0,0.0
+96,0,"[0.7794547160306742, 0.22054528396932582]",seen_subject_unseen_item,val,0,p2,76,76_p2_tq_1,Welche Eigenschaft besitzen photonische Kristalle?,0_1.0,0,1.0
+97,0,"[0.7155632366934535, 0.2844367633065466]",seen_subject_unseen_item,val,0,p2,77,77_p2_tq_1,Welche Eigenschaft besitzen photonische Kristalle?,0_0.0,0,0.0
+98,0,"[0.7663058441843295, 0.23369415581567052]",seen_subject_unseen_item,val,0,p2,78,78_p2_tq_1,Welche Eigenschaft besitzen photonische Kristalle?,0_1.0,0,1.0
+99,0,"[0.700330931632313, 0.29966906836768703]",seen_subject_unseen_item,val,0,p2,79,79_p2_tq_1,Welche Eigenschaft besitzen photonische Kristalle?,0_1.0,0,1.0
+100,0,"[0.6478107066987506, 0.35218929330124943]",seen_subject_unseen_item,val,0,p2,81,81_p2_tq_1,Welche Eigenschaft besitzen photonische Kristalle?,0_1.0,0,1.0
+101,0,"[0.6393974335846452, 0.3606025664153549]",seen_subject_unseen_item,val,0,p2,82,82_p2_tq_1,Welche Eigenschaft besitzen photonische Kristalle?,0_1.0,0,1.0
+102,0,"[0.6536668873206126, 0.34633311267938743]",seen_subject_unseen_item,val,0,p2,84,84_p2_tq_1,Welche Eigenschaft besitzen photonische Kristalle?,0_1.0,0,1.0
+103,0,"[0.7403413888606221, 0.2596586111393779]",seen_subject_unseen_item,val,0,p2,85,85_p2_tq_1,Welche Eigenschaft besitzen photonische Kristalle?,0_0.0,0,0.0
+104,0,"[0.7522996432334781, 0.24770035676652197]",seen_subject_unseen_item,val,0,p2,87,87_p2_tq_1,Welche Eigenschaft besitzen photonische Kristalle?,0_0.0,0,0.0
+105,1,"[0.9369774919614148, 0.06302250803858521]",seen_subject_unseen_item,val,0,p2,93,93_p2_tq_1,Welche Eigenschaft besitzen photonische Kristalle?,1_1.0,1,1.0
+106,0,"[0.5577756177406179, 0.44222438225938204]",seen_subject_unseen_item,val,0,p2,101,101_p2_tq_1,Welche Eigenschaft besitzen photonische Kristalle?,0_0.0,0,0.0
+107,0,"[0.8474797750664376, 0.15252022493356238]",seen_subject_unseen_item,val,0,p2,102,102_p2_tq_1,Welche Eigenschaft besitzen photonische Kristalle?,0_1.0,0,1.0
+108,0,"[0.8469044105850425, 0.15309558941495743]",seen_subject_unseen_item,val,0,p2,104,104_p2_tq_1,Welche Eigenschaft besitzen photonische Kristalle?,0_1.0,0,1.0
+109,0,"[0.7847760723941091, 0.21522392760589099]",seen_subject_unseen_item,val,0,p2,105,105_p2_tq_1,Welche Eigenschaft besitzen photonische Kristalle?,0_0.0,0,0.0
+0,0,"[0.6683670032011867, 0.3316329967988132]",unseen_subject_seen_item,val,0,b3,5,5_b3_tq_1,Wo befindet sich die ATP-Bindungsstelle?,0_1.0,0,1.0
+1,1,"[0.879417652446635, 0.12058234755336517]",unseen_subject_seen_item,val,0,b3,7,7_b3_tq_1,Wo befindet sich die ATP-Bindungsstelle?,1_0.0,1,0.0
+2,0,"[0.7341996133047073, 0.2658003866952927]",unseen_subject_seen_item,val,0,b3,22,22_b3_tq_1,Wo befindet sich die ATP-Bindungsstelle?,0_1.0,0,1.0
+3,1,"[0.6949525106043544, 0.3050474893956456]",unseen_subject_seen_item,val,0,b3,30,30_b3_tq_1,Wo befindet sich die ATP-Bindungsstelle?,1_1.0,1,1.0
+4,0,"[0.8649295283050227, 0.13507047169497724]",unseen_subject_seen_item,val,0,b3,35,35_b3_tq_1,Wo befindet sich die ATP-Bindungsstelle?,0_0.0,0,0.0
+5,0,"[0.8420784781566608, 0.1579215218433392]",unseen_subject_seen_item,val,0,b3,39,39_b3_tq_1,Wo befindet sich die ATP-Bindungsstelle?,0_0.0,0,0.0
+6,0,"[0.6530081799579516, 0.3469918200420484]",unseen_subject_seen_item,val,0,b3,40,40_b3_tq_1,Wo befindet sich die ATP-Bindungsstelle?,0_0.0,0,0.0
+7,0,"[0.748572885774193, 0.25142711422580705]",unseen_subject_seen_item,val,0,b3,60,60_b3_tq_1,Wo befindet sich die ATP-Bindungsstelle?,0_0.0,0,0.0
+8,0,"[1.0, 0.0]",unseen_subject_seen_item,val,0,b3,61,61_b3_tq_1,Wo befindet sich die ATP-Bindungsstelle?,0_1.0,0,1.0
+9,0,"[0.817056472029963, 0.1829435279700371]",unseen_subject_seen_item,val,0,b3,65,65_b3_tq_1,Wo befindet sich die ATP-Bindungsstelle?,0_0.0,0,0.0
+10,0,"[0.8272348868862632, 0.17276511311373685]",unseen_subject_seen_item,val,0,b3,68,68_b3_tq_1,Wo befindet sich die ATP-Bindungsstelle?,0_1.0,0,1.0
+11,0,"[0.7340900549841801, 0.2659099450158199]",unseen_subject_seen_item,val,0,b3,69,69_b3_tq_1,Wo befindet sich die ATP-Bindungsstelle?,0_1.0,0,1.0
+12,1,"[0.6414603434810563, 0.3585396565189437]",unseen_subject_seen_item,val,0,b3,74,74_b3_tq_1,Wo befindet sich die ATP-Bindungsstelle?,1_1.0,1,1.0
+13,0,"[0.9163584637268848, 0.08364153627311524]",unseen_subject_seen_item,val,0,b3,80,80_b3_tq_1,Wo befindet sich die ATP-Bindungsstelle?,0_1.0,0,1.0
+14,0,"[0.654011060400238, 0.3459889395997619]",unseen_subject_seen_item,val,0,b3,92,92_b3_tq_1,Wo befindet sich die ATP-Bindungsstelle?,0_1.0,0,1.0
+15,0,"[0.8491079495429075, 0.15089205045709253]",unseen_subject_seen_item,val,0,b3,98,98_b3_tq_1,Wo befindet sich die ATP-Bindungsstelle?,0_1.0,0,1.0
+16,0,"[0.8491079495429075, 0.15089205045709253]",unseen_subject_seen_item,val,0,b3,99,99_b3_tq_1,Wo befindet sich die ATP-Bindungsstelle?,0_1.0,0,1.0
+17,0,"[0.7568406722865071, 0.24315932771349286]",unseen_subject_seen_item,val,0,b3,100,100_b3_tq_1,Wo befindet sich die ATP-Bindungsstelle?,0_1.0,0,1.0
+18,0,"[0.5711092924196837, 0.4288907075803164]",unseen_subject_seen_item,val,0,b4,5,5_b4_tq_1,Welche Substanz ist reduzierend?,0_0.0,0,0.0
+19,0,"[0.8242300724936493, 0.17576992750635084]",unseen_subject_seen_item,val,0,b4,7,7_b4_tq_1,Welche Substanz ist reduzierend?,0_0.0,0,0.0
+20,0,"[0.8355423030080456, 0.16445769699195453]",unseen_subject_seen_item,val,0,b4,22,22_b4_tq_1,Welche Substanz ist reduzierend?,0_1.0,0,1.0
+21,1,"[0.9037643207855973, 0.09623567921440261]",unseen_subject_seen_item,val,0,b4,30,30_b4_tq_1,Welche Substanz ist reduzierend?,1_0.0,1,0.0
+22,0,"[0.9037643207855973, 0.09623567921440261]",unseen_subject_seen_item,val,0,b4,35,35_b4_tq_1,Welche Substanz ist reduzierend?,0_1.0,0,1.0
+23,0,"[0.7934192877493741, 0.20658071225062585]",unseen_subject_seen_item,val,0,b4,39,39_b4_tq_1,Welche Substanz ist reduzierend?,0_0.0,0,0.0
+24,0,"[0.727378305017214, 0.272621694982786]",unseen_subject_seen_item,val,0,b4,40,40_b4_tq_1,Welche Substanz ist reduzierend?,0_1.0,0,1.0
+25,0,"[0.6144604077545421, 0.38553959224545786]",unseen_subject_seen_item,val,0,b4,60,60_b4_tq_1,Welche Substanz ist reduzierend?,0_1.0,0,1.0
+26,0,"[0.7947012540325858, 0.20529874596741404]",unseen_subject_seen_item,val,0,b4,61,61_b4_tq_1,Welche Substanz ist reduzierend?,0_1.0,0,1.0
+27,0,"[0.44188289201602304, 0.558117107983977]",unseen_subject_seen_item,val,0,b4,65,65_b4_tq_1,Welche Substanz ist reduzierend?,0_1.0,0,1.0
+28,1,"[0.725273413243203, 0.27472658675679695]",unseen_subject_seen_item,val,0,b4,68,68_b4_tq_1,Welche Substanz ist reduzierend?,1_1.0,1,1.0
+29,1,"[0.7477080150737234, 0.2522919849262766]",unseen_subject_seen_item,val,0,b4,69,69_b4_tq_1,Welche Substanz ist reduzierend?,1_1.0,1,1.0
+30,1,"[1.0, 0.0]",unseen_subject_seen_item,val,0,b4,74,74_b4_tq_1,Welche Substanz ist reduzierend?,1_0.0,1,0.0
+31,0,"[0.4648833616286735, 0.5351166383713265]",unseen_subject_seen_item,val,0,b4,80,80_b4_tq_1,Welche Substanz ist reduzierend?,0_0.0,0,0.0
+32,1,"[0.4680086840744123, 0.5319913159255877]",unseen_subject_seen_item,val,0,b4,90,90_b4_tq_1,Welche Substanz ist reduzierend?,1_1.0,1,1.0
+33,0,"[0.6272153953842988, 0.3727846046157013]",unseen_subject_seen_item,val,0,b4,92,92_b4_tq_1,Welche Substanz ist reduzierend?,0_0.0,0,0.0
+34,0,"[0.7519007667349302, 0.24809923326506977]",unseen_subject_seen_item,val,0,b4,98,98_b4_tq_1,Welche Substanz ist reduzierend?,0_0.0,0,0.0
+35,0,"[0.7016615352020111, 0.29833846479798887]",unseen_subject_seen_item,val,0,b4,99,99_b4_tq_1,Welche Substanz ist reduzierend?,0_0.0,0,0.0
+36,0,"[0.736021640905479, 0.26397835909452105]",unseen_subject_seen_item,val,0,b4,100,100_b4_tq_1,Welche Substanz ist reduzierend?,0_0.0,0,0.0
+37,0,"[0.8770608240224893, 0.12293917597751063]",unseen_subject_seen_item,val,0,b5,5,5_b5_tq_1,Welche Struktur kommt im Prion im Vergleich zum Wildtypprotein häufiger vor?,0_0.0,0,0.0
+38,0,"[0.9230702136938509, 0.07692978630614913]",unseen_subject_seen_item,val,0,b5,7,7_b5_tq_1,Welche Struktur kommt im Prion im Vergleich zum Wildtypprotein häufiger vor?,0_1.0,0,1.0
+39,0,"[0.8259202756517195, 0.17407972434828048]",unseen_subject_seen_item,val,0,b5,22,22_b5_tq_1,Welche Struktur kommt im Prion im Vergleich zum Wildtypprotein häufiger vor?,0_1.0,0,1.0
+40,0,"[0.7332678165678561, 0.2667321834321439]",unseen_subject_seen_item,val,0,b5,30,30_b5_tq_1,Welche Struktur kommt im Prion im Vergleich zum Wildtypprotein häufiger vor?,0_1.0,0,1.0
+41,0,"[0.8081509663189775, 0.19184903368102255]",unseen_subject_seen_item,val,0,b5,35,35_b5_tq_1,Welche Struktur kommt im Prion im Vergleich zum Wildtypprotein häufiger vor?,0_1.0,0,1.0
+42,0,"[0.9230702136938509, 0.07692978630614913]",unseen_subject_seen_item,val,0,b5,39,39_b5_tq_1,Welche Struktur kommt im Prion im Vergleich zum Wildtypprotein häufiger vor?,0_1.0,0,1.0
+43,0,"[0.8311593109974853, 0.1688406890025149]",unseen_subject_seen_item,val,0,b5,40,40_b5_tq_1,Welche Struktur kommt im Prion im Vergleich zum Wildtypprotein häufiger vor?,0_1.0,0,1.0
+44,0,"[0.7389429930031169, 0.26105700699688306]",unseen_subject_seen_item,val,0,b5,60,60_b5_tq_1,Welche Struktur kommt im Prion im Vergleich zum Wildtypprotein häufiger vor?,0_0.0,0,0.0
+45,0,"[0.8076384033874314, 0.19236159661256855]",unseen_subject_seen_item,val,0,b5,61,61_b5_tq_1,Welche Struktur kommt im Prion im Vergleich zum Wildtypprotein häufiger vor?,0_1.0,0,1.0
+46,0,"[0.8355423030080456, 0.16445769699195453]",unseen_subject_seen_item,val,0,b5,65,65_b5_tq_1,Welche Struktur kommt im Prion im Vergleich zum Wildtypprotein häufiger vor?,0_0.0,0,0.0
+47,0,"[0.9082793376529879, 0.09172066234701223]",unseen_subject_seen_item,val,0,b5,68,68_b5_tq_1,Welche Struktur kommt im Prion im Vergleich zum Wildtypprotein häufiger vor?,0_1.0,0,1.0
+48,0,"[0.8420784781566608, 0.1579215218433392]",unseen_subject_seen_item,val,0,b5,69,69_b5_tq_1,Welche Struktur kommt im Prion im Vergleich zum Wildtypprotein häufiger vor?,0_1.0,0,1.0
+49,0,"[0.8131881110392911, 0.18681188896070888]",unseen_subject_seen_item,val,0,b5,74,74_b5_tq_1,Welche Struktur kommt im Prion im Vergleich zum Wildtypprotein häufiger vor?,0_1.0,0,1.0
+50,1,"[0.9065229139645481, 0.0934770860354518]",unseen_subject_seen_item,val,0,b5,80,80_b5_tq_1,Welche Struktur kommt im Prion im Vergleich zum Wildtypprotein häufiger vor?,1_1.0,1,1.0
+51,0,"[0.6644301008149707, 0.3355698991850293]",unseen_subject_seen_item,val,0,b5,90,90_b5_tq_1,Welche Struktur kommt im Prion im Vergleich zum Wildtypprotein häufiger vor?,0_1.0,0,1.0
+52,0,"[0.5805566817587593, 0.4194433182412407]",unseen_subject_seen_item,val,0,b5,92,92_b5_tq_1,Welche Struktur kommt im Prion im Vergleich zum Wildtypprotein häufiger vor?,0_1.0,0,1.0
+53,0,"[0.6839024559452206, 0.3160975440547794]",unseen_subject_seen_item,val,0,b5,98,98_b5_tq_1,Welche Struktur kommt im Prion im Vergleich zum Wildtypprotein häufiger vor?,0_1.0,0,1.0
+54,0,"[0.7573872871958952, 0.24261271280410476]",unseen_subject_seen_item,val,0,b5,99,99_b5_tq_1,Welche Struktur kommt im Prion im Vergleich zum Wildtypprotein häufiger vor?,0_1.0,0,1.0
+55,0,"[0.9082793376529879, 0.09172066234701223]",unseen_subject_seen_item,val,0,b5,100,100_b5_tq_1,Welche Struktur kommt im Prion im Vergleich zum Wildtypprotein häufiger vor?,0_1.0,0,1.0
+56,0,"[1.0, 0.0]",unseen_subject_seen_item,val,0,p0,5,5_p0_tq_1,Warum muss die Umlaufszeit für einen Halbkreis unabhängig vom Radius sein?,0_0.0,0,0.0
+57,0,"[0.7399724479585015, 0.26002755204149863]",unseen_subject_seen_item,val,0,p0,7,7_p0_tq_1,Warum muss die Umlaufszeit für einen Halbkreis unabhängig vom Radius sein?,0_1.0,0,1.0
+58,0,"[1.0, 0.0]",unseen_subject_seen_item,val,0,p0,22,22_p0_tq_1,Warum muss die Umlaufszeit für einen Halbkreis unabhängig vom Radius sein?,0_1.0,0,1.0
+59,0,"[0.8287508476075356, 0.1712491523924644]",unseen_subject_seen_item,val,0,p0,30,30_p0_tq_1,Warum muss die Umlaufszeit für einen Halbkreis unabhängig vom Radius sein?,0_0.0,0,0.0
+60,0,"[0.9105022831050228, 0.08949771689497718]",unseen_subject_seen_item,val,0,p0,35,35_p0_tq_1,Warum muss die Umlaufszeit für einen Halbkreis unabhängig vom Radius sein?,0_1.0,0,1.0
+61,0,"[0.8703490740555232, 0.12965092594447675]",unseen_subject_seen_item,val,0,p0,39,39_p0_tq_1,Warum muss die Umlaufszeit für einen Halbkreis unabhängig vom Radius sein?,0_0.0,0,0.0
+62,0,"[1.0, 0.0]",unseen_subject_seen_item,val,0,p0,40,40_p0_tq_1,Warum muss die Umlaufszeit für einen Halbkreis unabhängig vom Radius sein?,0_1.0,0,1.0
+63,0,"[0.8353667281896946, 0.16463327181030532]",unseen_subject_seen_item,val,0,p0,60,60_p0_tq_1,Warum muss die Umlaufszeit für einen Halbkreis unabhängig vom Radius sein?,0_1.0,0,1.0
+64,0,"[1.0, 0.0]",unseen_subject_seen_item,val,0,p0,61,61_p0_tq_1,Warum muss die Umlaufszeit für einen Halbkreis unabhängig vom Radius sein?,0_1.0,0,1.0
+65,0,"[0.8319976102078266, 0.16800238979217347]",unseen_subject_seen_item,val,0,p0,65,65_p0_tq_1,Warum muss die Umlaufszeit für einen Halbkreis unabhängig vom Radius sein?,0_1.0,0,1.0
+66,0,"[0.7622701786430272, 0.23772982135697288]",unseen_subject_seen_item,val,0,p0,68,68_p0_tq_1,Warum muss die Umlaufszeit für einen Halbkreis unabhängig vom Radius sein?,0_1.0,0,1.0
+67,0,"[0.7582082294119863, 0.24179177058801377]",unseen_subject_seen_item,val,0,p0,69,69_p0_tq_1,Warum muss die Umlaufszeit für einen Halbkreis unabhängig vom Radius sein?,0_1.0,0,1.0
+68,0,"[0.9539906103286384, 0.0460093896713615]",unseen_subject_seen_item,val,0,p0,74,74_p0_tq_1,Warum muss die Umlaufszeit für einen Halbkreis unabhängig vom Radius sein?,0_0.0,0,0.0
+69,0,"[0.7341162673366395, 0.2658837326633606]",unseen_subject_seen_item,val,0,p0,80,80_p0_tq_1,Warum muss die Umlaufszeit für einen Halbkreis unabhängig vom Radius sein?,0_0.0,0,0.0
+70,0,"[0.9163584637268848, 0.08364153627311524]",unseen_subject_seen_item,val,0,p0,90,90_p0_tq_1,Warum muss die Umlaufszeit für einen Halbkreis unabhängig vom Radius sein?,0_1.0,0,1.0
+71,0,"[0.8556003223207093, 0.1443996776792909]",unseen_subject_seen_item,val,0,p0,92,92_p0_tq_1,Warum muss die Umlaufszeit für einen Halbkreis unabhängig vom Radius sein?,0_0.0,0,0.0
+72,0,"[0.8201681232626082, 0.1798318767373918]",unseen_subject_seen_item,val,0,p0,98,98_p0_tq_1,Warum muss die Umlaufszeit für einen Halbkreis unabhängig vom Radius sein?,0_0.0,0,0.0
+73,0,"[0.8770608240224893, 0.12293917597751063]",unseen_subject_seen_item,val,0,p0,99,99_p0_tq_1,Warum muss die Umlaufszeit für einen Halbkreis unabhängig vom Radius sein?,0_1.0,0,1.0
+74,0,"[0.8703490740555232, 0.12965092594447675]",unseen_subject_seen_item,val,0,p0,100,100_p0_tq_1,Warum muss die Umlaufszeit für einen Halbkreis unabhängig vom Radius sein?,0_1.0,0,1.0
+75,0,"[0.760354809351101, 0.23964519064889905]",unseen_subject_seen_item,val,0,p3,5,5_p3_tq_1,"Was spricht dagegen, Neutronen als Elementarteilchen zu betrachten?",0_0.0,0,0.0
+76,1,"[0.8423961995759413, 0.15760380042405864]",unseen_subject_seen_item,val,0,p3,7,7_p3_tq_1,"Was spricht dagegen, Neutronen als Elementarteilchen zu betrachten?",1_1.0,1,1.0
+77,0,"[0.8311593109974853, 0.1688406890025149]",unseen_subject_seen_item,val,0,p3,22,22_p3_tq_1,"Was spricht dagegen, Neutronen als Elementarteilchen zu betrachten?",0_1.0,0,1.0
+78,0,"[0.8177578036097547, 0.18224219639024533]",unseen_subject_seen_item,val,0,p3,30,30_p3_tq_1,"Was spricht dagegen, Neutronen als Elementarteilchen zu betrachten?",0_1.0,0,1.0
+79,0,"[0.8365400189540795, 0.16345998104592058]",unseen_subject_seen_item,val,0,p3,35,35_p3_tq_1,"Was spricht dagegen, Neutronen als Elementarteilchen zu betrachten?",0_1.0,0,1.0
+80,0,"[0.7837926669632924, 0.21620733303670753]",unseen_subject_seen_item,val,0,p3,39,39_p3_tq_1,"Was spricht dagegen, Neutronen als Elementarteilchen zu betrachten?",0_1.0,0,1.0
+81,0,"[0.64214634059016, 0.35785365940984004]",unseen_subject_seen_item,val,0,p3,40,40_p3_tq_1,"Was spricht dagegen, Neutronen als Elementarteilchen zu betrachten?",0_1.0,0,1.0
+82,0,"[0.8072555205047319, 0.19274447949526813]",unseen_subject_seen_item,val,0,p3,60,60_p3_tq_1,"Was spricht dagegen, Neutronen als Elementarteilchen zu betrachten?",0_0.0,0,0.0
+83,0,"[0.829584424406438, 0.17041557559356205]",unseen_subject_seen_item,val,0,p3,61,61_p3_tq_1,"Was spricht dagegen, Neutronen als Elementarteilchen zu betrachten?",0_1.0,0,1.0
+84,0,"[0.9260377358490566, 0.0739622641509434]",unseen_subject_seen_item,val,0,p3,65,65_p3_tq_1,"Was spricht dagegen, Neutronen als Elementarteilchen zu betrachten?",0_0.0,0,0.0
+85,0,"[0.9260377358490566, 0.0739622641509434]",unseen_subject_seen_item,val,0,p3,68,68_p3_tq_1,"Was spricht dagegen, Neutronen als Elementarteilchen zu betrachten?",0_1.0,0,1.0
+86,0,"[0.8391999649491761, 0.16080003505082371]",unseen_subject_seen_item,val,0,p3,69,69_p3_tq_1,"Was spricht dagegen, Neutronen als Elementarteilchen zu betrachten?",0_0.0,0,0.0
+87,0,"[0.9082793376529879, 0.09172066234701223]",unseen_subject_seen_item,val,0,p3,74,74_p3_tq_1,"Was spricht dagegen, Neutronen als Elementarteilchen zu betrachten?",0_1.0,0,1.0
+88,0,"[0.6318933218846043, 0.3681066781153956]",unseen_subject_seen_item,val,0,p3,80,80_p3_tq_1,"Was spricht dagegen, Neutronen als Elementarteilchen zu betrachten?",0_0.0,0,0.0
+89,0,"[0.6379856506322692, 0.36201434936773075]",unseen_subject_seen_item,val,0,p3,90,90_p3_tq_1,"Was spricht dagegen, Neutronen als Elementarteilchen zu betrachten?",0_1.0,0,1.0
+90,0,"[0.9450980392156862, 0.05490196078431373]",unseen_subject_seen_item,val,0,p3,92,92_p3_tq_1,"Was spricht dagegen, Neutronen als Elementarteilchen zu betrachten?",0_1.0,0,1.0
+91,0,"[0.8534397715472484, 0.14656022845275182]",unseen_subject_seen_item,val,0,p3,98,98_p3_tq_1,"Was spricht dagegen, Neutronen als Elementarteilchen zu betrachten?",0_0.0,0,0.0
+92,0,"[0.9230702136938509, 0.07692978630614913]",unseen_subject_seen_item,val,0,p3,99,99_p3_tq_1,"Was spricht dagegen, Neutronen als Elementarteilchen zu betrachten?",0_0.0,0,0.0
+93,0,"[1.0, 0.0]",unseen_subject_seen_item,val,0,p3,100,100_p3_tq_1,"Was spricht dagegen, Neutronen als Elementarteilchen zu betrachten?",0_1.0,0,1.0
+94,0,"[1.0, 0.0]",unseen_subject_seen_item,val,0,p4,5,5_p4_tq_1,Wozu kann holografische Interferometrie verwendet werden?,0_1.0,0,1.0
+95,1,"[1.0, 0.0]",unseen_subject_seen_item,val,0,p4,7,7_p4_tq_1,Wozu kann holografische Interferometrie verwendet werden?,1_1.0,1,1.0
+96,0,"[0.7705499887602885, 0.22945001123971148]",unseen_subject_seen_item,val,0,p4,22,22_p4_tq_1,Wozu kann holografische Interferometrie verwendet werden?,0_1.0,0,1.0
+97,0,"[0.9230702136938509, 0.07692978630614913]",unseen_subject_seen_item,val,0,p4,30,30_p4_tq_1,Wozu kann holografische Interferometrie verwendet werden?,0_0.0,0,0.0
+98,0,"[1.0, 0.0]",unseen_subject_seen_item,val,0,p4,35,35_p4_tq_1,Wozu kann holografische Interferometrie verwendet werden?,0_1.0,0,1.0
+99,0,"[0.9539906103286384, 0.0460093896713615]",unseen_subject_seen_item,val,0,p4,39,39_p4_tq_1,Wozu kann holografische Interferometrie verwendet werden?,0_1.0,0,1.0
+100,0,"[0.7251830125359321, 0.2748169874640678]",unseen_subject_seen_item,val,0,p4,40,40_p4_tq_1,Wozu kann holografische Interferometrie verwendet werden?,0_0.0,0,0.0
+101,0,"[0.9034006899950715, 0.09659931000492857]",unseen_subject_seen_item,val,0,p4,60,60_p4_tq_1,Wozu kann holografische Interferometrie verwendet werden?,0_0.0,0,0.0
+102,0,"[1.0, 0.0]",unseen_subject_seen_item,val,0,p4,61,61_p4_tq_1,Wozu kann holografische Interferometrie verwendet werden?,0_1.0,0,1.0
+103,0,"[0.8600477056552658, 0.13995229434473436]",unseen_subject_seen_item,val,0,p4,65,65_p4_tq_1,Wozu kann holografische Interferometrie verwendet werden?,0_1.0,0,1.0
+104,0,"[1.0, 0.0]",unseen_subject_seen_item,val,0,p4,68,68_p4_tq_1,Wozu kann holografische Interferometrie verwendet werden?,0_0.0,0,0.0
+105,0,"[0.7711924022072936, 0.2288075977927063]",unseen_subject_seen_item,val,0,p4,69,69_p4_tq_1,Wozu kann holografische Interferometrie verwendet werden?,0_1.0,0,1.0
+106,0,"[1.0, 0.0]",unseen_subject_seen_item,val,0,p4,74,74_p4_tq_1,Wozu kann holografische Interferometrie verwendet werden?,0_1.0,0,1.0
+107,0,"[1.0, 0.0]",unseen_subject_seen_item,val,0,p4,80,80_p4_tq_1,Wozu kann holografische Interferometrie verwendet werden?,0_0.0,0,0.0
+108,0,"[0.8452568296144026, 0.15474317038559743]",unseen_subject_seen_item,val,0,p4,90,90_p4_tq_1,Wozu kann holografische Interferometrie verwendet werden?,0_1.0,0,1.0
+109,0,"[0.7921143436523901, 0.20788565634760997]",unseen_subject_seen_item,val,0,p4,92,92_p4_tq_1,Wozu kann holografische Interferometrie verwendet werden?,0_1.0,0,1.0
+110,0,"[1.0, 0.0]",unseen_subject_seen_item,val,0,p4,98,98_p4_tq_1,Wozu kann holografische Interferometrie verwendet werden?,0_1.0,0,1.0
+111,0,"[1.0, 0.0]",unseen_subject_seen_item,val,0,p4,99,99_p4_tq_1,Wozu kann holografische Interferometrie verwendet werden?,0_0.0,0,0.0
+112,0,"[1.0, 0.0]",unseen_subject_seen_item,val,0,p4,100,100_p4_tq_1,Wozu kann holografische Interferometrie verwendet werden?,0_1.0,0,1.0
+0,0,"[0.810939159261503, 0.1890608407384971]",unseen_subject_unseen_item,val,0,b1,5,5_b1_tq_1,Was ist RecA?,0_1.0,0,1.0
+1,0,"[0.9238341968911918, 0.0761658031088083]",unseen_subject_unseen_item,val,0,b1,7,7_b1_tq_1,Was ist RecA?,0_0.0,0,0.0
+2,0,"[0.5496947619212627, 0.45030523807873724]",unseen_subject_unseen_item,val,0,b1,22,22_b1_tq_1,Was ist RecA?,0_1.0,0,1.0
+3,0,"[0.8394286774207356, 0.16057132257926435]",unseen_subject_unseen_item,val,0,b1,30,30_b1_tq_1,Was ist RecA?,0_0.0,0,0.0
+4,0,"[0.7274517638668896, 0.2725482361331104]",unseen_subject_unseen_item,val,0,b1,35,35_b1_tq_1,Was ist RecA?,0_1.0,0,1.0
+5,0,"[0.5862178402369745, 0.41378215976302546]",unseen_subject_unseen_item,val,0,b1,39,39_b1_tq_1,Was ist RecA?,0_1.0,0,1.0
+6,0,"[0.735113872132436, 0.264886127867564]",unseen_subject_unseen_item,val,0,b1,40,40_b1_tq_1,Was ist RecA?,0_1.0,0,1.0
+7,0,"[0.9163584637268848, 0.08364153627311521]",unseen_subject_unseen_item,val,0,b1,60,60_b1_tq_1,Was ist RecA?,0_1.0,0,1.0
+8,0,"[0.812043658438585, 0.18795634156141486]",unseen_subject_unseen_item,val,0,b1,61,61_b1_tq_1,Was ist RecA?,0_1.0,0,1.0
+9,0,"[0.538041720522864, 0.4619582794771361]",unseen_subject_unseen_item,val,0,b1,65,65_b1_tq_1,Was ist RecA?,0_1.0,0,1.0
+10,0,"[0.8066920040642833, 0.19330799593571676]",unseen_subject_unseen_item,val,0,b1,68,68_b1_tq_1,Was ist RecA?,0_1.0,0,1.0
+11,0,"[0.5726314240504611, 0.427368575949539]",unseen_subject_unseen_item,val,0,b1,69,69_b1_tq_1,Was ist RecA?,0_1.0,0,1.0
+12,0,"[0.6503678366822385, 0.3496321633177614]",unseen_subject_unseen_item,val,0,b1,74,74_b1_tq_1,Was ist RecA?,0_1.0,0,1.0
+13,0,"[0.6602373491537639, 0.3397626508462361]",unseen_subject_unseen_item,val,0,b1,80,80_b1_tq_1,Was ist RecA?,0_1.0,0,1.0
+14,0,"[0.6605009664689684, 0.3394990335310316]",unseen_subject_unseen_item,val,0,b1,90,90_b1_tq_1,Was ist RecA?,0_1.0,0,1.0
+15,0,"[0.6997074460350389, 0.3002925539649612]",unseen_subject_unseen_item,val,0,b1,92,92_b1_tq_1,Was ist RecA?,0_1.0,0,1.0
+16,0,"[0.74524626153381, 0.2547537384661899]",unseen_subject_unseen_item,val,0,b1,98,98_b1_tq_1,Was ist RecA?,0_1.0,0,1.0
+17,0,"[0.6429789004714722, 0.35702109952852784]",unseen_subject_unseen_item,val,0,b1,99,99_b1_tq_1,Was ist RecA?,0_1.0,0,1.0
+18,0,"[0.7482817579217107, 0.2517182420782893]",unseen_subject_unseen_item,val,0,b1,100,100_b1_tq_1,Was ist RecA?,0_1.0,0,1.0
+19,0,"[0.5958302035871662, 0.40416979641283374]",unseen_subject_unseen_item,val,0,b2,5,5_b2_tq_1,Was wird nicht über die Wurzel aufgenommen?,0_0.0,0,0.0
+20,1,"[0.7172604307437573, 0.2827395692562426]",unseen_subject_unseen_item,val,0,b2,7,7_b2_tq_1,Was wird nicht über die Wurzel aufgenommen?,1_1.0,1,1.0
+21,1,"[0.9124720893141947, 0.08752791068580543]",unseen_subject_unseen_item,val,0,b2,22,22_b2_tq_1,Was wird nicht über die Wurzel aufgenommen?,1_1.0,1,1.0
+22,0,"[0.7206611207388288, 0.2793388792611712]",unseen_subject_unseen_item,val,0,b2,30,30_b2_tq_1,Was wird nicht über die Wurzel aufgenommen?,0_1.0,0,1.0
+23,1,"[0.7179617893001834, 0.2820382106998166]",unseen_subject_unseen_item,val,0,b2,35,35_b2_tq_1,Was wird nicht über die Wurzel aufgenommen?,1_1.0,1,1.0
+24,0,"[0.9163584637268848, 0.08364153627311524]",unseen_subject_unseen_item,val,0,b2,39,39_b2_tq_1,Was wird nicht über die Wurzel aufgenommen?,0_1.0,0,1.0
+25,1,"[0.7373932617036206, 0.2626067382963793]",unseen_subject_unseen_item,val,0,b2,40,40_b2_tq_1,Was wird nicht über die Wurzel aufgenommen?,1_0.0,1,0.0
+26,0,"[0.9539906103286384, 0.0460093896713615]",unseen_subject_unseen_item,val,0,b2,60,60_b2_tq_1,Was wird nicht über die Wurzel aufgenommen?,0_1.0,0,1.0
+27,0,"[0.5966478724070189, 0.4033521275929811]",unseen_subject_unseen_item,val,0,b2,61,61_b2_tq_1,Was wird nicht über die Wurzel aufgenommen?,0_1.0,0,1.0
+28,1,"[0.8095347289818241, 0.19046527101817595]",unseen_subject_unseen_item,val,0,b2,65,65_b2_tq_1,Was wird nicht über die Wurzel aufgenommen?,1_1.0,1,1.0
+29,0,"[0.8205611866178287, 0.17943881338217121]",unseen_subject_unseen_item,val,0,b2,68,68_b2_tq_1,Was wird nicht über die Wurzel aufgenommen?,0_1.0,0,1.0
+30,1,"[0.5498653734194322, 0.4501346265805677]",unseen_subject_unseen_item,val,0,b2,69,69_b2_tq_1,Was wird nicht über die Wurzel aufgenommen?,1_1.0,1,1.0
+31,1,"[0.8314803537770045, 0.1685196462229955]",unseen_subject_unseen_item,val,0,b2,74,74_b2_tq_1,Was wird nicht über die Wurzel aufgenommen?,1_1.0,1,1.0
+32,0,"[0.6294841230531338, 0.3705158769468663]",unseen_subject_unseen_item,val,0,b2,80,80_b2_tq_1,Was wird nicht über die Wurzel aufgenommen?,0_1.0,0,1.0
+33,1,"[0.8307715430630029, 0.16922845693699692]",unseen_subject_unseen_item,val,0,b2,90,90_b2_tq_1,Was wird nicht über die Wurzel aufgenommen?,1_1.0,1,1.0
+34,1,"[0.4450985665971066, 0.5549014334028934]",unseen_subject_unseen_item,val,0,b2,92,92_b2_tq_1,Was wird nicht über die Wurzel aufgenommen?,1_1.0,1,1.0
+35,0,"[0.6695618456839073, 0.33043815431609275]",unseen_subject_unseen_item,val,0,b2,98,98_b2_tq_1,Was wird nicht über die Wurzel aufgenommen?,0_1.0,0,1.0
+36,0,"[0.8207514269671823, 0.17924857303281766]",unseen_subject_unseen_item,val,0,b2,99,99_b2_tq_1,Was wird nicht über die Wurzel aufgenommen?,0_1.0,0,1.0
+37,0,"[0.5871265869503949, 0.4128734130496051]",unseen_subject_unseen_item,val,0,b2,100,100_b2_tq_1,Was wird nicht über die Wurzel aufgenommen?,0_1.0,0,1.0
+38,0,"[0.9080890973036343, 0.09191090269636577]",unseen_subject_unseen_item,val,0,p2,5,5_p2_tq_1,Welche Eigenschaft besitzen photonische Kristalle?,0_1.0,0,1.0
+39,0,"[0.6069027039855408, 0.3930972960144592]",unseen_subject_unseen_item,val,0,p2,7,7_p2_tq_1,Welche Eigenschaft besitzen photonische Kristalle?,0_0.0,0,0.0
+40,0,"[0.677468636529371, 0.32253136347062894]",unseen_subject_unseen_item,val,0,p2,22,22_p2_tq_1,Welche Eigenschaft besitzen photonische Kristalle?,0_0.0,0,0.0
+41,0,"[0.7785857447320386, 0.22141425526796138]",unseen_subject_unseen_item,val,0,p2,30,30_p2_tq_1,Welche Eigenschaft besitzen photonische Kristalle?,0_0.0,0,0.0
+42,0,"[0.8153202822671158, 0.18467971773288408]",unseen_subject_unseen_item,val,0,p2,35,35_p2_tq_1,Welche Eigenschaft besitzen photonische Kristalle?,0_0.0,0,0.0
+43,0,"[1.0, 0.0]",unseen_subject_unseen_item,val,0,p2,39,39_p2_tq_1,Welche Eigenschaft besitzen photonische Kristalle?,0_0.0,0,0.0
+44,0,"[0.9082793376529879, 0.09172066234701223]",unseen_subject_unseen_item,val,0,p2,40,40_p2_tq_1,Welche Eigenschaft besitzen photonische Kristalle?,0_0.0,0,0.0
+45,0,"[0.8355423030080453, 0.16445769699195453]",unseen_subject_unseen_item,val,0,p2,60,60_p2_tq_1,Welche Eigenschaft besitzen photonische Kristalle?,0_1.0,0,1.0
+46,0,"[0.8059280208669424, 0.1940719791330576]",unseen_subject_unseen_item,val,0,p2,61,61_p2_tq_1,Welche Eigenschaft besitzen photonische Kristalle?,0_1.0,0,1.0
+47,0,"[0.9163584637268848, 0.08364153627311521]",unseen_subject_unseen_item,val,0,p2,65,65_p2_tq_1,Welche Eigenschaft besitzen photonische Kristalle?,0_1.0,0,1.0
+48,0,"[0.8401926606180765, 0.15980733938192354]",unseen_subject_unseen_item,val,0,p2,68,68_p2_tq_1,Welche Eigenschaft besitzen photonische Kristalle?,0_1.0,0,1.0
+49,0,"[0.7177714677264367, 0.2822285322735632]",unseen_subject_unseen_item,val,0,p2,69,69_p2_tq_1,Welche Eigenschaft besitzen photonische Kristalle?,0_1.0,0,1.0
+50,0,"[0.9745784695201039, 0.025421530479896242]",unseen_subject_unseen_item,val,0,p2,74,74_p2_tq_1,Welche Eigenschaft besitzen photonische Kristalle?,0_0.0,0,0.0
+51,0,"[0.5515574899951251, 0.4484425100048749]",unseen_subject_unseen_item,val,0,p2,80,80_p2_tq_1,Welche Eigenschaft besitzen photonische Kristalle?,0_1.0,0,1.0
+52,0,"[0.843500405925963, 0.15649959407403702]",unseen_subject_unseen_item,val,0,p2,90,90_p2_tq_1,Welche Eigenschaft besitzen photonische Kristalle?,0_0.0,0,0.0
+53,0,"[0.7078279932893102, 0.2921720067106897]",unseen_subject_unseen_item,val,0,p2,92,92_p2_tq_1,Welche Eigenschaft besitzen photonische Kristalle?,0_1.0,0,1.0
+54,0,"[0.9230702136938508, 0.07692978630614913]",unseen_subject_unseen_item,val,0,p2,98,98_p2_tq_1,Welche Eigenschaft besitzen photonische Kristalle?,0_0.0,0,0.0
+55,0,"[0.7374791683636277, 0.2625208316363724]",unseen_subject_unseen_item,val,0,p2,99,99_p2_tq_1,Welche Eigenschaft besitzen photonische Kristalle?,0_1.0,0,1.0
+56,0,"[0.8279144252084034, 0.17208557479159667]",unseen_subject_unseen_item,val,0,p2,100,100_p2_tq_1,Welche Eigenschaft besitzen photonische Kristalle?,0_1.0,0,1.0
+0,0,"[0.6341299314533215, 0.3658700685466784]",seen_subject_unseen_item,test,0,b0,1,1_b0_tq_1,Nach welchem Kriterium werden die DNA-Fragmente getrennt?,0_0.0,0,0.0
+1,0,"[0.8394286774207356, 0.16057132257926438]",seen_subject_unseen_item,test,0,b0,2,2_b0_tq_1,Nach welchem Kriterium werden die DNA-Fragmente getrennt?,0_1.0,0,1.0
+2,0,"[0.8313495513468385, 0.16865044865316137]",seen_subject_unseen_item,test,0,b0,5,5_b0_tq_1,Nach welchem Kriterium werden die DNA-Fragmente getrennt?,0_0.0,0,0.0
+3,0,"[0.8313495513468385, 0.16865044865316137]",seen_subject_unseen_item,test,0,b0,7,7_b0_tq_1,Nach welchem Kriterium werden die DNA-Fragmente getrennt?,0_0.0,0,0.0
+4,0,"[0.7711924022072936, 0.2288075977927063]",seen_subject_unseen_item,test,0,b0,12,12_b0_tq_1,Nach welchem Kriterium werden die DNA-Fragmente getrennt?,0_0.0,0,0.0
+5,0,"[0.7584369418835455, 0.24156305811645443]",seen_subject_unseen_item,test,0,b0,13,13_b0_tq_1,Nach welchem Kriterium werden die DNA-Fragmente getrennt?,0_1.0,0,1.0
+6,0,"[0.8313495513468385, 0.16865044865316137]",seen_subject_unseen_item,test,0,b0,14,14_b0_tq_1,Nach welchem Kriterium werden die DNA-Fragmente getrennt?,0_1.0,0,1.0
+7,0,"[0.6323242344654371, 0.36767576553456294]",seen_subject_unseen_item,test,0,b0,15,15_b0_tq_1,Nach welchem Kriterium werden die DNA-Fragmente getrennt?,0_0.0,0,0.0
+8,0,"[0.7866221279586888, 0.2133778720413111]",seen_subject_unseen_item,test,0,b0,17,17_b0_tq_1,Nach welchem Kriterium werden die DNA-Fragmente getrennt?,0_0.0,0,0.0
+9,0,"[0.8153202822671158, 0.18467971773288408]",seen_subject_unseen_item,test,0,b0,18,18_b0_tq_1,Nach welchem Kriterium werden die DNA-Fragmente getrennt?,0_1.0,0,1.0
+10,0,"[0.9230702136938508, 0.07692978630614913]",seen_subject_unseen_item,test,0,b0,19,19_b0_tq_1,Nach welchem Kriterium werden die DNA-Fragmente getrennt?,0_0.0,0,0.0
+11,0,"[0.6397907305324042, 0.3602092694675956]",seen_subject_unseen_item,test,0,b0,20,20_b0_tq_1,Nach welchem Kriterium werden die DNA-Fragmente getrennt?,0_0.0,0,0.0
+12,0,"[0.7048136939946235, 0.29518630600537654]",seen_subject_unseen_item,test,0,b0,22,22_b0_tq_1,Nach welchem Kriterium werden die DNA-Fragmente getrennt?,0_0.0,0,0.0
+13,0,"[0.5720235512474122, 0.42797644875258756]",seen_subject_unseen_item,test,0,b0,23,23_b0_tq_1,Nach welchem Kriterium werden die DNA-Fragmente getrennt?,0_1.0,0,1.0
+14,0,"[0.5630282973408393, 0.4369717026591607]",seen_subject_unseen_item,test,0,b0,30,30_b0_tq_1,Nach welchem Kriterium werden die DNA-Fragmente getrennt?,0_0.0,0,0.0
+15,0,"[0.7316787459940006, 0.26832125400599927]",seen_subject_unseen_item,test,0,b0,31,31_b0_tq_1,Nach welchem Kriterium werden die DNA-Fragmente getrennt?,0_0.0,0,0.0
+16,0,"[0.8311593109974851, 0.1688406890025149]",seen_subject_unseen_item,test,0,b0,32,32_b0_tq_1,Nach welchem Kriterium werden die DNA-Fragmente getrennt?,0_0.0,0,0.0
+17,0,"[0.6260508053794245, 0.3739491946205754]",seen_subject_unseen_item,test,0,b0,34,34_b0_tq_1,Nach welchem Kriterium werden die DNA-Fragmente getrennt?,0_0.0,0,0.0
+18,0,"[0.7027903513362201, 0.29720964866377986]",seen_subject_unseen_item,test,0,b0,35,35_b0_tq_1,Nach welchem Kriterium werden die DNA-Fragmente getrennt?,0_0.0,0,0.0
+19,0,"[0.763812026440863, 0.23618797355913695]",seen_subject_unseen_item,test,0,b0,37,37_b0_tq_1,Nach welchem Kriterium werden die DNA-Fragmente getrennt?,0_1.0,0,1.0
+20,0,"[0.6258605650300709, 0.37413943496992896]",seen_subject_unseen_item,test,0,b0,38,38_b0_tq_1,Nach welchem Kriterium werden die DNA-Fragmente getrennt?,0_1.0,0,1.0
+21,0,"[0.7934192877493741, 0.20658071225062588]",seen_subject_unseen_item,test,0,b0,39,39_b0_tq_1,Nach welchem Kriterium werden die DNA-Fragmente getrennt?,0_0.0,0,0.0
+22,0,"[0.7477080150737233, 0.2522919849262766]",seen_subject_unseen_item,test,0,b0,40,40_b0_tq_1,Nach welchem Kriterium werden die DNA-Fragmente getrennt?,0_0.0,0,0.0
+23,1,"[0.8183681520341171, 0.181631847965883]",seen_subject_unseen_item,test,0,b0,60,60_b0_tq_1,Nach welchem Kriterium werden die DNA-Fragmente getrennt?,1_0.0,1,0.0
+24,0,"[0.8153202822671158, 0.18467971773288408]",seen_subject_unseen_item,test,0,b0,61,61_b0_tq_1,Nach welchem Kriterium werden die DNA-Fragmente getrennt?,0_1.0,0,1.0
+25,0,"[0.5567261559930123, 0.4432738440069876]",seen_subject_unseen_item,test,0,b0,63,63_b0_tq_1,Nach welchem Kriterium werden die DNA-Fragmente getrennt?,0_0.0,0,0.0
+26,0,"[0.7506755372289291, 0.2493244627710709]",seen_subject_unseen_item,test,0,b0,65,65_b0_tq_1,Nach welchem Kriterium werden die DNA-Fragmente getrennt?,0_0.0,0,0.0
+27,0,"[0.6701802385911402, 0.32981976140885977]",seen_subject_unseen_item,test,0,b0,66,66_b0_tq_1,Nach welchem Kriterium werden die DNA-Fragmente getrennt?,0_0.0,0,0.0
+28,1,"[0.7446649876506585, 0.25533501234934153]",seen_subject_unseen_item,test,0,b0,67,67_b0_tq_1,Nach welchem Kriterium werden die DNA-Fragmente getrennt?,1_1.0,1,1.0
+29,1,"[0.559065777515599, 0.4409342224844009]",seen_subject_unseen_item,test,0,b0,68,68_b0_tq_1,Nach welchem Kriterium werden die DNA-Fragmente getrennt?,1_0.0,1,0.0
+30,0,"[0.6367797321892466, 0.3632202678107533]",seen_subject_unseen_item,test,0,b0,69,69_b0_tq_1,Nach welchem Kriterium werden die DNA-Fragmente getrennt?,0_1.0,0,1.0
+31,1,"[0.5196730987873759, 0.48032690121262417]",seen_subject_unseen_item,test,0,b0,71,71_b0_tq_1,Nach welchem Kriterium werden die DNA-Fragmente getrennt?,1_1.0,1,1.0
+32,1,"[0.5710086330874229, 0.4289913669125772]",seen_subject_unseen_item,test,0,b0,72,72_b0_tq_1,Nach welchem Kriterium werden die DNA-Fragmente getrennt?,1_1.0,1,1.0
+33,0,"[0.7506755372289291, 0.2493244627710709]",seen_subject_unseen_item,test,0,b0,73,73_b0_tq_1,Nach welchem Kriterium werden die DNA-Fragmente getrennt?,0_1.0,0,1.0
+34,0,"[0.9260377358490566, 0.0739622641509434]",seen_subject_unseen_item,test,0,b0,74,74_b0_tq_1,Nach welchem Kriterium werden die DNA-Fragmente getrennt?,0_1.0,0,1.0
+35,1,"[0.6737104727271678, 0.3262895272728322]",seen_subject_unseen_item,test,0,b0,75,75_b0_tq_1,Nach welchem Kriterium werden die DNA-Fragmente getrennt?,1_1.0,1,1.0
+36,0,"[0.7525611593696208, 0.2474388406303793]",seen_subject_unseen_item,test,0,b0,76,76_b0_tq_1,Nach welchem Kriterium werden die DNA-Fragmente getrennt?,0_1.0,0,1.0
+37,1,"[0.8153202822671158, 0.18467971773288408]",seen_subject_unseen_item,test,0,b0,77,77_b0_tq_1,Nach welchem Kriterium werden die DNA-Fragmente getrennt?,1_1.0,1,1.0
+38,1,"[0.5707105237141572, 0.42928947628584274]",seen_subject_unseen_item,test,0,b0,78,78_b0_tq_1,Nach welchem Kriterium werden die DNA-Fragmente getrennt?,1_0.0,1,0.0
+39,0,"[0.625612484498471, 0.3743875155015291]",seen_subject_unseen_item,test,0,b0,79,79_b0_tq_1,Nach welchem Kriterium werden die DNA-Fragmente getrennt?,0_1.0,0,1.0
+40,1,"[0.7371098906940671, 0.26289010930593293]",seen_subject_unseen_item,test,0,b0,80,80_b0_tq_1,Nach welchem Kriterium werden die DNA-Fragmente getrennt?,1_1.0,1,1.0
+41,0,"[1.0, 0.0]",seen_subject_unseen_item,test,0,b0,81,81_b0_tq_1,Nach welchem Kriterium werden die DNA-Fragmente getrennt?,0_0.0,0,0.0
+42,0,"[0.7839937963981186, 0.2160062036018814]",seen_subject_unseen_item,test,0,b0,82,82_b0_tq_1,Nach welchem Kriterium werden die DNA-Fragmente getrennt?,0_0.0,0,0.0
+43,0,"[0.9745784695201039, 0.025421530479896242]",seen_subject_unseen_item,test,0,b0,84,84_b0_tq_1,Nach welchem Kriterium werden die DNA-Fragmente getrennt?,0_0.0,0,0.0
+44,1,"[0.7063233992702165, 0.29367660072978363]",seen_subject_unseen_item,test,0,b0,85,85_b0_tq_1,Nach welchem Kriterium werden die DNA-Fragmente getrennt?,1_1.0,1,1.0
+45,0,"[0.8600477056552656, 0.13995229434473436]",seen_subject_unseen_item,test,0,b0,87,87_b0_tq_1,Nach welchem Kriterium werden die DNA-Fragmente getrennt?,0_1.0,0,1.0
+46,0,"[0.6397907305324042, 0.3602092694675956]",seen_subject_unseen_item,test,0,b0,90,90_b0_tq_1,Nach welchem Kriterium werden die DNA-Fragmente getrennt?,0_1.0,0,1.0
+47,0,"[0.9037643207855973, 0.09623567921440261]",seen_subject_unseen_item,test,0,b0,92,92_b0_tq_1,Nach welchem Kriterium werden die DNA-Fragmente getrennt?,0_1.0,0,1.0
+48,0,"[0.6672127164359345, 0.3327872835640655]",seen_subject_unseen_item,test,0,b0,93,93_b0_tq_1,Nach welchem Kriterium werden die DNA-Fragmente getrennt?,0_1.0,0,1.0
+49,0,"[0.9124720893141947, 0.08752791068580543]",seen_subject_unseen_item,test,0,b0,98,98_b0_tq_1,Nach welchem Kriterium werden die DNA-Fragmente getrennt?,0_1.0,0,1.0
+50,0,"[0.6511087050687948, 0.3488912949312052]",seen_subject_unseen_item,test,0,b0,99,99_b0_tq_1,Nach welchem Kriterium werden die DNA-Fragmente getrennt?,0_0.0,0,0.0
+51,0,"[0.803466267327029, 0.19653373267297097]",seen_subject_unseen_item,test,0,b0,100,100_b0_tq_1,Nach welchem Kriterium werden die DNA-Fragmente getrennt?,0_0.0,0,0.0
+52,0,"[0.66198401560559, 0.33801598439441005]",seen_subject_unseen_item,test,0,b0,101,101_b0_tq_1,Nach welchem Kriterium werden die DNA-Fragmente getrennt?,0_0.0,0,0.0
+53,0,"[0.8153202822671158, 0.18467971773288408]",seen_subject_unseen_item,test,0,b0,102,102_b0_tq_1,Nach welchem Kriterium werden die DNA-Fragmente getrennt?,0_1.0,0,1.0
+54,0,"[0.7175019326292235, 0.2824980673707766]",seen_subject_unseen_item,test,0,b0,104,104_b0_tq_1,Nach welchem Kriterium werden die DNA-Fragmente getrennt?,0_1.0,0,1.0
+55,1,"[0.6427242899784213, 0.3572757100215787]",seen_subject_unseen_item,test,0,b0,105,105_b0_tq_1,Nach welchem Kriterium werden die DNA-Fragmente getrennt?,1_0.0,1,0.0
+56,0,"[0.7638382387933225, 0.23616176120667762]",seen_subject_unseen_item,test,0,p1,1,1_p1_tq_1,"Welchem Wert muss die Geschwindigkeitsdifferenz eines absorbierendes und eines emittierendes Atom entsprechen, so dass die Anregungen dieselbe Frequenz haben?",0_1.0,0,1.0
+57,0,"[0.6783542570488026, 0.3216457429511974]",seen_subject_unseen_item,test,0,p1,2,2_p1_tq_1,"Welchem Wert muss die Geschwindigkeitsdifferenz eines absorbierendes und eines emittierendes Atom entsprechen, so dass die Anregungen dieselbe Frequenz haben?",0_0.0,0,0.0
+58,0,"[0.6869084524871732, 0.31309154751282675]",seen_subject_unseen_item,test,0,p1,5,5_p1_tq_1,"Welchem Wert muss die Geschwindigkeitsdifferenz eines absorbierendes und eines emittierendes Atom entsprechen, so dass die Anregungen dieselbe Frequenz haben?",0_0.0,0,0.0
+59,0,"[0.6616047252606948, 0.3383952747393052]",seen_subject_unseen_item,test,0,p1,7,7_p1_tq_1,"Welchem Wert muss die Geschwindigkeitsdifferenz eines absorbierendes und eines emittierendes Atom entsprechen, so dass die Anregungen dieselbe Frequenz haben?",0_1.0,0,1.0
+60,0,"[0.5797330171604125, 0.4202669828395876]",seen_subject_unseen_item,test,0,p1,12,12_p1_tq_1,"Welchem Wert muss die Geschwindigkeitsdifferenz eines absorbierendes und eines emittierendes Atom entsprechen, so dass die Anregungen dieselbe Frequenz haben?",0_1.0,0,1.0
+61,0,"[0.6727219337745242, 0.32727806622547595]",seen_subject_unseen_item,test,0,p1,13,13_p1_tq_1,"Welchem Wert muss die Geschwindigkeitsdifferenz eines absorbierendes und eines emittierendes Atom entsprechen, so dass die Anregungen dieselbe Frequenz haben?",0_0.0,0,0.0
+62,0,"[0.668202792536957, 0.331797207463043]",seen_subject_unseen_item,test,0,p1,14,14_p1_tq_1,"Welchem Wert muss die Geschwindigkeitsdifferenz eines absorbierendes und eines emittierendes Atom entsprechen, so dass die Anregungen dieselbe Frequenz haben?",0_0.0,0,0.0
+63,0,"[0.8205611866178287, 0.17943881338217121]",seen_subject_unseen_item,test,0,p1,15,15_p1_tq_1,"Welchem Wert muss die Geschwindigkeitsdifferenz eines absorbierendes und eines emittierendes Atom entsprechen, so dass die Anregungen dieselbe Frequenz haben?",0_0.0,0,0.0
+64,1,"[0.8343170735020443, 0.16568292649795563]",seen_subject_unseen_item,test,0,p1,17,17_p1_tq_1,"Welchem Wert muss die Geschwindigkeitsdifferenz eines absorbierendes und eines emittierendes Atom entsprechen, so dass die Anregungen dieselbe Frequenz haben?",1_0.0,1,0.0
+65,1,"[0.5986632417154276, 0.40133675828457244]",seen_subject_unseen_item,test,0,p1,18,18_p1_tq_1,"Welchem Wert muss die Geschwindigkeitsdifferenz eines absorbierendes und eines emittierendes Atom entsprechen, so dass die Anregungen dieselbe Frequenz haben?",1_0.0,1,0.0
+66,0,"[0.7519580115007761, 0.2480419884992239]",seen_subject_unseen_item,test,0,p1,19,19_p1_tq_1,"Welchem Wert muss die Geschwindigkeitsdifferenz eines absorbierendes und eines emittierendes Atom entsprechen, so dass die Anregungen dieselbe Frequenz haben?",0_0.0,0,0.0
+67,0,"[0.8263981178945876, 0.17360188210541233]",seen_subject_unseen_item,test,0,p1,20,20_p1_tq_1,"Welchem Wert muss die Geschwindigkeitsdifferenz eines absorbierendes und eines emittierendes Atom entsprechen, so dass die Anregungen dieselbe Frequenz haben?",0_0.0,0,0.0
+68,0,"[0.7270801344515178, 0.27291986554848224]",seen_subject_unseen_item,test,0,p1,22,22_p1_tq_1,"Welchem Wert muss die Geschwindigkeitsdifferenz eines absorbierendes und eines emittierendes Atom entsprechen, so dass die Anregungen dieselbe Frequenz haben?",0_0.0,0,0.0
+69,0,"[0.6023480639565736, 0.3976519360434264]",seen_subject_unseen_item,test,0,p1,23,23_p1_tq_1,"Welchem Wert muss die Geschwindigkeitsdifferenz eines absorbierendes und eines emittierendes Atom entsprechen, so dass die Anregungen dieselbe Frequenz haben?",0_0.0,0,0.0
+70,0,"[0.8246378013798725, 0.17536219862012747]",seen_subject_unseen_item,test,0,p1,30,30_p1_tq_1,"Welchem Wert muss die Geschwindigkeitsdifferenz eines absorbierendes und eines emittierendes Atom entsprechen, so dass die Anregungen dieselbe Frequenz haben?",0_0.0,0,0.0
+71,0,"[1.0, 0.0]",seen_subject_unseen_item,test,0,p1,31,31_p1_tq_1,"Welchem Wert muss die Geschwindigkeitsdifferenz eines absorbierendes und eines emittierendes Atom entsprechen, so dass die Anregungen dieselbe Frequenz haben?",0_1.0,0,1.0
+72,0,"[0.5521345111399476, 0.4478654888600522]",seen_subject_unseen_item,test,0,p1,32,32_p1_tq_1,"Welchem Wert muss die Geschwindigkeitsdifferenz eines absorbierendes und eines emittierendes Atom entsprechen, so dass die Anregungen dieselbe Frequenz haben?",0_0.0,0,0.0
+73,0,"[0.6250228638609919, 0.37497713613900807]",seen_subject_unseen_item,test,0,p1,34,34_p1_tq_1,"Welchem Wert muss die Geschwindigkeitsdifferenz eines absorbierendes und eines emittierendes Atom entsprechen, so dass die Anregungen dieselbe Frequenz haben?",0_1.0,0,1.0
+74,0,"[0.8343170735020443, 0.16568292649795563]",seen_subject_unseen_item,test,0,p1,35,35_p1_tq_1,"Welchem Wert muss die Geschwindigkeitsdifferenz eines absorbierendes und eines emittierendes Atom entsprechen, so dass die Anregungen dieselbe Frequenz haben?",0_0.0,0,0.0
+75,0,"[0.6442776663122889, 0.35572233368771106]",seen_subject_unseen_item,test,0,p1,37,37_p1_tq_1,"Welchem Wert muss die Geschwindigkeitsdifferenz eines absorbierendes und eines emittierendes Atom entsprechen, so dass die Anregungen dieselbe Frequenz haben?",0_0.0,0,0.0
+76,0,"[0.7616152933412873, 0.23838470665871267]",seen_subject_unseen_item,test,0,p1,38,38_p1_tq_1,"Welchem Wert muss die Geschwindigkeitsdifferenz eines absorbierendes und eines emittierendes Atom entsprechen, so dass die Anregungen dieselbe Frequenz haben?",0_0.0,0,0.0
+77,0,"[0.7343170735020443, 0.26568292649795566]",seen_subject_unseen_item,test,0,p1,39,39_p1_tq_1,"Welchem Wert muss die Geschwindigkeitsdifferenz eines absorbierendes und eines emittierendes Atom entsprechen, so dass die Anregungen dieselbe Frequenz haben?",0_1.0,0,1.0
+78,0,"[0.6358154873253155, 0.3641845126746845]",seen_subject_unseen_item,test,0,p1,40,40_p1_tq_1,"Welchem Wert muss die Geschwindigkeitsdifferenz eines absorbierendes und eines emittierendes Atom entsprechen, so dass die Anregungen dieselbe Frequenz haben?",0_0.0,0,0.0
+79,0,"[0.8242300724936491, 0.17576992750635084]",seen_subject_unseen_item,test,0,p1,60,60_p1_tq_1,"Welchem Wert muss die Geschwindigkeitsdifferenz eines absorbierendes und eines emittierendes Atom entsprechen, so dass die Anregungen dieselbe Frequenz haben?",0_0.0,0,0.0
+80,0,"[0.7614044640387513, 0.23859553596124874]",seen_subject_unseen_item,test,0,p1,63,63_p1_tq_1,"Welchem Wert muss die Geschwindigkeitsdifferenz eines absorbierendes und eines emittierendes Atom entsprechen, so dass die Anregungen dieselbe Frequenz haben?",0_0.0,0,0.0
+81,0,"[0.674390134554733, 0.32560986544526704]",seen_subject_unseen_item,test,0,p1,65,65_p1_tq_1,"Welchem Wert muss die Geschwindigkeitsdifferenz eines absorbierendes und eines emittierendes Atom entsprechen, so dass die Anregungen dieselbe Frequenz haben?",0_0.0,0,0.0
+82,0,"[0.634112165619326, 0.36588783438067396]",seen_subject_unseen_item,test,0,p1,66,66_p1_tq_1,"Welchem Wert muss die Geschwindigkeitsdifferenz eines absorbierendes und eines emittierendes Atom entsprechen, so dass die Anregungen dieselbe Frequenz haben?",0_0.0,0,0.0
+83,0,"[0.631396192674322, 0.368603807325678]",seen_subject_unseen_item,test,0,p1,67,67_p1_tq_1,"Welchem Wert muss die Geschwindigkeitsdifferenz eines absorbierendes und eines emittierendes Atom entsprechen, so dass die Anregungen dieselbe Frequenz haben?",0_1.0,0,1.0
+84,0,"[0.7427565816214725, 0.2572434183785276]",seen_subject_unseen_item,test,0,p1,68,68_p1_tq_1,"Welchem Wert muss die Geschwindigkeitsdifferenz eines absorbierendes und eines emittierendes Atom entsprechen, so dass die Anregungen dieselbe Frequenz haben?",0_0.0,0,0.0
+85,0,"[0.8018660716359014, 0.19813392836409854]",seen_subject_unseen_item,test,0,p1,69,69_p1_tq_1,"Welchem Wert muss die Geschwindigkeitsdifferenz eines absorbierendes und eines emittierendes Atom entsprechen, so dass die Anregungen dieselbe Frequenz haben?",0_0.0,0,0.0
+86,0,"[0.6084617161344144, 0.39153828386558553]",seen_subject_unseen_item,test,0,p1,71,71_p1_tq_1,"Welchem Wert muss die Geschwindigkeitsdifferenz eines absorbierendes und eines emittierendes Atom entsprechen, so dass die Anregungen dieselbe Frequenz haben?",0_1.0,0,1.0
+87,0,"[0.715574734626861, 0.2844252653731389]",seen_subject_unseen_item,test,0,p1,72,72_p1_tq_1,"Welchem Wert muss die Geschwindigkeitsdifferenz eines absorbierendes und eines emittierendes Atom entsprechen, so dass die Anregungen dieselbe Frequenz haben?",0_1.0,0,1.0
+88,0,"[0.6527810224836271, 0.3472189775163729]",seen_subject_unseen_item,test,0,p1,73,73_p1_tq_1,"Welchem Wert muss die Geschwindigkeitsdifferenz eines absorbierendes und eines emittierendes Atom entsprechen, so dass die Anregungen dieselbe Frequenz haben?",0_0.0,0,0.0
+89,0,"[0.816236410099792, 0.18376358990020805]",seen_subject_unseen_item,test,0,p1,74,74_p1_tq_1,"Welchem Wert muss die Geschwindigkeitsdifferenz eines absorbierendes und eines emittierendes Atom entsprechen, so dass die Anregungen dieselbe Frequenz haben?",0_1.0,0,1.0
+90,0,"[0.5848662053072963, 0.4151337946927036]",seen_subject_unseen_item,test,0,p1,75,75_p1_tq_1,"Welchem Wert muss die Geschwindigkeitsdifferenz eines absorbierendes und eines emittierendes Atom entsprechen, so dass die Anregungen dieselbe Frequenz haben?",0_0.0,0,0.0
+91,0,"[0.9082793376529879, 0.09172066234701223]",seen_subject_unseen_item,test,0,p1,76,76_p1_tq_1,"Welchem Wert muss die Geschwindigkeitsdifferenz eines absorbierendes und eines emittierendes Atom entsprechen, so dass die Anregungen dieselbe Frequenz haben?",0_0.0,0,0.0
+92,0,"[0.8094391964527861, 0.19056080354721394]",seen_subject_unseen_item,test,0,p1,77,77_p1_tq_1,"Welchem Wert muss die Geschwindigkeitsdifferenz eines absorbierendes und eines emittierendes Atom entsprechen, so dass die Anregungen dieselbe Frequenz haben?",0_0.0,0,0.0
+93,0,"[0.45576504413819113, 0.5442349558618089]",seen_subject_unseen_item,test,0,p1,78,78_p1_tq_1,"Welchem Wert muss die Geschwindigkeitsdifferenz eines absorbierendes und eines emittierendes Atom entsprechen, so dass die Anregungen dieselbe Frequenz haben?",0_0.0,0,0.0
+94,0,"[0.7681781121013687, 0.23182188789863134]",seen_subject_unseen_item,test,0,p1,79,79_p1_tq_1,"Welchem Wert muss die Geschwindigkeitsdifferenz eines absorbierendes und eines emittierendes Atom entsprechen, so dass die Anregungen dieselbe Frequenz haben?",0_0.0,0,0.0
+95,0,"[0.7284021221654698, 0.2715978778345301]",seen_subject_unseen_item,test,0,p1,80,80_p1_tq_1,"Welchem Wert muss die Geschwindigkeitsdifferenz eines absorbierendes und eines emittierendes Atom entsprechen, so dass die Anregungen dieselbe Frequenz haben?",0_0.0,0,0.0
+96,0,"[0.5173965504889372, 0.4826034495110629]",seen_subject_unseen_item,test,0,p1,81,81_p1_tq_1,"Welchem Wert muss die Geschwindigkeitsdifferenz eines absorbierendes und eines emittierendes Atom entsprechen, so dass die Anregungen dieselbe Frequenz haben?",0_0.0,0,0.0
+97,0,"[0.8498994548216998, 0.15010054517830013]",seen_subject_unseen_item,test,0,p1,82,82_p1_tq_1,"Welchem Wert muss die Geschwindigkeitsdifferenz eines absorbierendes und eines emittierendes Atom entsprechen, so dass die Anregungen dieselbe Frequenz haben?",0_0.0,0,0.0
+98,0,"[0.8327169274537696, 0.16728307254623045]",seen_subject_unseen_item,test,0,p1,84,84_p1_tq_1,"Welchem Wert muss die Geschwindigkeitsdifferenz eines absorbierendes und eines emittierendes Atom entsprechen, so dass die Anregungen dieselbe Frequenz haben?",0_0.0,0,0.0
+99,0,"[0.6461572716165439, 0.3538427283834561]",seen_subject_unseen_item,test,0,p1,85,85_p1_tq_1,"Welchem Wert muss die Geschwindigkeitsdifferenz eines absorbierendes und eines emittierendes Atom entsprechen, so dass die Anregungen dieselbe Frequenz haben?",0_0.0,0,0.0
+100,0,"[0.5467638568334074, 0.4532361431665928]",seen_subject_unseen_item,test,0,p1,87,87_p1_tq_1,"Welchem Wert muss die Geschwindigkeitsdifferenz eines absorbierendes und eines emittierendes Atom entsprechen, so dass die Anregungen dieselbe Frequenz haben?",0_0.0,0,0.0
+101,0,"[0.7367021618078436, 0.26329783819215624]",seen_subject_unseen_item,test,0,p1,90,90_p1_tq_1,"Welchem Wert muss die Geschwindigkeitsdifferenz eines absorbierendes und eines emittierendes Atom entsprechen, so dass die Anregungen dieselbe Frequenz haben?",0_0.0,0,0.0
+102,0,"[0.6382615488232692, 0.3617384511767307]",seen_subject_unseen_item,test,0,p1,92,92_p1_tq_1,"Welchem Wert muss die Geschwindigkeitsdifferenz eines absorbierendes und eines emittierendes Atom entsprechen, so dass die Anregungen dieselbe Frequenz haben?",0_0.0,0,0.0
+103,0,"[0.6021041545714385, 0.39789584542856143]",seen_subject_unseen_item,test,0,p1,93,93_p1_tq_1,"Welchem Wert muss die Geschwindigkeitsdifferenz eines absorbierendes und eines emittierendes Atom entsprechen, so dass die Anregungen dieselbe Frequenz haben?",0_0.0,0,0.0
+104,0,"[0.9745784695201039, 0.025421530479896242]",seen_subject_unseen_item,test,0,p1,98,98_p1_tq_1,"Welchem Wert muss die Geschwindigkeitsdifferenz eines absorbierendes und eines emittierendes Atom entsprechen, so dass die Anregungen dieselbe Frequenz haben?",0_0.0,0,0.0
+105,0,"[0.8828578071730915, 0.11714219282690848]",seen_subject_unseen_item,test,0,p1,99,99_p1_tq_1,"Welchem Wert muss die Geschwindigkeitsdifferenz eines absorbierendes und eines emittierendes Atom entsprechen, so dass die Anregungen dieselbe Frequenz haben?",0_0.0,0,0.0
+106,0,"[0.9149674620390457, 0.08503253796095445]",seen_subject_unseen_item,test,0,p1,100,100_p1_tq_1,"Welchem Wert muss die Geschwindigkeitsdifferenz eines absorbierendes und eines emittierendes Atom entsprechen, so dass die Anregungen dieselbe Frequenz haben?",0_0.0,0,0.0
+107,0,"[0.7340204851775615, 0.2659795148224386]",seen_subject_unseen_item,test,0,p1,101,101_p1_tq_1,"Welchem Wert muss die Geschwindigkeitsdifferenz eines absorbierendes und eines emittierendes Atom entsprechen, so dass die Anregungen dieselbe Frequenz haben?",0_1.0,0,1.0
+108,0,"[0.6981019440276574, 0.30189805597234265]",seen_subject_unseen_item,test,0,p1,102,102_p1_tq_1,"Welchem Wert muss die Geschwindigkeitsdifferenz eines absorbierendes und eines emittierendes Atom entsprechen, so dass die Anregungen dieselbe Frequenz haben?",0_0.0,0,0.0
+109,0,"[0.7146340855023343, 0.28536591449766563]",seen_subject_unseen_item,test,0,p1,104,104_p1_tq_1,"Welchem Wert muss die Geschwindigkeitsdifferenz eines absorbierendes und eines emittierendes Atom entsprechen, so dass die Anregungen dieselbe Frequenz haben?",0_0.0,0,0.0
+110,0,"[0.5340052835015294, 0.46599471649847046]",seen_subject_unseen_item,test,0,p1,105,105_p1_tq_1,"Welchem Wert muss die Geschwindigkeitsdifferenz eines absorbierendes und eines emittierendes Atom entsprechen, so dass die Anregungen dieselbe Frequenz haben?",0_0.0,0,0.0
+111,0,"[0.8197591537219562, 0.1802408462780438]",seen_subject_unseen_item,test,0,p5,2,2_p5_tq_1,Warum wird die effektive Elektronenmasse benutzt?,0_1.0,0,1.0
+112,0,"[0.9080890973036343, 0.09191090269636577]",seen_subject_unseen_item,test,0,p5,5,5_p5_tq_1,Warum wird die effektive Elektronenmasse benutzt?,0_1.0,0,1.0
+113,0,"[0.7493339986613926, 0.2506660013386074]",seen_subject_unseen_item,test,0,p5,7,7_p5_tq_1,Warum wird die effektive Elektronenmasse benutzt?,0_1.0,0,1.0
+114,0,"[0.6665260391871798, 0.3334739608128202]",seen_subject_unseen_item,test,0,p5,12,12_p5_tq_1,Warum wird die effektive Elektronenmasse benutzt?,0_1.0,0,1.0
+115,0,"[0.9163584637268848, 0.08364153627311524]",seen_subject_unseen_item,test,0,p5,13,13_p5_tq_1,Warum wird die effektive Elektronenmasse benutzt?,0_1.0,0,1.0
+116,0,"[0.763293995791283, 0.23670600420871693]",seen_subject_unseen_item,test,0,p5,14,14_p5_tq_1,Warum wird die effektive Elektronenmasse benutzt?,0_1.0,0,1.0
+117,0,"[0.8272876021157977, 0.1727123978842023]",seen_subject_unseen_item,test,0,p5,15,15_p5_tq_1,Warum wird die effektive Elektronenmasse benutzt?,0_1.0,0,1.0
+118,0,"[0.7701179311674824, 0.22988206883251766]",seen_subject_unseen_item,test,0,p5,17,17_p5_tq_1,Warum wird die effektive Elektronenmasse benutzt?,0_1.0,0,1.0
+119,0,"[0.8268607468319076, 0.17313925316809242]",seen_subject_unseen_item,test,0,p5,18,18_p5_tq_1,Warum wird die effektive Elektronenmasse benutzt?,0_1.0,0,1.0
+120,0,"[0.8341268331526909, 0.16587316684730918]",seen_subject_unseen_item,test,0,p5,19,19_p5_tq_1,Warum wird die effektive Elektronenmasse benutzt?,0_1.0,0,1.0
+121,0,"[0.9020890099909173, 0.09791099000908265]",seen_subject_unseen_item,test,0,p5,20,20_p5_tq_1,Warum wird die effektive Elektronenmasse benutzt?,0_1.0,0,1.0
+122,0,"[0.8394286774207356, 0.16057132257926438]",seen_subject_unseen_item,test,0,p5,22,22_p5_tq_1,Warum wird die effektive Elektronenmasse benutzt?,0_0.0,0,0.0
+123,0,"[0.6975466687043781, 0.30245333129562185]",seen_subject_unseen_item,test,0,p5,23,23_p5_tq_1,Warum wird die effektive Elektronenmasse benutzt?,0_1.0,0,1.0
+124,0,"[0.8823851746018405, 0.11761482539815944]",seen_subject_unseen_item,test,0,p5,30,30_p5_tq_1,Warum wird die effektive Elektronenmasse benutzt?,0_1.0,0,1.0
+125,0,"[0.8394286774207356, 0.16057132257926438]",seen_subject_unseen_item,test,0,p5,31,31_p5_tq_1,Warum wird die effektive Elektronenmasse benutzt?,0_1.0,0,1.0
+126,0,"[0.750167575460295, 0.24983242453970494]",seen_subject_unseen_item,test,0,p5,32,32_p5_tq_1,Warum wird die effektive Elektronenmasse benutzt?,0_1.0,0,1.0
+127,0,"[0.9163584637268848, 0.08364153627311524]",seen_subject_unseen_item,test,0,p5,34,34_p5_tq_1,Warum wird die effektive Elektronenmasse benutzt?,0_1.0,0,1.0
+128,0,"[0.9260377358490566, 0.0739622641509434]",seen_subject_unseen_item,test,0,p5,35,35_p5_tq_1,Warum wird die effektive Elektronenmasse benutzt?,0_1.0,0,1.0
+129,0,"[0.773865761279467, 0.226134238720533]",seen_subject_unseen_item,test,0,p5,37,37_p5_tq_1,Warum wird die effektive Elektronenmasse benutzt?,0_0.0,0,0.0
+130,0,"[0.5486826981923218, 0.4513173018076782]",seen_subject_unseen_item,test,0,p5,38,38_p5_tq_1,Warum wird die effektive Elektronenmasse benutzt?,0_1.0,0,1.0
+131,0,"[0.9539906103286384, 0.0460093896713615]",seen_subject_unseen_item,test,0,p5,39,39_p5_tq_1,Warum wird die effektive Elektronenmasse benutzt?,0_1.0,0,1.0
+132,0,"[0.5800155103980471, 0.4199844896019528]",seen_subject_unseen_item,test,0,p5,40,40_p5_tq_1,Warum wird die effektive Elektronenmasse benutzt?,0_0.0,0,0.0
+133,0,"[0.718935548152791, 0.28106445184720896]",seen_subject_unseen_item,test,0,p5,60,60_p5_tq_1,Warum wird die effektive Elektronenmasse benutzt?,0_0.0,0,0.0
+134,0,"[0.817056472029963, 0.1829435279700371]",seen_subject_unseen_item,test,0,p5,61,61_p5_tq_1,Warum wird die effektive Elektronenmasse benutzt?,0_1.0,0,1.0
+135,0,"[0.8713149007918295, 0.12868509920817048]",seen_subject_unseen_item,test,0,p5,63,63_p5_tq_1,Warum wird die effektive Elektronenmasse benutzt?,0_0.0,0,0.0
+136,0,"[0.7354769323018426, 0.26452306769815737]",seen_subject_unseen_item,test,0,p5,65,65_p5_tq_1,Warum wird die effektive Elektronenmasse benutzt?,0_0.0,0,0.0
+137,1,"[0.8254697451440685, 0.17453025485593163]",seen_subject_unseen_item,test,0,p5,66,66_p5_tq_1,Warum wird die effektive Elektronenmasse benutzt?,1_0.0,1,0.0
+138,0,"[0.7790559701180755, 0.22094402988192438]",seen_subject_unseen_item,test,0,p5,67,67_p5_tq_1,Warum wird die effektive Elektronenmasse benutzt?,0_1.0,0,1.0
+139,0,"[0.7740229226011052, 0.22597707739889478]",seen_subject_unseen_item,test,0,p5,68,68_p5_tq_1,Warum wird die effektive Elektronenmasse benutzt?,0_0.0,0,0.0
+140,0,"[0.728447460915596, 0.271552539084404]",seen_subject_unseen_item,test,0,p5,69,69_p5_tq_1,Warum wird die effektive Elektronenmasse benutzt?,0_1.0,0,1.0
+141,0,"[0.7289497568228249, 0.2710502431771751]",seen_subject_unseen_item,test,0,p5,71,71_p5_tq_1,Warum wird die effektive Elektronenmasse benutzt?,0_0.0,0,0.0
+142,0,"[0.7222571332535257, 0.2777428667464744]",seen_subject_unseen_item,test,0,p5,72,72_p5_tq_1,Warum wird die effektive Elektronenmasse benutzt?,0_1.0,0,1.0
+143,0,"[0.8420784781566608, 0.1579215218433392]",seen_subject_unseen_item,test,0,p5,73,73_p5_tq_1,Warum wird die effektive Elektronenmasse benutzt?,0_1.0,0,1.0
+144,0,"[0.6672689828556438, 0.3327310171443561]",seen_subject_unseen_item,test,0,p5,74,74_p5_tq_1,Warum wird die effektive Elektronenmasse benutzt?,0_1.0,0,1.0
+145,0,"[0.8116800276480592, 0.1883199723519408]",seen_subject_unseen_item,test,0,p5,75,75_p5_tq_1,Warum wird die effektive Elektronenmasse benutzt?,0_1.0,0,1.0
+146,0,"[0.652574306870493, 0.3474256931295071]",seen_subject_unseen_item,test,0,p5,76,76_p5_tq_1,Warum wird die effektive Elektronenmasse benutzt?,0_1.0,0,1.0
+147,0,"[0.8420784781566608, 0.1579215218433392]",seen_subject_unseen_item,test,0,p5,77,77_p5_tq_1,Warum wird die effektive Elektronenmasse benutzt?,0_1.0,0,1.0
+148,0,"[0.654669771252601, 0.34533022874739905]",seen_subject_unseen_item,test,0,p5,78,78_p5_tq_1,Warum wird die effektive Elektronenmasse benutzt?,0_1.0,0,1.0
+149,0,"[0.8246007109803865, 0.17539928901961366]",seen_subject_unseen_item,test,0,p5,79,79_p5_tq_1,Warum wird die effektive Elektronenmasse benutzt?,0_0.0,0,0.0
+150,0,"[0.7436460658426823, 0.25635393415731755]",seen_subject_unseen_item,test,0,p5,80,80_p5_tq_1,Warum wird die effektive Elektronenmasse benutzt?,0_0.0,0,0.0
+151,0,"[0.8103683476439052, 0.1896316523560949]",seen_subject_unseen_item,test,0,p5,81,81_p5_tq_1,Warum wird die effektive Elektronenmasse benutzt?,0_0.0,0,0.0
+152,0,"[0.9190082644628099, 0.08099173553719008]",seen_subject_unseen_item,test,0,p5,82,82_p5_tq_1,Warum wird die effektive Elektronenmasse benutzt?,0_0.0,0,0.0
+153,0,"[0.737455738180612, 0.26254426181938795]",seen_subject_unseen_item,test,0,p5,84,84_p5_tq_1,Warum wird die effektive Elektronenmasse benutzt?,0_0.0,0,0.0
+154,0,"[0.8124205483260404, 0.18757945167395967]",seen_subject_unseen_item,test,0,p5,85,85_p5_tq_1,Warum wird die effektive Elektronenmasse benutzt?,0_1.0,0,1.0
+155,0,"[0.750167575460295, 0.24983242453970494]",seen_subject_unseen_item,test,0,p5,87,87_p5_tq_1,Warum wird die effektive Elektronenmasse benutzt?,0_1.0,0,1.0
+156,0,"[0.5611308162018059, 0.4388691837981941]",seen_subject_unseen_item,test,0,p5,90,90_p5_tq_1,Warum wird die effektive Elektronenmasse benutzt?,0_1.0,0,1.0
+157,0,"[0.6557691387588425, 0.34423086124115765]",seen_subject_unseen_item,test,0,p5,92,92_p5_tq_1,Warum wird die effektive Elektronenmasse benutzt?,0_1.0,0,1.0
+158,0,"[0.7710470823586014, 0.2289529176413986]",seen_subject_unseen_item,test,0,p5,93,93_p5_tq_1,Warum wird die effektive Elektronenmasse benutzt?,0_0.0,0,0.0
+159,0,"[0.8249884789148684, 0.1750115210851316]",seen_subject_unseen_item,test,0,p5,98,98_p5_tq_1,Warum wird die effektive Elektronenmasse benutzt?,0_1.0,0,1.0
+160,0,"[0.8175183225266831, 0.18248167747331695]",seen_subject_unseen_item,test,0,p5,99,99_p5_tq_1,Warum wird die effektive Elektronenmasse benutzt?,0_0.0,0,0.0
+161,0,"[0.748260718392834, 0.251739281607166]",seen_subject_unseen_item,test,0,p5,100,100_p5_tq_1,Warum wird die effektive Elektronenmasse benutzt?,0_0.0,0,0.0
+162,0,"[0.7734039107827468, 0.2265960892172531]",seen_subject_unseen_item,test,0,p5,101,101_p5_tq_1,Warum wird die effektive Elektronenmasse benutzt?,0_0.0,0,0.0
+163,0,"[0.8270973617664442, 0.17290263823355584]",seen_subject_unseen_item,test,0,p5,102,102_p5_tq_1,Warum wird die effektive Elektronenmasse benutzt?,0_1.0,0,1.0
+164,0,"[0.8251592236847681, 0.1748407763152318]",seen_subject_unseen_item,test,0,p5,104,104_p5_tq_1,Warum wird die effektive Elektronenmasse benutzt?,0_0.0,0,0.0
+165,0,"[0.9190082644628099, 0.08099173553719008]",seen_subject_unseen_item,test,0,p5,105,105_p5_tq_1,Warum wird die effektive Elektronenmasse benutzt?,0_1.0,0,1.0
+0,0,"[0.73475024134191, 0.2652497586580899]",unseen_subject_seen_item,test,0,b1,0,0_b1_tq_1,Was ist RecA?,0_1.0,0,1.0
+1,0,"[0.6286478908858151, 0.3713521091141848]",unseen_subject_seen_item,test,0,b1,3,3_b1_tq_1,Was ist RecA?,0_0.0,0,0.0
+2,0,"[0.45802877094190153, 0.5419712290580986]",unseen_subject_seen_item,test,0,b1,4,4_b1_tq_1,Was ist RecA?,0_1.0,0,1.0
+3,0,"[0.7418518344518614, 0.2581481655481385]",unseen_subject_seen_item,test,0,b1,6,6_b1_tq_1,Was ist RecA?,0_1.0,0,1.0
+4,0,"[0.7477080150737233, 0.2522919849262766]",unseen_subject_seen_item,test,0,b1,8,8_b1_tq_1,Was ist RecA?,0_1.0,0,1.0
+5,0,"[0.7503578158096486, 0.24964218419035147]",unseen_subject_seen_item,test,0,b1,10,10_b1_tq_1,Was ist RecA?,0_0.0,0,0.0
+6,0,"[0.4814155031033504, 0.5185844968966495]",unseen_subject_seen_item,test,0,b1,16,16_b1_tq_1,Was ist RecA?,0_0.0,0,0.0
+7,0,"[0.6682926071648896, 0.3317073928351104]",unseen_subject_seen_item,test,0,b1,36,36_b1_tq_1,Was ist RecA?,0_1.0,0,1.0
+8,0,"[0.5356485696525854, 0.4643514303474145]",unseen_subject_seen_item,test,0,b1,41,41_b1_tq_1,Was ist RecA?,0_1.0,0,1.0
+9,0,"[0.7360035225120376, 0.26399647748796246]",unseen_subject_seen_item,test,0,b1,64,64_b1_tq_1,Was ist RecA?,0_1.0,0,1.0
+10,1,"[0.8313495513468385, 0.16865044865316137]",unseen_subject_seen_item,test,0,b1,70,70_b1_tq_1,Was ist RecA?,1_1.0,1,1.0
+11,0,"[0.8161273208388439, 0.18387267916115616]",unseen_subject_seen_item,test,0,b1,83,83_b1_tq_1,Was ist RecA?,0_1.0,0,1.0
+12,0,"[0.6016615352020112, 0.3983384647979889]",unseen_subject_seen_item,test,0,b1,91,91_b1_tq_1,Was ist RecA?,0_1.0,0,1.0
+13,0,"[0.8450665892650491, 0.15493341073495098]",unseen_subject_seen_item,test,0,b1,94,94_b1_tq_1,Was ist RecA?,0_1.0,0,1.0
+14,0,"[0.5639444251735153, 0.4360555748264846]",unseen_subject_seen_item,test,0,b1,95,95_b1_tq_1,Was ist RecA?,0_1.0,0,1.0
+15,0,"[0.8059280208669424, 0.1940719791330576]",unseen_subject_seen_item,test,0,b1,96,96_b1_tq_1,Was ist RecA?,0_1.0,0,1.0
+16,0,"[0.6046317353149087, 0.39536826468509145]",unseen_subject_seen_item,test,0,b1,97,97_b1_tq_1,Was ist RecA?,0_1.0,0,1.0
+17,0,"[0.5513672496457717, 0.44863275035422845]",unseen_subject_seen_item,test,0,b1,103,103_b1_tq_1,Was ist RecA?,0_1.0,0,1.0
+18,0,"[0.5668316875477488, 0.4331683124522513]",unseen_subject_seen_item,test,0,b2,0,0_b2_tq_1,Was wird nicht über die Wurzel aufgenommen?,0_1.0,0,1.0
+19,1,"[0.550051861325003, 0.44994813867499683]",unseen_subject_seen_item,test,0,b2,3,3_b2_tq_1,Was wird nicht über die Wurzel aufgenommen?,1_1.0,1,1.0
+20,0,"[0.5385366397035805, 0.46146336029641954]",unseen_subject_seen_item,test,0,b2,4,4_b2_tq_1,Was wird nicht über die Wurzel aufgenommen?,0_1.0,0,1.0
+21,0,"[0.9190082644628099, 0.08099173553719008]",unseen_subject_seen_item,test,0,b2,6,6_b2_tq_1,Was wird nicht über die Wurzel aufgenommen?,0_1.0,0,1.0
+22,0,"[0.7372435450644808, 0.26275645493551925]",unseen_subject_seen_item,test,0,b2,8,8_b2_tq_1,Was wird nicht über die Wurzel aufgenommen?,0_1.0,0,1.0
+23,0,"[0.6487074280372565, 0.3512925719627435]",unseen_subject_seen_item,test,0,b2,10,10_b2_tq_1,Was wird nicht über die Wurzel aufgenommen?,0_0.0,0,0.0
+24,1,"[0.5471660419807869, 0.45283395801921317]",unseen_subject_seen_item,test,0,b2,16,16_b2_tq_1,Was wird nicht über die Wurzel aufgenommen?,1_1.0,1,1.0
+25,1,"[0.5980822621604027, 0.40191773783959717]",unseen_subject_seen_item,test,0,b2,36,36_b2_tq_1,Was wird nicht über die Wurzel aufgenommen?,1_1.0,1,1.0
+26,0,"[0.6895673296848952, 0.3104326703151047]",unseen_subject_seen_item,test,0,b2,41,41_b2_tq_1,Was wird nicht über die Wurzel aufgenommen?,0_1.0,0,1.0
+27,1,"[0.6350149954461117, 0.3649850045538884]",unseen_subject_seen_item,test,0,b2,62,62_b2_tq_1,Was wird nicht über die Wurzel aufgenommen?,1_1.0,1,1.0
+28,1,"[0.546607529276405, 0.45339247072359506]",unseen_subject_seen_item,test,0,b2,64,64_b2_tq_1,Was wird nicht über die Wurzel aufgenommen?,1_1.0,1,1.0
+29,0,"[0.7164793645261295, 0.2835206354738705]",unseen_subject_seen_item,test,0,b2,70,70_b2_tq_1,Was wird nicht über die Wurzel aufgenommen?,0_1.0,0,1.0
+30,0,"[0.7353667281896946, 0.2646332718103053]",unseen_subject_seen_item,test,0,b2,83,83_b2_tq_1,Was wird nicht über die Wurzel aufgenommen?,0_1.0,0,1.0
+31,0,"[0.7576893323116265, 0.24231066768837356]",unseen_subject_seen_item,test,0,b2,91,91_b2_tq_1,Was wird nicht über die Wurzel aufgenommen?,0_1.0,0,1.0
+32,1,"[0.8251592236847681, 0.1748407763152318]",unseen_subject_seen_item,test,0,b2,94,94_b2_tq_1,Was wird nicht über die Wurzel aufgenommen?,1_1.0,1,1.0
+33,0,"[0.7706292176430445, 0.2293707823569556]",unseen_subject_seen_item,test,0,b2,95,95_b2_tq_1,Was wird nicht über die Wurzel aufgenommen?,0_1.0,0,1.0
+34,0,"[0.5052045109496057, 0.4947954890503943]",unseen_subject_seen_item,test,0,b2,96,96_b2_tq_1,Was wird nicht über die Wurzel aufgenommen?,0_1.0,0,1.0
+35,0,"[0.7160067309833018, 0.2839932690166983]",unseen_subject_seen_item,test,0,b2,97,97_b2_tq_1,Was wird nicht über die Wurzel aufgenommen?,0_1.0,0,1.0
+36,0,"[0.6356723989518807, 0.36432760104811934]",unseen_subject_seen_item,test,0,b2,103,103_b2_tq_1,Was wird nicht über die Wurzel aufgenommen?,0_1.0,0,1.0
+37,0,"[0.9072555205047319, 0.09274447949526815]",unseen_subject_seen_item,test,0,b3,0,0_b3_tq_1,Wo befindet sich die ATP-Bindungsstelle?,0_1.0,0,1.0
+38,0,"[0.8174209308741055, 0.1825790691258946]",unseen_subject_seen_item,test,0,b3,3,3_b3_tq_1,Wo befindet sich die ATP-Bindungsstelle?,0_1.0,0,1.0
+39,1,"[0.5830981734464337, 0.4169018265535664]",unseen_subject_seen_item,test,0,b3,4,4_b3_tq_1,Wo befindet sich die ATP-Bindungsstelle?,1_1.0,1,1.0
+40,0,"[0.9230702136938508, 0.07692978630614913]",unseen_subject_seen_item,test,0,b3,6,6_b3_tq_1,Wo befindet sich die ATP-Bindungsstelle?,0_0.0,0,0.0
+41,0,"[0.763293995791283, 0.23670600420871693]",unseen_subject_seen_item,test,0,b3,8,8_b3_tq_1,Wo befindet sich die ATP-Bindungsstelle?,0_1.0,0,1.0
+42,0,"[0.6414551338094391, 0.35854486619056086]",unseen_subject_seen_item,test,0,b3,10,10_b3_tq_1,Wo befindet sich die ATP-Bindungsstelle?,0_0.0,0,0.0
+43,0,"[0.7046855540517378, 0.2953144459482622]",unseen_subject_seen_item,test,0,b3,16,16_b3_tq_1,Wo befindet sich die ATP-Bindungsstelle?,0_1.0,0,1.0
+44,0,"[0.7687569166227013, 0.2312430833772988]",unseen_subject_seen_item,test,0,b3,36,36_b3_tq_1,Wo befindet sich die ATP-Bindungsstelle?,0_0.0,0,0.0
+45,0,"[0.5833317319296684, 0.41666826807033175]",unseen_subject_seen_item,test,0,b3,41,41_b3_tq_1,Wo befindet sich die ATP-Bindungsstelle?,0_0.0,0,0.0
+46,0,"[0.67374575092278, 0.32625424907721995]",unseen_subject_seen_item,test,0,b3,64,64_b3_tq_1,Wo befindet sich die ATP-Bindungsstelle?,0_1.0,0,1.0
+47,0,"[0.7243329420630149, 0.275667057936985]",unseen_subject_seen_item,test,0,b3,70,70_b3_tq_1,Wo befindet sich die ATP-Bindungsstelle?,0_0.0,0,0.0
+48,0,"[0.8072555205047319, 0.19274447949526813]",unseen_subject_seen_item,test,0,b3,83,83_b3_tq_1,Wo befindet sich die ATP-Bindungsstelle?,0_1.0,0,1.0
+49,0,"[0.48002751257490417, 0.5199724874250958]",unseen_subject_seen_item,test,0,b3,91,91_b3_tq_1,Wo befindet sich die ATP-Bindungsstelle?,0_0.0,0,0.0
+50,0,"[0.7961749926720674, 0.20382500732793257]",unseen_subject_seen_item,test,0,b3,94,94_b3_tq_1,Wo befindet sich die ATP-Bindungsstelle?,0_1.0,0,1.0
+51,0,"[0.9319444444444445, 0.06805555555555556]",unseen_subject_seen_item,test,0,b3,95,95_b3_tq_1,Wo befindet sich die ATP-Bindungsstelle?,0_1.0,0,1.0
+52,1,"[0.8303257341985827, 0.16967426580141728]",unseen_subject_seen_item,test,0,b3,96,96_b3_tq_1,Wo befindet sich die ATP-Bindungsstelle?,1_1.0,1,1.0
+53,0,"[0.5393996274298638, 0.4606003725701361]",unseen_subject_seen_item,test,0,b3,97,97_b3_tq_1,Wo befindet sich die ATP-Bindungsstelle?,0_0.0,0,0.0
+54,0,"[0.5115838084171946, 0.4884161915828053]",unseen_subject_seen_item,test,0,b3,103,103_b3_tq_1,Wo befindet sich die ATP-Bindungsstelle?,0_0.0,0,0.0
+55,0,"[0.9190082644628099, 0.08099173553719008]",unseen_subject_seen_item,test,0,b4,0,0_b4_tq_1,Welche Substanz ist reduzierend?,0_0.0,0,0.0
+56,0,"[0.6556984642236022, 0.3443015357763978]",unseen_subject_seen_item,test,0,b4,3,3_b4_tq_1,Welche Substanz ist reduzierend?,0_0.0,0,0.0
+57,0,"[0.6938727893860016, 0.30612721061399845]",unseen_subject_seen_item,test,0,b4,4,4_b4_tq_1,Welche Substanz ist reduzierend?,0_0.0,0,0.0
+58,0,"[0.7177714677264367, 0.2822285322735632]",unseen_subject_seen_item,test,0,b4,6,6_b4_tq_1,Welche Substanz ist reduzierend?,0_1.0,0,1.0
+59,0,"[0.7167677829502531, 0.28323221704974694]",unseen_subject_seen_item,test,0,b4,8,8_b4_tq_1,Welche Substanz ist reduzierend?,0_1.0,0,1.0
+60,0,"[0.7947012540325858, 0.20529874596741404]",unseen_subject_seen_item,test,0,b4,10,10_b4_tq_1,Welche Substanz ist reduzierend?,0_0.0,0,0.0
+61,0,"[0.608548417658061, 0.39145158234193894]",unseen_subject_seen_item,test,0,b4,16,16_b4_tq_1,Welche Substanz ist reduzierend?,0_0.0,0,0.0
+62,0,"[0.7907057903589476, 0.2092942096410524]",unseen_subject_seen_item,test,0,b4,36,36_b4_tq_1,Welche Substanz ist reduzierend?,0_1.0,0,1.0
+63,0,"[0.816236410099792, 0.18376358990020805]",unseen_subject_seen_item,test,0,b4,41,41_b4_tq_1,Welche Substanz ist reduzierend?,0_0.0,0,0.0
+64,1,"[0.5676909017348832, 0.4323090982651167]",unseen_subject_seen_item,test,0,b4,62,62_b4_tq_1,Welche Substanz ist reduzierend?,1_1.0,1,1.0
+65,1,"[0.8353667281896946, 0.1646332718103053]",unseen_subject_seen_item,test,0,b4,64,64_b4_tq_1,Welche Substanz ist reduzierend?,1_1.0,1,1.0
+66,0,"[0.9238341968911918, 0.0761658031088083]",unseen_subject_seen_item,test,0,b4,70,70_b4_tq_1,Welche Substanz ist reduzierend?,0_1.0,0,1.0
+67,1,"[0.7426222486944265, 0.25737775130557344]",unseen_subject_seen_item,test,0,b4,83,83_b4_tq_1,Welche Substanz ist reduzierend?,1_1.0,1,1.0
+68,1,"[0.36302512709178913, 0.6369748729082109]",unseen_subject_seen_item,test,0,b4,91,91_b4_tq_1,Welche Substanz ist reduzierend?,1_1.0,1,1.0
+69,1,"[0.5562888175498333, 0.4437111824501668]",unseen_subject_seen_item,test,0,b4,94,94_b4_tq_1,Welche Substanz ist reduzierend?,1_1.0,1,1.0
+70,1,"[0.7947012540325858, 0.20529874596741404]",unseen_subject_seen_item,test,0,b4,95,95_b4_tq_1,Welche Substanz ist reduzierend?,1_1.0,1,1.0
+71,0,"[0.8264709036889222, 0.17352909631107769]",unseen_subject_seen_item,test,0,b4,96,96_b4_tq_1,Welche Substanz ist reduzierend?,0_1.0,0,1.0
+72,0,"[0.5472780267588815, 0.45272197324111857]",unseen_subject_seen_item,test,0,b4,97,97_b4_tq_1,Welche Substanz ist reduzierend?,0_0.0,0,0.0
+73,0,"[0.34948485393852313, 0.6505151460614769]",unseen_subject_seen_item,test,0,b4,103,103_b4_tq_1,Welche Substanz ist reduzierend?,0_1.0,0,1.0
+74,0,"[0.8335724967988737, 0.1664275032011263]",unseen_subject_seen_item,test,0,b5,0,0_b5_tq_1,Welche Struktur kommt im Prion im Vergleich zum Wildtypprotein häufiger vor?,0_1.0,0,1.0
+75,0,"[0.7413598871211199, 0.2586401128788801]",unseen_subject_seen_item,test,0,b5,3,3_b5_tq_1,Welche Struktur kommt im Prion im Vergleich zum Wildtypprotein häufiger vor?,0_1.0,0,1.0
+76,0,"[0.7253045822862678, 0.2746954177137322]",unseen_subject_seen_item,test,0,b5,4,4_b5_tq_1,Welche Struktur kommt im Prion im Vergleich zum Wildtypprotein häufiger vor?,0_1.0,0,1.0
+77,0,"[0.8214828801051464, 0.17851711989485367]",unseen_subject_seen_item,test,0,b5,6,6_b5_tq_1,Welche Struktur kommt im Prion im Vergleich zum Wildtypprotein häufiger vor?,0_1.0,0,1.0
+78,0,"[0.8153221512720632, 0.18467784872793674]",unseen_subject_seen_item,test,0,b5,8,8_b5_tq_1,Welche Struktur kommt im Prion im Vergleich zum Wildtypprotein häufiger vor?,0_1.0,0,1.0
+79,0,"[0.8828578071730915, 0.11714219282690848]",unseen_subject_seen_item,test,0,b5,10,10_b5_tq_1,Welche Struktur kommt im Prion im Vergleich zum Wildtypprotein häufiger vor?,0_0.0,0,0.0
+80,0,"[0.8764967347411213, 0.12350326525887874]",unseen_subject_seen_item,test,0,b5,16,16_b5_tq_1,Welche Struktur kommt im Prion im Vergleich zum Wildtypprotein häufiger vor?,0_0.0,0,0.0
+81,0,"[0.8153202822671158, 0.1846797177328841]",unseen_subject_seen_item,test,0,b5,36,36_b5_tq_1,Welche Struktur kommt im Prion im Vergleich zum Wildtypprotein häufiger vor?,0_1.0,0,1.0
+82,0,"[0.8591975007106527, 0.14080249928934738]",unseen_subject_seen_item,test,0,b5,41,41_b5_tq_1,Welche Struktur kommt im Prion im Vergleich zum Wildtypprotein häufiger vor?,0_0.0,0,0.0
+83,1,"[0.9260377358490566, 0.0739622641509434]",unseen_subject_seen_item,test,0,b5,64,64_b5_tq_1,Welche Struktur kommt im Prion im Vergleich zum Wildtypprotein häufiger vor?,1_1.0,1,1.0
+84,0,"[0.8313495513468385, 0.16865044865316137]",unseen_subject_seen_item,test,0,b5,70,70_b5_tq_1,Welche Struktur kommt im Prion im Vergleich zum Wildtypprotein häufiger vor?,0_1.0,0,1.0
+85,0,"[0.8218583264206785, 0.17814167357932142]",unseen_subject_seen_item,test,0,b5,83,83_b5_tq_1,Welche Struktur kommt im Prion im Vergleich zum Wildtypprotein häufiger vor?,0_1.0,0,1.0
+86,0,"[0.7125912930959402, 0.28740870690405984]",unseen_subject_seen_item,test,0,b5,91,91_b5_tq_1,Welche Struktur kommt im Prion im Vergleich zum Wildtypprotein häufiger vor?,0_0.0,0,0.0
+87,0,"[0.7429055128283573, 0.25709448717164285]",unseen_subject_seen_item,test,0,b5,94,94_b5_tq_1,Welche Struktur kommt im Prion im Vergleich zum Wildtypprotein häufiger vor?,0_1.0,0,1.0
+88,0,"[0.6250471206032409, 0.3749528793967592]",unseen_subject_seen_item,test,0,b5,95,95_b5_tq_1,Welche Struktur kommt im Prion im Vergleich zum Wildtypprotein häufiger vor?,0_1.0,0,1.0
+89,0,"[0.7383923649659141, 0.2616076350340859]",unseen_subject_seen_item,test,0,b5,96,96_b5_tq_1,Welche Struktur kommt im Prion im Vergleich zum Wildtypprotein häufiger vor?,0_1.0,0,1.0
+90,0,"[0.7163556138815376, 0.2836443861184625]",unseen_subject_seen_item,test,0,b5,97,97_b5_tq_1,Welche Struktur kommt im Prion im Vergleich zum Wildtypprotein häufiger vor?,0_0.0,0,0.0
+91,1,"[0.8385098251632513, 0.16149017483674882]",unseen_subject_seen_item,test,0,b5,103,103_b5_tq_1,Welche Struktur kommt im Prion im Vergleich zum Wildtypprotein häufiger vor?,1_1.0,1,1.0
+92,0,"[0.9072555205047319, 0.09274447949526815]",unseen_subject_seen_item,test,0,p0,0,0_p0_tq_1,Warum muss die Umlaufszeit für einen Halbkreis unabhängig vom Radius sein?,0_0.0,0,0.0
+93,0,"[0.8584728190642185, 0.14152718093578148]",unseen_subject_seen_item,test,0,p0,3,3_p0_tq_1,Warum muss die Umlaufszeit für einen Halbkreis unabhängig vom Radius sein?,0_1.0,0,1.0
+94,0,"[1.0, 0.0]",unseen_subject_seen_item,test,0,p0,4,4_p0_tq_1,Warum muss die Umlaufszeit für einen Halbkreis unabhängig vom Radius sein?,0_1.0,0,1.0
+95,0,"[1.0, 0.0]",unseen_subject_seen_item,test,0,p0,6,6_p0_tq_1,Warum muss die Umlaufszeit für einen Halbkreis unabhängig vom Radius sein?,0_1.0,0,1.0
+96,0,"[1.0, 0.0]",unseen_subject_seen_item,test,0,p0,8,8_p0_tq_1,Warum muss die Umlaufszeit für einen Halbkreis unabhängig vom Radius sein?,0_1.0,0,1.0
+97,0,"[1.0, 0.0]",unseen_subject_seen_item,test,0,p0,10,10_p0_tq_1,Warum muss die Umlaufszeit für einen Halbkreis unabhängig vom Radius sein?,0_0.0,0,0.0
+98,0,"[0.9019182652210176, 0.0980817347789825]",unseen_subject_seen_item,test,0,p0,16,16_p0_tq_1,Warum muss die Umlaufszeit für einen Halbkreis unabhängig vom Radius sein?,0_0.0,0,0.0
+99,0,"[0.9047883414295628, 0.0952116585704372]",unseen_subject_seen_item,test,0,p0,36,36_p0_tq_1,Warum muss die Umlaufszeit für einen Halbkreis unabhängig vom Radius sein?,0_1.0,0,1.0
+100,0,"[0.9369774919614148, 0.06302250803858521]",unseen_subject_seen_item,test,0,p0,41,41_p0_tq_1,Warum muss die Umlaufszeit für einen Halbkreis unabhängig vom Radius sein?,0_1.0,0,1.0
+101,0,"[0.7525807612616837, 0.24741923873831642]",unseen_subject_seen_item,test,0,p0,62,62_p0_tq_1,Warum muss die Umlaufszeit für einen Halbkreis unabhängig vom Radius sein?,0_0.0,0,0.0
+102,0,"[1.0, 0.0]",unseen_subject_seen_item,test,0,p0,64,64_p0_tq_1,Warum muss die Umlaufszeit für einen Halbkreis unabhängig vom Radius sein?,0_1.0,0,1.0
+103,0,"[1.0, 0.0]",unseen_subject_seen_item,test,0,p0,70,70_p0_tq_1,Warum muss die Umlaufszeit für einen Halbkreis unabhängig vom Radius sein?,0_0.0,0,0.0
+104,0,"[0.8831045343792713, 0.11689546562072858]",unseen_subject_seen_item,test,0,p0,83,83_p0_tq_1,Warum muss die Umlaufszeit für einen Halbkreis unabhängig vom Radius sein?,0_1.0,0,1.0
+105,0,"[1.0, 0.0]",unseen_subject_seen_item,test,0,p0,91,91_p0_tq_1,Warum muss die Umlaufszeit für einen Halbkreis unabhängig vom Radius sein?,0_1.0,0,1.0
+106,0,"[0.8319976102078265, 0.16800238979217347]",unseen_subject_seen_item,test,0,p0,94,94_p0_tq_1,Warum muss die Umlaufszeit für einen Halbkreis unabhängig vom Radius sein?,0_0.0,0,0.0
+107,0,"[0.7493538822262173, 0.2506461177737826]",unseen_subject_seen_item,test,0,p0,95,95_p0_tq_1,Warum muss die Umlaufszeit für einen Halbkreis unabhängig vom Radius sein?,0_1.0,0,1.0
+108,0,"[0.9072555205047319, 0.09274447949526815]",unseen_subject_seen_item,test,0,p0,96,96_p0_tq_1,Warum muss die Umlaufszeit für einen Halbkreis unabhängig vom Radius sein?,0_0.0,0,0.0
+109,0,"[0.8190843726572616, 0.18091562734273842]",unseen_subject_seen_item,test,0,p0,97,97_p0_tq_1,Warum muss die Umlaufszeit für einen Halbkreis unabhängig vom Radius sein?,0_1.0,0,1.0
+110,0,"[0.9214953271028037, 0.07850467289719627]",unseen_subject_seen_item,test,0,p0,103,103_p0_tq_1,Warum muss die Umlaufszeit für einen Halbkreis unabhängig vom Radius sein?,0_0.0,0,0.0
+111,0,"[0.7560884954076413, 0.2439115045923587]",unseen_subject_seen_item,test,0,p2,0,0_p2_tq_1,Welche Eigenschaft besitzen photonische Kristalle?,0_0.0,0,0.0
+112,1,"[0.5703186961723861, 0.42968130382761405]",unseen_subject_seen_item,test,0,p2,3,3_p2_tq_1,Welche Eigenschaft besitzen photonische Kristalle?,1_1.0,1,1.0
+113,0,"[0.489995204908176, 0.5100047950918241]",unseen_subject_seen_item,test,0,p2,4,4_p2_tq_1,Welche Eigenschaft besitzen photonische Kristalle?,0_0.0,0,0.0
+114,0,"[0.6985575308185168, 0.3014424691814831]",unseen_subject_seen_item,test,0,p2,6,6_p2_tq_1,Welche Eigenschaft besitzen photonische Kristalle?,0_0.0,0,0.0
+115,0,"[0.6559851595733694, 0.34401484042663055]",unseen_subject_seen_item,test,0,p2,8,8_p2_tq_1,Welche Eigenschaft besitzen photonische Kristalle?,0_0.0,0,0.0
+116,0,"[0.5723106929392799, 0.42768930706072006]",unseen_subject_seen_item,test,0,p2,10,10_p2_tq_1,Welche Eigenschaft besitzen photonische Kristalle?,0_1.0,0,1.0
+117,1,"[0.6785857447320386, 0.3214142552679614]",unseen_subject_seen_item,test,0,p2,16,16_p2_tq_1,Welche Eigenschaft besitzen photonische Kristalle?,1_1.0,1,1.0
+118,0,"[0.5558601163111202, 0.4441398836888798]",unseen_subject_seen_item,test,0,p2,36,36_p2_tq_1,Welche Eigenschaft besitzen photonische Kristalle?,0_0.0,0,0.0
+119,0,"[0.9082793376529879, 0.09172066234701223]",unseen_subject_seen_item,test,0,p2,41,41_p2_tq_1,Welche Eigenschaft besitzen photonische Kristalle?,0_0.0,0,0.0
+120,0,"[0.8600477056552656, 0.13995229434473436]",unseen_subject_seen_item,test,0,p2,62,62_p2_tq_1,Welche Eigenschaft besitzen photonische Kristalle?,0_1.0,0,1.0
+121,0,"[0.9260377358490566, 0.0739622641509434]",unseen_subject_seen_item,test,0,p2,64,64_p2_tq_1,Welche Eigenschaft besitzen photonische Kristalle?,0_1.0,0,1.0
+122,0,"[0.8311593109974851, 0.1688406890025149]",unseen_subject_seen_item,test,0,p2,70,70_p2_tq_1,Welche Eigenschaft besitzen photonische Kristalle?,0_1.0,0,1.0
+123,0,"[0.9539906103286384, 0.0460093896713615]",unseen_subject_seen_item,test,0,p2,83,83_p2_tq_1,Welche Eigenschaft besitzen photonische Kristalle?,0_1.0,0,1.0
+124,0,"[0.5229340241177944, 0.4770659758822056]",unseen_subject_seen_item,test,0,p2,91,91_p2_tq_1,Welche Eigenschaft besitzen photonische Kristalle?,0_1.0,0,1.0
+125,0,"[0.8783427903057011, 0.12165720969429886]",unseen_subject_seen_item,test,0,p2,94,94_p2_tq_1,Welche Eigenschaft besitzen photonische Kristalle?,0_1.0,0,1.0
+126,0,"[0.8207514269671823, 0.17924857303281766]",unseen_subject_seen_item,test,0,p2,95,95_p2_tq_1,Welche Eigenschaft besitzen photonische Kristalle?,0_0.0,0,0.0
+127,0,"[0.7226696921881999, 0.2773303078118001]",unseen_subject_seen_item,test,0,p2,96,96_p2_tq_1,Welche Eigenschaft besitzen photonische Kristalle?,0_1.0,0,1.0
+128,0,"[0.640879858358699, 0.35912014164130096]",unseen_subject_seen_item,test,0,p2,97,97_p2_tq_1,Welche Eigenschaft besitzen photonische Kristalle?,0_1.0,0,1.0
+129,0,"[0.6429733236953507, 0.3570266763046494]",unseen_subject_seen_item,test,0,p2,103,103_p2_tq_1,Welche Eigenschaft besitzen photonische Kristalle?,0_1.0,0,1.0
+130,0,"[0.8291139240506329, 0.17088607594936708]",unseen_subject_seen_item,test,0,p3,0,0_p3_tq_1,"Was spricht dagegen, Neutronen als Elementarteilchen zu betrachten?",0_1.0,0,1.0
+131,0,"[0.6968959427038232, 0.3031040572961769]",unseen_subject_seen_item,test,0,p3,3,3_p3_tq_1,"Was spricht dagegen, Neutronen als Elementarteilchen zu betrachten?",0_1.0,0,1.0
+132,0,"[0.7925778142821239, 0.20742218571787613]",unseen_subject_seen_item,test,0,p3,4,4_p3_tq_1,"Was spricht dagegen, Neutronen als Elementarteilchen zu betrachten?",0_1.0,0,1.0
+133,0,"[0.8252596478884012, 0.1747403521115989]",unseen_subject_seen_item,test,0,p3,6,6_p3_tq_1,"Was spricht dagegen, Neutronen als Elementarteilchen zu betrachten?",0_1.0,0,1.0
+134,0,"[0.9105022831050228, 0.08949771689497718]",unseen_subject_seen_item,test,0,p3,8,8_p3_tq_1,"Was spricht dagegen, Neutronen als Elementarteilchen zu betrachten?",0_1.0,0,1.0
+135,0,"[0.9047883414295628, 0.0952116585704372]",unseen_subject_seen_item,test,0,p3,10,10_p3_tq_1,"Was spricht dagegen, Neutronen als Elementarteilchen zu betrachten?",0_1.0,0,1.0
+136,0,"[0.855600322320709, 0.1443996776792909]",unseen_subject_seen_item,test,0,p3,16,16_p3_tq_1,"Was spricht dagegen, Neutronen als Elementarteilchen zu betrachten?",0_1.0,0,1.0
+137,0,"[1.0, 0.0]",unseen_subject_seen_item,test,0,p3,36,36_p3_tq_1,"Was spricht dagegen, Neutronen als Elementarteilchen zu betrachten?",0_1.0,0,1.0
+138,0,"[0.671147047183477, 0.32885295281652305]",unseen_subject_seen_item,test,0,p3,41,41_p3_tq_1,"Was spricht dagegen, Neutronen als Elementarteilchen zu betrachten?",0_0.0,0,0.0
+139,0,"[0.9037643207855973, 0.09623567921440264]",unseen_subject_seen_item,test,0,p3,62,62_p3_tq_1,"Was spricht dagegen, Neutronen als Elementarteilchen zu betrachten?",0_1.0,0,1.0
+140,0,"[0.774757917457482, 0.22524208254251796]",unseen_subject_seen_item,test,0,p3,64,64_p3_tq_1,"Was spricht dagegen, Neutronen als Elementarteilchen zu betrachten?",0_0.0,0,0.0
+141,0,"[0.748329861582252, 0.25167013841774805]",unseen_subject_seen_item,test,0,p3,70,70_p3_tq_1,"Was spricht dagegen, Neutronen als Elementarteilchen zu betrachten?",0_1.0,0,1.0
+142,0,"[0.7527279082822496, 0.24727209171775044]",unseen_subject_seen_item,test,0,p3,83,83_p3_tq_1,"Was spricht dagegen, Neutronen als Elementarteilchen zu betrachten?",0_0.0,0,0.0
+143,0,"[0.9105022831050228, 0.08949771689497718]",unseen_subject_seen_item,test,0,p3,91,91_p3_tq_1,"Was spricht dagegen, Neutronen als Elementarteilchen zu betrachten?",0_1.0,0,1.0
+144,0,"[0.855600322320709, 0.1443996776792909]",unseen_subject_seen_item,test,0,p3,94,94_p3_tq_1,"Was spricht dagegen, Neutronen als Elementarteilchen zu betrachten?",0_1.0,0,1.0
+145,0,"[0.7794775073963048, 0.22052249260369522]",unseen_subject_seen_item,test,0,p3,95,95_p3_tq_1,"Was spricht dagegen, Neutronen als Elementarteilchen zu betrachten?",0_1.0,0,1.0
+146,0,"[0.7426421322592514, 0.2573578677407487]",unseen_subject_seen_item,test,0,p3,96,96_p3_tq_1,"Was spricht dagegen, Neutronen als Elementarteilchen zu betrachten?",0_1.0,0,1.0
+147,0,"[0.9037643207855973, 0.09623567921440264]",unseen_subject_seen_item,test,0,p3,97,97_p3_tq_1,"Was spricht dagegen, Neutronen als Elementarteilchen zu betrachten?",0_0.0,0,0.0
+148,1,"[0.8665933663184902, 0.13340663368150998]",unseen_subject_seen_item,test,0,p3,103,103_p3_tq_1,"Was spricht dagegen, Neutronen als Elementarteilchen zu betrachten?",1_1.0,1,1.0
+149,0,"[0.8396162071556557, 0.1603837928443443]",unseen_subject_seen_item,test,0,p4,0,0_p4_tq_1,Wozu kann holografische Interferometrie verwendet werden?,0_1.0,0,1.0
+150,0,"[1.0, 0.0]",unseen_subject_seen_item,test,0,p4,3,3_p4_tq_1,Wozu kann holografische Interferometrie verwendet werden?,0_1.0,0,1.0
+151,0,"[0.8990886495443249, 0.10091135045567523]",unseen_subject_seen_item,test,0,p4,4,4_p4_tq_1,Wozu kann holografische Interferometrie verwendet werden?,0_1.0,0,1.0
+152,0,"[1.0, 0.0]",unseen_subject_seen_item,test,0,p4,6,6_p4_tq_1,Wozu kann holografische Interferometrie verwendet werden?,0_1.0,0,1.0
+153,0,"[0.9085820895522388, 0.0914179104477612]",unseen_subject_seen_item,test,0,p4,8,8_p4_tq_1,Wozu kann holografische Interferometrie verwendet werden?,0_1.0,0,1.0
+154,0,"[0.9105022831050228, 0.08949771689497718]",unseen_subject_seen_item,test,0,p4,10,10_p4_tq_1,Wozu kann holografische Interferometrie verwendet werden?,0_1.0,0,1.0
+155,0,"[0.8536801287679252, 0.14631987123207493]",unseen_subject_seen_item,test,0,p4,16,16_p4_tq_1,Wozu kann holografische Interferometrie verwendet werden?,0_1.0,0,1.0
+156,0,"[0.8470163044367037, 0.15298369556329622]",unseen_subject_seen_item,test,0,p4,36,36_p4_tq_1,Wozu kann holografische Interferometrie verwendet werden?,0_1.0,0,1.0
+157,0,"[1.0, 0.0]",unseen_subject_seen_item,test,0,p4,41,41_p4_tq_1,Wozu kann holografische Interferometrie verwendet werden?,0_1.0,0,1.0
+158,0,"[1.0, 0.0]",unseen_subject_seen_item,test,0,p4,64,64_p4_tq_1,Wozu kann holografische Interferometrie verwendet werden?,0_1.0,0,1.0
+159,0,"[0.9230702136938508, 0.07692978630614913]",unseen_subject_seen_item,test,0,p4,70,70_p4_tq_1,Wozu kann holografische Interferometrie verwendet werden?,0_1.0,0,1.0
+160,0,"[0.8420784781566608, 0.1579215218433392]",unseen_subject_seen_item,test,0,p4,83,83_p4_tq_1,Wozu kann holografische Interferometrie verwendet werden?,0_1.0,0,1.0
+161,0,"[1.0, 0.0]",unseen_subject_seen_item,test,0,p4,91,91_p4_tq_1,Wozu kann holografische Interferometrie verwendet werden?,0_1.0,0,1.0
+162,0,"[1.0, 0.0]",unseen_subject_seen_item,test,0,p4,94,94_p4_tq_1,Wozu kann holografische Interferometrie verwendet werden?,0_1.0,0,1.0
+163,0,"[0.9230702136938508, 0.07692978630614913]",unseen_subject_seen_item,test,0,p4,95,95_p4_tq_1,Wozu kann holografische Interferometrie verwendet werden?,0_1.0,0,1.0
+164,0,"[0.8420784781566606, 0.1579215218433392]",unseen_subject_seen_item,test,0,p4,96,96_p4_tq_1,Wozu kann holografische Interferometrie verwendet werden?,0_1.0,0,1.0
+165,0,"[0.8271735703927874, 0.17282642960721267]",unseen_subject_seen_item,test,0,p4,97,97_p4_tq_1,Wozu kann holografische Interferometrie verwendet werden?,0_0.0,0,0.0
+166,0,"[1.0, 0.0]",unseen_subject_seen_item,test,0,p4,103,103_p4_tq_1,Wozu kann holografische Interferometrie verwendet werden?,0_1.0,0,1.0
+0,0,"[0.8311593109974851, 0.1688406890025149]",unseen_subject_unseen_item,test,0,b0,0,0_b0_tq_1,Nach welchem Kriterium werden die DNA-Fragmente getrennt?,0_1.0,0,1.0
+1,0,"[0.736544440396387, 0.26345555960361305]",unseen_subject_unseen_item,test,0,b0,3,3_b0_tq_1,Nach welchem Kriterium werden die DNA-Fragmente getrennt?,0_1.0,0,1.0
+2,0,"[0.8153202822671158, 0.18467971773288408]",unseen_subject_unseen_item,test,0,b0,4,4_b0_tq_1,Nach welchem Kriterium werden die DNA-Fragmente getrennt?,0_1.0,0,1.0
+3,0,"[0.7095021013031861, 0.29049789869681375]",unseen_subject_unseen_item,test,0,b0,6,6_b0_tq_1,Nach welchem Kriterium werden die DNA-Fragmente getrennt?,0_1.0,0,1.0
+4,0,"[0.7095021013031861, 0.29049789869681375]",unseen_subject_unseen_item,test,0,b0,8,8_b0_tq_1,Nach welchem Kriterium werden die DNA-Fragmente getrennt?,0_0.0,0,0.0
+5,0,"[0.6640664788006081, 0.3359335211993918]",unseen_subject_unseen_item,test,0,b0,10,10_b0_tq_1,Nach welchem Kriterium werden die DNA-Fragmente getrennt?,0_0.0,0,0.0
+6,0,"[0.7383904959609667, 0.2616095040390332]",unseen_subject_unseen_item,test,0,b0,16,16_b0_tq_1,Nach welchem Kriterium werden die DNA-Fragmente getrennt?,0_0.0,0,0.0
+7,0,"[0.8895459315591493, 0.11045406844085068]",unseen_subject_unseen_item,test,0,b0,36,36_b0_tq_1,Nach welchem Kriterium werden die DNA-Fragmente getrennt?,0_0.0,0,0.0
+8,0,"[0.8244475610305191, 0.175552438969481]",unseen_subject_unseen_item,test,0,b0,41,41_b0_tq_1,Nach welchem Kriterium werden die DNA-Fragmente getrennt?,0_0.0,0,0.0
+9,0,"[0.6485171876879029, 0.3514828123120971]",unseen_subject_unseen_item,test,0,b0,64,64_b0_tq_1,Nach welchem Kriterium werden die DNA-Fragmente getrennt?,0_0.0,0,0.0
+10,0,"[0.6701802385911402, 0.32981976140885977]",unseen_subject_unseen_item,test,0,b0,70,70_b0_tq_1,Nach welchem Kriterium werden die DNA-Fragmente getrennt?,0_1.0,0,1.0
+11,0,"[0.8521841377444836, 0.1478158622555162]",unseen_subject_unseen_item,test,0,b0,83,83_b0_tq_1,Nach welchem Kriterium werden die DNA-Fragmente getrennt?,0_0.0,0,0.0
+12,0,"[0.7295285613441576, 0.27047143865584256]",unseen_subject_unseen_item,test,0,b0,91,91_b0_tq_1,Nach welchem Kriterium werden die DNA-Fragmente getrennt?,0_1.0,0,1.0
+13,0,"[0.7858398519626985, 0.21416014803730157]",unseen_subject_unseen_item,test,0,b0,94,94_b0_tq_1,Nach welchem Kriterium werden die DNA-Fragmente getrennt?,0_1.0,0,1.0
+14,0,"[0.6439445497925622, 0.3560554502074378]",unseen_subject_unseen_item,test,0,b0,95,95_b0_tq_1,Nach welchem Kriterium werden die DNA-Fragmente getrennt?,0_1.0,0,1.0
+15,1,"[0.7185665724031333, 0.2814334275968666]",unseen_subject_unseen_item,test,0,b0,96,96_b0_tq_1,Nach welchem Kriterium werden die DNA-Fragmente getrennt?,1_0.0,1,0.0
+16,0,"[0.5039736033177571, 0.49602639668224296]",unseen_subject_unseen_item,test,0,b0,97,97_b0_tq_1,Nach welchem Kriterium werden die DNA-Fragmente getrennt?,0_0.0,0,0.0
+17,0,"[0.882667566823738, 0.117332433176262]",unseen_subject_unseen_item,test,0,b0,103,103_b0_tq_1,Nach welchem Kriterium werden die DNA-Fragmente getrennt?,0_1.0,0,1.0
+18,0,"[0.7701479183105404, 0.2298520816894596]",unseen_subject_unseen_item,test,0,p1,0,0_p1_tq_1,"Welchem Wert muss die Geschwindigkeitsdifferenz eines absorbierendes und eines emittierendes Atom entsprechen, so dass die Anregungen dieselbe Frequenz haben?",0_1.0,0,1.0
+19,1,"[0.5460054504121881, 0.45399454958781194]",unseen_subject_unseen_item,test,0,p1,3,3_p1_tq_1,"Welchem Wert muss die Geschwindigkeitsdifferenz eines absorbierendes und eines emittierendes Atom entsprechen, so dass die Anregungen dieselbe Frequenz haben?",1_1.0,1,1.0
+20,0,"[0.5249879058782637, 0.4750120941217362]",unseen_subject_unseen_item,test,0,p1,4,4_p1_tq_1,"Welchem Wert muss die Geschwindigkeitsdifferenz eines absorbierendes und eines emittierendes Atom entsprechen, so dass die Anregungen dieselbe Frequenz haben?",0_1.0,0,1.0
+21,0,"[0.6516451556793739, 0.34835484432062613]",unseen_subject_unseen_item,test,0,p1,6,6_p1_tq_1,"Welchem Wert muss die Geschwindigkeitsdifferenz eines absorbierendes und eines emittierendes Atom entsprechen, so dass die Anregungen dieselbe Frequenz haben?",0_0.0,0,0.0
+22,0,"[0.44842008619634266, 0.5515799138036572]",unseen_subject_unseen_item,test,0,p1,8,8_p1_tq_1,"Welchem Wert muss die Geschwindigkeitsdifferenz eines absorbierendes und eines emittierendes Atom entsprechen, so dass die Anregungen dieselbe Frequenz haben?",0_0.0,0,0.0
+23,0,"[0.9082793376529879, 0.09172066234701223]",unseen_subject_unseen_item,test,0,p1,10,10_p1_tq_1,"Welchem Wert muss die Geschwindigkeitsdifferenz eines absorbierendes und eines emittierendes Atom entsprechen, so dass die Anregungen dieselbe Frequenz haben?",0_0.0,0,0.0
+24,0,"[0.7864318876093354, 0.21356811239066462]",unseen_subject_unseen_item,test,0,p1,16,16_p1_tq_1,"Welchem Wert muss die Geschwindigkeitsdifferenz eines absorbierendes und eines emittierendes Atom entsprechen, so dass die Anregungen dieselbe Frequenz haben?",0_1.0,0,1.0
+25,0,"[0.7062092824392792, 0.2937907175607208]",unseen_subject_unseen_item,test,0,p1,36,36_p1_tq_1,"Welchem Wert muss die Geschwindigkeitsdifferenz eines absorbierendes und eines emittierendes Atom entsprechen, so dass die Anregungen dieselbe Frequenz haben?",0_0.0,0,0.0
+26,0,"[0.7274878633377411, 0.2725121366622588]",unseen_subject_unseen_item,test,0,p1,41,41_p1_tq_1,"Welchem Wert muss die Geschwindigkeitsdifferenz eines absorbierendes und eines emittierendes Atom entsprechen, so dass die Anregungen dieselbe Frequenz haben?",0_1.0,0,1.0
+27,0,"[0.9082793376529879, 0.09172066234701223]",unseen_subject_unseen_item,test,0,p1,62,62_p1_tq_1,"Welchem Wert muss die Geschwindigkeitsdifferenz eines absorbierendes und eines emittierendes Atom entsprechen, so dass die Anregungen dieselbe Frequenz haben?",0_0.0,0,0.0
+28,0,"[0.8288305530410793, 0.17116944695892067]",unseen_subject_unseen_item,test,0,p1,64,64_p1_tq_1,"Welchem Wert muss die Geschwindigkeitsdifferenz eines absorbierendes und eines emittierendes Atom entsprechen, so dass die Anregungen dieselbe Frequenz haben?",0_1.0,0,1.0
+29,0,"[0.7076560457386064, 0.2923439542613936]",unseen_subject_unseen_item,test,0,p1,70,70_p1_tq_1,"Welchem Wert muss die Geschwindigkeitsdifferenz eines absorbierendes und eines emittierendes Atom entsprechen, so dass die Anregungen dieselbe Frequenz haben?",0_0.0,0,0.0
+30,0,"[0.7318933218846044, 0.2681066781153956]",unseen_subject_unseen_item,test,0,p1,83,83_p1_tq_1,"Welchem Wert muss die Geschwindigkeitsdifferenz eines absorbierendes und eines emittierendes Atom entsprechen, so dass die Anregungen dieselbe Frequenz haben?",0_0.0,0,0.0
+31,1,"[0.7238630050611936, 0.27613699493880633]",unseen_subject_unseen_item,test,0,p1,91,91_p1_tq_1,"Welchem Wert muss die Geschwindigkeitsdifferenz eines absorbierendes und eines emittierendes Atom entsprechen, so dass die Anregungen dieselbe Frequenz haben?",1_0.0,1,0.0
+32,0,"[0.9082793376529879, 0.09172066234701223]",unseen_subject_unseen_item,test,0,p1,94,94_p1_tq_1,"Welchem Wert muss die Geschwindigkeitsdifferenz eines absorbierendes und eines emittierendes Atom entsprechen, so dass die Anregungen dieselbe Frequenz haben?",0_0.0,0,0.0
+33,0,"[0.8452568296144026, 0.15474317038559743]",unseen_subject_unseen_item,test,0,p1,95,95_p1_tq_1,"Welchem Wert muss die Geschwindigkeitsdifferenz eines absorbierendes und eines emittierendes Atom entsprechen, so dass die Anregungen dieselbe Frequenz haben?",0_1.0,0,1.0
+34,0,"[1.0, 0.0]",unseen_subject_unseen_item,test,0,p1,96,96_p1_tq_1,"Welchem Wert muss die Geschwindigkeitsdifferenz eines absorbierendes und eines emittierendes Atom entsprechen, so dass die Anregungen dieselbe Frequenz haben?",0_0.0,0,0.0
+35,0,"[0.6638382387933224, 0.3361617612066776]",unseen_subject_unseen_item,test,0,p1,97,97_p1_tq_1,"Welchem Wert muss die Geschwindigkeitsdifferenz eines absorbierendes und eines emittierendes Atom entsprechen, so dass die Anregungen dieselbe Frequenz haben?",0_1.0,0,1.0
+36,0,"[0.7137511518957386, 0.28624884810426154]",unseen_subject_unseen_item,test,0,p1,103,103_p1_tq_1,"Welchem Wert muss die Geschwindigkeitsdifferenz eines absorbierendes und eines emittierendes Atom entsprechen, so dass die Anregungen dieselbe Frequenz haben?",0_0.0,0,0.0
+37,0,"[0.9539906103286384, 0.0460093896713615]",unseen_subject_unseen_item,test,0,p5,0,0_p5_tq_1,Warum wird die effektive Elektronenmasse benutzt?,0_1.0,0,1.0
+38,0,"[0.8019182652210176, 0.1980817347789825]",unseen_subject_unseen_item,test,0,p5,3,3_p5_tq_1,Warum wird die effektive Elektronenmasse benutzt?,0_1.0,0,1.0
+39,0,"[0.55504087875672, 0.44495912124328]",unseen_subject_unseen_item,test,0,p5,4,4_p5_tq_1,Warum wird die effektive Elektronenmasse benutzt?,0_1.0,0,1.0
+40,0,"[0.660525951874463, 0.33947404812553705]",unseen_subject_unseen_item,test,0,p5,6,6_p5_tq_1,Warum wird die effektive Elektronenmasse benutzt?,0_1.0,0,1.0
+41,0,"[0.5323242344654371, 0.46767576553456297]",unseen_subject_unseen_item,test,0,p5,8,8_p5_tq_1,Warum wird die effektive Elektronenmasse benutzt?,0_0.0,0,0.0
+42,0,"[0.8103683476439052, 0.1896316523560949]",unseen_subject_unseen_item,test,0,p5,10,10_p5_tq_1,Warum wird die effektive Elektronenmasse benutzt?,0_1.0,0,1.0
+43,0,"[0.6944960795031414, 0.30550392049685865]",unseen_subject_unseen_item,test,0,p5,16,16_p5_tq_1,Warum wird die effektive Elektronenmasse benutzt?,0_1.0,0,1.0
+44,0,"[0.7475177747243699, 0.25248222527563013]",unseen_subject_unseen_item,test,0,p5,36,36_p5_tq_1,Warum wird die effektive Elektronenmasse benutzt?,0_1.0,0,1.0
+45,0,"[0.7592320465602421, 0.24076795343975785]",unseen_subject_unseen_item,test,0,p5,41,41_p5_tq_1,Warum wird die effektive Elektronenmasse benutzt?,0_1.0,0,1.0
+46,0,"[0.8353667281896946, 0.16463327181030532]",unseen_subject_unseen_item,test,0,p5,62,62_p5_tq_1,Warum wird die effektive Elektronenmasse benutzt?,0_0.0,0,0.0
+47,0,"[0.8727059024796688, 0.12729409752033127]",unseen_subject_unseen_item,test,0,p5,64,64_p5_tq_1,Warum wird die effektive Elektronenmasse benutzt?,0_1.0,0,1.0
+48,0,"[0.9190082644628099, 0.08099173553719008]",unseen_subject_unseen_item,test,0,p5,70,70_p5_tq_1,Warum wird die effektive Elektronenmasse benutzt?,0_1.0,0,1.0
+49,0,"[0.5865370200156598, 0.41346297998434023]",unseen_subject_unseen_item,test,0,p5,83,83_p5_tq_1,Warum wird die effektive Elektronenmasse benutzt?,0_1.0,0,1.0
+50,0,"[0.7584369418835456, 0.24156305811645443]",unseen_subject_unseen_item,test,0,p5,91,91_p5_tq_1,Warum wird die effektive Elektronenmasse benutzt?,0_1.0,0,1.0
+51,0,"[0.564653332829467, 0.43534666717053305]",unseen_subject_unseen_item,test,0,p5,94,94_p5_tq_1,Warum wird die effektive Elektronenmasse benutzt?,0_1.0,0,1.0
+52,0,"[0.729376612106715, 0.270623387893285]",unseen_subject_unseen_item,test,0,p5,95,95_p5_tq_1,Warum wird die effektive Elektronenmasse benutzt?,0_0.0,0,0.0
+53,0,"[0.729376612106715, 0.270623387893285]",unseen_subject_unseen_item,test,0,p5,96,96_p5_tq_1,Warum wird die effektive Elektronenmasse benutzt?,0_1.0,0,1.0
+54,0,"[0.713578797289623, 0.286421202710377]",unseen_subject_unseen_item,test,0,p5,97,97_p5_tq_1,Warum wird die effektive Elektronenmasse benutzt?,0_0.0,0,0.0
+55,0,"[0.9020890099909173, 0.09791099000908265]",unseen_subject_unseen_item,test,0,p5,103,103_p5_tq_1,Warum wird die effektive Elektronenmasse benutzt?,0_1.0,0,1.0

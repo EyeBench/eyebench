@@ -1,0 +1,16 @@
+Model,Unseen Reader_\makecell{Balanced\\Accuracy},Unseen Text_\makecell{Balanced\\Accuracy},Unseen Text \& Reader_\makecell{Balanced\\Accuracy},Average_\makecell{Balanced\\Accuracy},Unseen Reader_AUROC,Unseen Text_AUROC,Unseen Text \& Reader_AUROC,Average_AUROC
+Majority Class / Chance,50.0 ± 0.0,50.0 ± 0.0,50.0 ± 0.0,50.0 ± 0.0,50.0 ± 0.0,50.0 ± 0.0,50.0 ± 0.0,50.0 ± 0.0
+Reading Speed,52.5 ± 1.2,50.7 ± 1.6,49.3 ± 3.6,51.3 ± 1.7,52.2 ± 1.5,51.1 ± 2.0,53.5 ± 6.1,51.9 ± 2.2
+Text-Only Roberta,57.6 ± 0.9,48.8 ± 1.7,50.3 ± 1.7,51.7 ± 1.3,62.5 ± 1.5,48.2 ± 1.8,48.2 ± 2.4,56.3 ± 1.6
+Logistic Regression~\cite{meziere2023using},53.6 ± 0.9,53.9 ± 1.8,51.3 ± 2.1,52.9 ± 0.4,53.9 ± 1.8,55.9 ± 2.2,53.2 ± 0.6,54.1 ± 0.7
+SVM~\cite{hollenstein2023zuco},51.3 ± 0.9,50.1 ± 0.7,50.6 ± 0.9,50.6 ± 0.7,51.3 ± 0.9,50.1 ± 0.7,50.6 ± 0.9,50.6 ± 0.7
+Random Forest~\cite{makowski2024detection},55.8 ± 1.5,48.3 ± 1.4,48.2 ± 2.3,51.8 ± 1.2,59.2 ± 2.2,49.9 ± 1.7,46.1 ± 2.6,54.3 ± 1.2
+AhnRNN~\citep{ahn2020towards},50.0 ± 0.0,50.0 ± 0.0,50.0 ± 0.0,50.0 ± 0.0,50.0 ± 0.0,50.0 ± 0.0,50.0 ± 0.0,50.0 ± 0.0
+AhnCNN~\citep{ahn2020towards},50.0 ± 1.1,49.7 ± 1.2,49.5 ± 2.0,49.4 ± 0.9,51.4 ± 1.8,53.9 ± 2.6,47.4 ± 2.3,51.6 ± 2.0
+BEyeLSTM~\citep{reich_inferring_2022},58.5 ± 1.1,51.6 ± 0.9,51.0 ± 1.6,53.2 ± 0.8,61.1 ± 1.9,51.5 ± 2.7,51.7 ± 4.2,54.7 ± 1.4
+PLM-AS~\citep{Yang2023PLMASPL},54.6 ± 1.5,50.1 ± 0.6,50.0 ± 1.2,52.1 ± 0.8,58.3 ± 0.6,53.8 ± 0.6,53.7 ± 1.0,56.5 ± 0.3
+PLM-AS-RM~\citep{haller2022eye},58.1 ± 1.0,49.0 ± 1.0,46.1 ± 1.7,53.9 ± 1.4,61.8 ± 1.1,53.2 ± 2.3,51.5 ± 4.7,59.0 ± 1.2
+RoBERTEye-W~\citep{Shubi2024Finegrained},58.1 ± 1.0,49.7 ± 0.1,48.8 ± 0.7,52.6 ± 0.9,61.1 ± 0.5,51.7 ± 2.5,49.7 ± 3.2,56.8 ± 1.2
+RoBERTEye-F~\citep{Shubi2024Finegrained},50.2 ± 0.2,50.0 ± 0.0,50.0 ± 0.0,50.0 ± 0.1,57.3 ± 2.7,52.7 ± 2.1,49.1 ± 3.7,54.7 ± 2.2
+MAG-Eye~\citep{Shubi2024Finegrained},59.3 ± 1.1,49.8 ± 0.2,49.1 ± 0.8,54.2 ± 1.1,63.7 ± 1.5,48.7 ± 2.4,48.6 ± 3.9,58.3 ± 1.3
+PostFusion-Eye~\citep{Shubi2024Finegrained},52.6 ± 1.6,50.1 ± 1.1,50.0 ± 1.6,51.3 ± 0.7,56.6 ± 2.0,51.2 ± 2.4,48.6 ± 2.6,53.0 ± 1.8

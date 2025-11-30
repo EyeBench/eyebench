@@ -1,0 +1,30 @@
+#!/bin/bash
+
+#SBATCH --job-name=AhnCNN_OneStop_RC-array
+#SBATCH --output=logs/AhnCNN_OneStop_RC-%A_%a.out
+#SBATCH --error=logs/AhnCNN_OneStop_RC-%A_%a.err
+#SBATCH --partition=work,mig
+#SBATCH --ntasks=1
+#SBATCH --nodes=1
+#SBATCH --gpus=1
+#SBATCH --qos=basic
+#SBATCH --cpus-per-task=10
+#SBATCH --mem=75G
+#SBATCH --array=0-9
+#SBATCH --mail-type=ALL
+#SBATCH --mail-user=shubi@campus.technion.ac.il
+
+sweep_ids=(sb32ii57 nywp0t6s ltz2jm66 yfabu4ta f4yelogk d1q8up6s r5k1d1gu lcxrhkhu qt1gln66 4phkk13m)
+SWEEP_ID=${sweep_ids[$SLURM_ARRAY_TASK_ID]}
+
+
+srun --overlap --ntasks=1 --nodes=1 --cpus-per-task=$SLURM_CPUS_PER_TASK -p work,mig \
+    --container-image=/rg/berzak_prj/shubi/prj/rev05_pytorchlightning+pytorch_lightning.sqsh \
+    --container-mounts="/rg/berzak_prj/shubi:/home/shubi" \
+    --container-workdir=/home/shubi/eyebench_private \
+    bash -c "
+echo 'Starting job on $(date)'
+source /home/shubi/prj/nvidia_pytorch_25_03_py3_mamba_wrapper.sh
+conda activate eyebench
+wandb agent EyeRead/OneStop_RC_20251118/$SWEEP_ID"
+    

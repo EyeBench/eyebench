@@ -1,0 +1,10 @@
+column,type,count,percent_null,min,quantile_10,mean,median,quantile_90,max,std,nunique,distribution
+annotator_labels,categorical,2500,0.0,,,,,,,,2,"{'non_hallucinated': 61.4, 'hallucinated': 38.6}"
+fixation_durations,categorical,2500,0.0,,,,,,,,2500,
+fixation_seqs,categorical,2500,0.0,,,,,,,,212,
+fixation_word_ids,categorical,2500,0.0,,,,,,,,2500,
+fixation_word_texts,categorical,2500,0.0,,,,,,,,2500,
+participant_id,categorical,2500,0.0,,,,,,,,5,"{'p01': 20.0, 'p02': 20.0, 'p03': 20.0, 'p04': 20.0, 'p05': 20.0}"
+text,categorical,2500,0.0,,,,,,,,500,
+trial_id,numeric,2500,0.0,1.0,50.900000000000006,250.5,250.5,450.0999999999999,500.0,144.36615474083203,500,
+true_labels,categorical,2500,0.0,,,,,,,,2,"{'non_hallucinated': 50.2, 'hallucinated': 49.8}"

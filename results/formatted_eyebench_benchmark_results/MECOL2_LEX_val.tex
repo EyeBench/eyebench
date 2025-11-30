@@ -1,0 +1,34 @@
+
+\begin{table}[ht]
+\centering
+\caption{Model performance on the \textbf{Vocabulary Knowledge} task on \textbf{MECOL2} for the \textbf{validation} set.}
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{@{}l|ccc|ccc|ccc|ccc|@{}}
+\toprule
+\multirow{2}{*}{\textbf{Method}} & \multicolumn{3}{c|}{\textbf{Unseen Reader}} & \multicolumn{3}{c|}{\textbf{Unseen Text}} & \multicolumn{3}{c|}{\textbf{Unseen Text \& Reader}} & \multicolumn{3}{c|}{\textbf{Average}} \\
+\cmidrule(lr){2-4} \cmidrule(lr){5-7} \cmidrule(lr){8-10} \cmidrule(lr){11-13}
+  & \textbf{RMSE} & \textbf{MAE} & \textbf{R²} & \textbf{RMSE} & \textbf{MAE} & \textbf{R²} & \textbf{RMSE} & \textbf{MAE} & \textbf{R²} & \textbf{RMSE} & \textbf{MAE} & \textbf{R²} \\
+\midrule
+Majority Class / Chance & 12.49\textsubscript{±0.1} & 10.42\textsubscript{±0.1} & -0.0\textsubscript{±0.0} & 12.45\textsubscript{±0.1} & 10.4\textsubscript{±0.1} & -0.0\textsubscript{±0.0} & 12.39\textsubscript{±0.1} & 10.31\textsubscript{±0.1} & -0.0\textsubscript{±0.0} & 12.45\textsubscript{±0.1} & 10.39\textsubscript{±0.1} & -0.0\textsubscript{±0.0} \\
+Reading Speed & 28.76\textsubscript{±14.2} & 26.97\textsubscript{±14.4} & -9.09\textsubscript{±7.9} & 29.0\textsubscript{±14.4} & 27.22\textsubscript{±14.6} & -9.63\textsubscript{±8.3} & 28.61\textsubscript{±14.2} & 26.83\textsubscript{±14.4} & -9.07\textsubscript{±7.9} & 28.82\textsubscript{±14.2} & 27.04\textsubscript{±14.5} & -9.28\textsubscript{±8.0} \\
+Text-Only Roberta & 12.49\textsubscript{±0.1} & 10.42\textsubscript{±0.1} & -0.0\textsubscript{±0.0} & 12.45\textsubscript{±0.1} & 10.4\textsubscript{±0.1} & -0.0\textsubscript{±0.0} & 12.38\textsubscript{±0.1} & 10.31\textsubscript{±0.1} & -0.0\textsubscript{±0.0} & 12.45\textsubscript{±0.1} & 10.39\textsubscript{±0.1} & -0.0\textsubscript{±0.0} \\
+\midrule
+Logistic Regression~\cite{meziere2023using} & 10.37\textsubscript{±0.2} & 8.35\textsubscript{±0.1} & 0.31\textsubscript{±0.0} & 10.27\textsubscript{±0.1} & 8.29\textsubscript{±0.1} & 0.32\textsubscript{±0.0} & 10.32\textsubscript{±0.1} & \textbf{8.31\textsubscript{±0.1}} & 0.3\textsubscript{±0.0} & 10.32\textsubscript{±0.1} & 8.32\textsubscript{±0.1} & 0.31\textsubscript{±0.0} \\
+SVM~\cite{hollenstein2023zuco} & 10.95\textsubscript{±0.1} & 8.77\textsubscript{±0.1} & 0.23\textsubscript{±0.0} & 10.9\textsubscript{±0.0} & 8.74\textsubscript{±0.0} & 0.23\textsubscript{±0.0} & 10.79\textsubscript{±0.1} & 8.63\textsubscript{±0.1} & 0.24\textsubscript{±0.0} & 10.9\textsubscript{±0.1} & 8.73\textsubscript{±0.0} & 0.23\textsubscript{±0.0} \\
+Random Forest~\cite{makowski2024detection} & \textbf{10.19\textsubscript{±0.1}} & \textbf{8.16\textsubscript{±0.1}} & \textbf{0.33\textsubscript{±0.0}} & \textbf{9.71\textsubscript{±0.0}} & \textbf{7.79\textsubscript{±0.0}} & \textbf{0.39\textsubscript{±0.0}} & \textbf{10.26\textsubscript{±0.1}} & 8.32\textsubscript{±0.2} & \textbf{0.31\textsubscript{±0.0}} & \textbf{10.01\textsubscript{±0.1}} & \textbf{8.04\textsubscript{±0.0}} & \textbf{0.35\textsubscript{±0.0}} \\
+\midrule
+AhnRNN~\citep{ahn2020towards} & 12.48\textsubscript{±0.1} & 10.41\textsubscript{±0.1} & 0.0\textsubscript{±0.0} & 12.45\textsubscript{±0.1} & 10.41\textsubscript{±0.1} & -0.0\textsubscript{±0.0} & 12.37\textsubscript{±0.1} & 10.3\textsubscript{±0.1} & 0.0\textsubscript{±0.0} & 12.45\textsubscript{±0.1} & 10.39\textsubscript{±0.1} & 0.0\textsubscript{±0.0} \\
+AhnCNN~\citep{ahn2020towards} & 12.33\textsubscript{±0.1} & 10.28\textsubscript{±0.1} & 0.02\textsubscript{±0.0} & 12.27\textsubscript{±0.1} & 10.25\textsubscript{±0.1} & 0.03\textsubscript{±0.0} & 12.21\textsubscript{±0.1} & 10.17\textsubscript{±0.2} & 0.02\textsubscript{±0.0} & 12.28\textsubscript{±0.1} & 10.25\textsubscript{±0.1} & 0.03\textsubscript{±0.0} \\
+BEyeLSTM~\citep{reich_inferring_2022} & 12.64\textsubscript{±0.4} & 10.4\textsubscript{±0.2} & -0.03\textsubscript{±0.0} & 12.33\textsubscript{±0.1} & 10.3\textsubscript{±0.1} & 0.02\textsubscript{±0.0} & 12.55\textsubscript{±0.4} & 10.29\textsubscript{±0.2} & -0.03\textsubscript{±0.1} & 12.51\textsubscript{±0.3} & 10.34\textsubscript{±0.1} & -0.01\textsubscript{±0.0} \\
+PLM-AS~\citep{Yang2023PLMASPL} & 12.48\textsubscript{±0.1} & 10.41\textsubscript{±0.1} & -0.0\textsubscript{±0.0} & 12.45\textsubscript{±0.1} & 10.41\textsubscript{±0.1} & -0.0\textsubscript{±0.0} & 12.37\textsubscript{±0.1} & 10.3\textsubscript{±0.1} & -0.0\textsubscript{±0.0} & 12.45\textsubscript{±0.1} & 10.39\textsubscript{±0.1} & -0.0\textsubscript{±0.0} \\
+PLM-AS-RM~\citep{haller2022eye} & 31.81\textsubscript{±0.3} & 29.27\textsubscript{±0.3} & -5.5\textsubscript{±0.2} & 31.78\textsubscript{±0.0} & 29.25\textsubscript{±0.1} & -5.52\textsubscript{±0.1} & 31.7\textsubscript{±0.4} & 29.2\textsubscript{±0.4} & -5.58\textsubscript{±0.2} & 31.78\textsubscript{±0.2} & 29.25\textsubscript{±0.2} & -5.52\textsubscript{±0.1} \\
+RoBERTEye-W~\citep{Shubi2024Finegrained} & 11.05\textsubscript{±0.1} & 9.1\textsubscript{±0.0} & 0.22\textsubscript{±0.0} & 11.11\textsubscript{±0.1} & 9.11\textsubscript{±0.1} & 0.2\textsubscript{±0.0} & 11.16\textsubscript{±0.1} & 9.22\textsubscript{±0.2} & 0.18\textsubscript{±0.0} & 11.1\textsubscript{±0.0} & 9.13\textsubscript{±0.0} & 0.21\textsubscript{±0.0} \\
+RoBERTEye-F~\citep{Shubi2024Finegrained} & 11.17\textsubscript{±0.1} & 9.2\textsubscript{±0.1} & 0.2\textsubscript{±0.0} & 10.98\textsubscript{±0.0} & 9.04\textsubscript{±0.0} & 0.22\textsubscript{±0.0} & 11.03\textsubscript{±0.1} & 9.11\textsubscript{±0.1} & 0.2\textsubscript{±0.0} & 11.07\textsubscript{±0.0} & 9.12\textsubscript{±0.0} & 0.21\textsubscript{±0.0} \\
+MAG-Eye~\citep{Shubi2024Finegrained} & 12.49\textsubscript{±0.1} & 10.42\textsubscript{±0.1} & -0.0\textsubscript{±0.0} & 12.45\textsubscript{±0.1} & 10.4\textsubscript{±0.1} & -0.0\textsubscript{±0.0} & 12.38\textsubscript{±0.1} & 10.31\textsubscript{±0.1} & -0.0\textsubscript{±0.0} & 12.45\textsubscript{±0.1} & 10.39\textsubscript{±0.1} & -0.0\textsubscript{±0.0} \\
+PostFusion-Eye~\citep{Shubi2024Finegrained} & 13.01\textsubscript{±0.4} & 10.37\textsubscript{±0.3} & -0.09\textsubscript{±0.1} & 13.72\textsubscript{±0.9} & 11.0\textsubscript{±0.8} & -0.23\textsubscript{±0.2} & 13.15\textsubscript{±0.3} & 10.2\textsubscript{±0.1} & -0.13\textsubscript{±0.1} & 13.35\textsubscript{±0.5} & 10.59\textsubscript{±0.4} & -0.16\textsubscript{±0.1} \\
+
+\bottomrule
+\end{tabular}%
+}
+\label{tab:task-mecol2_lex-val-regime}
+\end{table}

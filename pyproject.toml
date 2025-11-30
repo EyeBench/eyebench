@@ -1,0 +1,60 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "eyebench"
+version = "1.0.0"
+description = "EyeBench: Predictive Modeling from Eye Movements in Reading"
+readme = "README.md"
+requires-python = ">=3.12"
+license = { text = "MIT License" }
+
+authors = [
+  { name = "Omer Shubi", email = "shubi@campus.technion.ac.il" },
+  { name = "David R. Reich", email = "davidrobert.reich@uzh.ch" },
+  { name = "Keren Gruteke Klein", email = "gkeren@campus.technion.ac.il" },
+  { name = "Yuval Angel", email = "yuval.angel@campus.technion.ac.il" },
+  { name = "Paul Prasse", email = "paul.prasse@uni-potsdam.de" },
+  { name = "Lena Jäger", email = "lenaann.jaeger@uzh.ch" },
+  { name = "Yevgeni Berzak", email = "berzak@technion.ac.il" }
+]
+
+keywords = [
+  "eye-tracking",
+  "reading",
+  "machine-learning",
+  "benchmark",
+  "multimodal-ai",
+  "cognitive-science",
+  "neural-networks"
+  ]
+
+classifiers = [
+  "Intended Audience :: Science/Research",
+  "Topic :: Scientific/Engineering :: Artificial Intelligence",
+  "Topic :: Scientific/Engineering :: Cognitive Science",
+  "Programming Language :: Python :: 3",
+  "License :: OSI Approved :: MIT License",
+  "Operating System :: OS Independent",
+]
+
+[project.urls]
+Homepage = "https://github.com/EyeBench/eyebench"
+Documentation = "https://eyebench.github.io"
+Repository = "https://github.com/EyeBench/eyebench"
+"Bug Tracker" = "https://github.com/EyeBench/eyebench/issues"
+"Paper (NeurIPS 2025)" = "https://arxiv.org/abs/TODO"
+"DOI" = "https://doi.org/TODO"
+
+[tool.hatch.metadata]
+allow-direct-references = true
+
+[tool.hatch.build.targets.wheel]
+packages = ["src"]
+
+[tool.ruff]
+extend-include = ["*.ipynb"]
+
+[tool.ruff.format]
+quote-style = "single"

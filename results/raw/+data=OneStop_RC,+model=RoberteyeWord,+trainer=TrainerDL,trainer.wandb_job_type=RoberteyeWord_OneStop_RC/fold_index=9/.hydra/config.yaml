@@ -1,0 +1,198 @@
+model:
+  use_class_weighted_loss: true
+  class_weights: null
+  prepend_eye_features_to_text: true
+  item_level_features_modes: []
+  batch_size: 4
+  text_dim: -1
+  num_special_tokens_add: 6
+  max_eye_len: 512
+  use_fixation_report: false
+  max_tokens_in_word: 15
+  eyes_dim: 33
+  fixation_dim: 49
+  use_eyes_only: false
+  is_ml: false
+  feature_mode: EYES_WORDS
+  word_features:
+  - gpt2_surprisal
+  - wordfreq_frequency
+  - word_length
+  - start_of_line
+  - end_of_line
+  - is_content_word
+  - ptb_pos
+  - left_dependents_count
+  - right_dependents_count
+  - distance_to_head
+  eye_features:
+  - IA_DWELL_TIME
+  - IA_DWELL_TIME_%
+  - IA_FIXATION_%
+  - IA_FIXATION_COUNT
+  - IA_REGRESSION_IN_COUNT
+  - IA_REGRESSION_OUT_FULL_COUNT
+  - IA_RUN_COUNT
+  - IA_FIRST_FIXATION_DURATION
+  - IA_FIRST_FIXATION_VISITED_IA_COUNT
+  - IA_FIRST_RUN_DWELL_TIME
+  - IA_FIRST_RUN_FIXATION_COUNT
+  - IA_SKIP
+  - IA_REGRESSION_PATH_DURATION
+  - IA_REGRESSION_OUT_COUNT
+  - IA_SELECTIVE_REGRESSION_PATH_DURATION
+  - IA_LAST_FIXATION_DURATION
+  - IA_LAST_RUN_DWELL_TIME
+  - IA_LAST_RUN_FIXATION_COUNT
+  - IA_TOP
+  - IA_LEFT
+  - IA_FIRST_FIX_PROGRESSIVE
+  - normalized_ID
+  - PARAGRAPH_RT
+  - total_skip
+  ia_features:
+  - IA_DWELL_TIME
+  - IA_DWELL_TIME_%
+  - IA_FIXATION_%
+  - IA_FIXATION_COUNT
+  - IA_REGRESSION_IN_COUNT
+  - IA_REGRESSION_OUT_FULL_COUNT
+  - IA_RUN_COUNT
+  - IA_FIRST_FIXATION_DURATION
+  - IA_FIRST_FIXATION_VISITED_IA_COUNT
+  - IA_FIRST_RUN_DWELL_TIME
+  - IA_FIRST_RUN_FIXATION_COUNT
+  - IA_SKIP
+  - IA_REGRESSION_PATH_DURATION
+  - IA_REGRESSION_OUT_COUNT
+  - IA_SELECTIVE_REGRESSION_PATH_DURATION
+  - IA_LAST_FIXATION_DURATION
+  - IA_LAST_RUN_DWELL_TIME
+  - IA_LAST_RUN_FIXATION_COUNT
+  - IA_TOP
+  - IA_LEFT
+  - IA_FIRST_FIX_PROGRESSIVE
+  - normalized_ID
+  - PARAGRAPH_RT
+  - total_skip
+  - gpt2_surprisal
+  - wordfreq_frequency
+  - word_length
+  - start_of_line
+  - end_of_line
+  - is_content_word
+  - ptb_pos
+  - left_dependents_count
+  - right_dependents_count
+  - distance_to_head
+  fixation_features:
+  - CURRENT_FIX_INDEX
+  - CURRENT_FIX_DURATION
+  - CURRENT_FIX_PUPIL
+  - CURRENT_FIX_X
+  - CURRENT_FIX_Y
+  - NEXT_FIX_ANGLE
+  - CURRENT_FIX_INTEREST_AREA_INDEX
+  - NEXT_FIX_INTEREST_AREA_INDEX
+  - PREVIOUS_FIX_ANGLE
+  - NEXT_FIX_DISTANCE
+  - PREVIOUS_FIX_DISTANCE
+  - NEXT_SAC_AMPLITUDE
+  - NEXT_SAC_ANGLE
+  - NEXT_SAC_AVG_VELOCITY
+  - NEXT_SAC_DURATION
+  - NEXT_SAC_PEAK_VELOCITY
+  ia_categorical_features:
+  - ptb_pos
+  compute_trial_level_features: false
+  n_tokens: 0
+  eye_token_id: 0
+  sep_token_id: 0
+  is_training: false
+  full_model_name: ''
+  max_time_limit: null
+  sweep_hours_limit: 120
+  base_model_name: ROBERTEYE_MODEL
+  normalization_mode: ALL
+  normalization_type: ROBUST_SCALER
+  backbone: ROBERTA_LARGE
+  hf_access_token: null
+  accumulate_grad_batches: 4
+  preorder: true
+  warmup_proportion: 0.1
+  max_epochs: 10
+  early_stopping_patience: 3
+  freeze: false
+  eye_projection_dropout: 0.3
+  eye_projection_MAGModule: false
+  token_type_num: 2
+  vocab_size: -1
+trainer:
+  num_workers: 4
+  profiler: null
+  precision: THIRTY_TWO_TRUE
+  float32_matmul_precision: HIGH
+  seed: 42
+  devices: 1
+  run_mode: TRAIN
+  wandb_job_type: RoberteyeWord_OneStop_RC
+  wandb_project: EyeBench
+  wandb_entity: EyeRead
+  wandb_notes: ''
+  sample_m_per_class: false
+  samples_per_epoch: null
+  overwrite_data: false
+  learning_rate: 0.0003
+  gradient_clip_val: 1.0
+  accelerator: AUTO
+  log_gradients: false
+  optimize_for_loss: true
+  use_torch_compile: false
+data:
+  task: RC
+  n_folds: 10
+  n_questions_per_item: 1
+  fold_index: 9
+  subject_column: participant_id
+  unique_item_column: unique_paragraph_id
+  unique_trial_id_column: unique_trial_id
+  ia_query: practice_trial==False & question_preview==False & repeated_reading_trial==False
+  fixation_query: practice_trial==False & question_preview==False & repeated_reading_trial==False
+  split_item_columns:
+  - article_batch
+  - article_id
+  additional_groupby_columns:
+  - list_number
+  - question_preview
+  - repeated_reading_trial
+  groupby_columns: []
+  processed_data_path: !!python/object/apply:pathlib.PosixPath []
+  ia_path: !!python/object/apply:pathlib.PosixPath []
+  fixations_path: !!python/object/apply:pathlib.PosixPath []
+  raw_ia_path: !!python/object/apply:pathlib.PosixPath []
+  raw_fixations_path: !!python/object/apply:pathlib.PosixPath []
+  trial_level_path: !!python/object/apply:pathlib.PosixPath []
+  all_folds_folder: !!python/object/apply:pathlib.PosixPath
+  - data
+  folds_folder_name: folds
+  metadata_path: !!python/object/apply:pathlib.PosixPath []
+  stratify: is_correct
+  higher_level_split: article_batch
+  datamodule_name: ''
+  base_path: !!python/object/apply:pathlib.PosixPath []
+  target_column: is_correct
+  class_names:
+  - Incorrect
+  - Correct
+  text_source: Guardian Articles
+  text_language: English
+  text_domain: News
+  text_type: paragraph
+  tasks:
+    RC: is_correct
+  full_dataset_name: ''
+  max_scanpath_length: 815
+  max_q_len: 30
+  max_seq_len: 512
+  max_tokens_in_word: 10
+eval_path: null

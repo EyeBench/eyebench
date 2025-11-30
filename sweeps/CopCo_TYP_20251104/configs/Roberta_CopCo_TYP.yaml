@@ -1,0 +1,77 @@
+hyper_args:
+  base_model: Roberteye
+  base_models:
+  - AhnCNNModel
+  - AhnRNNModel
+  - BEyeLSTMModel
+  - PLMASModel
+  - MAGModel
+  - PLMASFModel
+  - PostFusionModel
+  - Roberteye
+  - Roberteye
+  - Roberteye
+  - SupportVectorMachineMLModel
+  - XGBoostMLModel
+  - RandomForestMLModel
+  - LogisticRegressionMLModel
+  - LogisticRegressionMLModel
+  - DummyClassifierMLModel
+  data_task: CopCo_TYP
+  data_tasks:
+  - CopCo_TYP
+  folds:
+  - 0
+  - 1
+  - 2
+  - 3
+  gpu_count: 1
+  model: Roberta
+  models:
+  - AhnCNN
+  - AhnRNN
+  - BEyeLSTMArgs
+  - PLMASArgs
+  - MAG
+  - PLMASfArgs
+  - PostFusion
+  - Roberta
+  - RoberteyeFixation
+  - RoberteyeWord
+  - SupportVectorMachineMLArgs
+  - XGBoostMLArgs
+  - RandomForestMLArgs
+  - LogisticRegressionMLArgs
+  - LogisticMeziereArgs
+  - DummyClassifierMLArgs
+  num_duplicates_per_gpu: 1
+  run_cap: 1000
+  search_algorithm: grid
+  slurm_cpus: 10
+  slurm_mailto: shubi@campus.technion.ac.il
+  slurm_mem: 75G
+  trainer: TrainerDL
+  trainers:
+  - TrainerDL
+  - TrainerDL
+  - TrainerDL
+  - TrainerDL
+  - TrainerDL
+  - TrainerDL
+  - TrainerDL
+  - TrainerDL
+  - TrainerDL
+  - TrainerDL
+  - TrainerML
+  - TrainerML
+  - TrainerML
+  - TrainerML
+  - TrainerML
+  - TrainerML
+  wandb_entity: EyeRead
+  wandb_project: CopCo_TYP_20251104
+sweep_ids:
+- 318qem3r
+- gsm2w8ci
+- gqd4dzcj
+- ruggjizf

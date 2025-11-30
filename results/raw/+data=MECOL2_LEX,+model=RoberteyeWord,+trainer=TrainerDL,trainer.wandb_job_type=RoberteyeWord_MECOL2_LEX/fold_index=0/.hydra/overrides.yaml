@@ -1,0 +1,6 @@
+- +model=RoberteyeWord
+- +data=MECOL2_LEX
+- +trainer=TrainerDL
+- data.fold_index=0
+- trainer.devices=1
+- trainer.wandb_job_type=RoberteyeWord_MECOL2_LEX

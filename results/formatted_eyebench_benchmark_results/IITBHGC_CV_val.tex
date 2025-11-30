@@ -1,0 +1,34 @@
+
+\begin{table}[ht]
+\centering
+\caption{Model performance on the \textbf{Claim Verification} task on \textbf{IITBHGC} for the \textbf{validation} set.}
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{@{}l|cc|cc|cc|cc|@{}}
+\toprule
+\multirow{2}{*}{\textbf{Method}} & \multicolumn{2}{c|}{\textbf{Unseen Reader}} & \multicolumn{2}{c|}{\textbf{Unseen Text}} & \multicolumn{2}{c|}{\textbf{Unseen Text \& Reader}} & \multicolumn{2}{c|}{\textbf{Average}} \\
+\cmidrule(lr){2-3} \cmidrule(lr){4-5} \cmidrule(lr){6-7} \cmidrule(lr){8-9}
+  & \textbf{\makecell{Balanced\\Accuracy}} & \textbf{AUROC} & \textbf{\makecell{Balanced\\Accuracy}} & \textbf{AUROC} & \textbf{\makecell{Balanced\\Accuracy}} & \textbf{AUROC} & \textbf{\makecell{Balanced\\Accuracy}} & \textbf{AUROC} \\
+\midrule
+Majority Class / Chance & 50.6\textsubscript{±0.5} & 50.6\textsubscript{±0.5} & 51.4\textsubscript{±1.2} & 51.4\textsubscript{±1.2} & 51.3\textsubscript{±1.1} & 51.3\textsubscript{±1.1} & 51.0\textsubscript{±0.8} & 51.0\textsubscript{±0.8} \\
+Reading Speed & 56.1\textsubscript{±0.8} & 56.9\textsubscript{±1.5} & 56.1\textsubscript{±0.9} & 56.0\textsubscript{±1.0} & \textbf{56.5\textsubscript{±1.5}} & 58.0\textsubscript{±1.3} & 56.2\textsubscript{±0.4} & 57.0\textsubscript{±0.7} \\
+Text-Only Roberta & 60.0\textsubscript{±4.0} & 66.1\textsubscript{±3.5} & 51.1\textsubscript{±1.2} & 54.7\textsubscript{±1.3} & 48.9\textsubscript{±1.2} & 55.2\textsubscript{±2.0} & 53.9\textsubscript{±1.8} & 59.2\textsubscript{±1.9} \\
+\midrule
+Logistic Regression~\cite{meziere2023using} & 54.1\textsubscript{±1.5} & 54.8\textsubscript{±1.8} & 54.4\textsubscript{±1.2} & 56.2\textsubscript{±0.5} & 55.9\textsubscript{±2.2} & 55.2\textsubscript{±2.2} & 54.6\textsubscript{±1.2} & 55.2\textsubscript{±1.4} \\
+SVM~\cite{hollenstein2023zuco} & 57.6\textsubscript{±1.3} & 57.6\textsubscript{±1.3} & 55.6\textsubscript{±1.2} & 55.6\textsubscript{±1.2} & 54.6\textsubscript{±1.3} & 54.6\textsubscript{±1.3} & 56.1\textsubscript{±0.6} & 56.1\textsubscript{±0.6} \\
+Random Forest~\cite{makowski2024detection} & 60.0\textsubscript{±1.2} & 63.7\textsubscript{±1.6} & \textbf{56.5\textsubscript{±0.8}} & \textbf{60.6\textsubscript{±2.0}} & 55.3\textsubscript{±1.8} & 57.1\textsubscript{±2.1} & \textbf{57.5\textsubscript{±0.8}} & 61.2\textsubscript{±1.4} \\
+\midrule
+AhnRNN~\citep{ahn2020towards} & 50.0\textsubscript{±0.0} & 50.9\textsubscript{±0.7} & 50.0\textsubscript{±0.0} & 50.9\textsubscript{±0.6} & 50.0\textsubscript{±0.0} & 50.1\textsubscript{±0.1} & 50.0\textsubscript{±0.0} & 50.8\textsubscript{±0.6} \\
+AhnCNN~\citep{ahn2020towards} & 53.7\textsubscript{±1.5} & 57.5\textsubscript{±0.4} & 52.2\textsubscript{±0.3} & 55.4\textsubscript{±0.7} & 53.7\textsubscript{±1.0} & 55.6\textsubscript{±1.4} & 53.2\textsubscript{±0.6} & 56.1\textsubscript{±0.3} \\
+BEyeLSTM~\citep{reich_inferring_2022} & 56.6\textsubscript{±0.9} & 61.8\textsubscript{±0.7} & 52.9\textsubscript{±1.5} & 55.3\textsubscript{±1.1} & 52.2\textsubscript{±0.4} & 54.9\textsubscript{±0.9} & 54.0\textsubscript{±0.9} & 57.5\textsubscript{±0.7} \\
+PLM-AS~\citep{Yang2023PLMASPL} & 52.6\textsubscript{±1.1} & 54.0\textsubscript{±1.8} & 53.6\textsubscript{±1.8} & 56.7\textsubscript{±3.4} & 51.7\textsubscript{±2.4} & 51.8\textsubscript{±2.2} & 53.1\textsubscript{±1.0} & 54.6\textsubscript{±2.2} \\
+PLM-AS-RM~\citep{haller2022eye} & 57.1\textsubscript{±2.9} & 64.1\textsubscript{±3.3} & 50.7\textsubscript{±0.8} & 50.6\textsubscript{±0.6} & 50.0\textsubscript{±1.0} & 51.0\textsubscript{±2.8} & 53.2\textsubscript{±1.5} & 56.1\textsubscript{±1.2} \\
+RoBERTEye-W~\citep{Shubi2024Finegrained} & 58.7\textsubscript{±3.6} & 71.4\textsubscript{±2.3} & 54.0\textsubscript{±2.2} & 59.4\textsubscript{±1.8} & 51.3\textsubscript{±1.3} & 56.2\textsubscript{±0.9} & 55.5\textsubscript{±2.6} & \textbf{63.9\textsubscript{±1.9}} \\
+RoBERTEye-F~\citep{Shubi2024Finegrained} & 55.2\textsubscript{±4.2} & 65.8\textsubscript{±3.1} & 49.7\textsubscript{±0.3} & 55.8\textsubscript{±2.4} & 50.6\textsubscript{±0.6} & 56.0\textsubscript{±2.9} & 51.6\textsubscript{±1.3} & 59.5\textsubscript{±0.4} \\
+MAG-Eye~\citep{Shubi2024Finegrained} & \textbf{62.3\textsubscript{±4.2}} & \textbf{72.2\textsubscript{±1.4}} & 52.0\textsubscript{±1.2} & 56.0\textsubscript{±0.9} & 50.7\textsubscript{±1.6} & 55.3\textsubscript{±2.0} & 55.7\textsubscript{±1.9} & 62.9\textsubscript{±1.1} \\
+PostFusion-Eye~\citep{Shubi2024Finegrained} & 51.9\textsubscript{±0.7} & 59.3\textsubscript{±1.1} & 50.9\textsubscript{±0.8} & 56.7\textsubscript{±2.0} & 53.4\textsubscript{±0.7} & \textbf{60.0\textsubscript{±1.2}} & 51.6\textsubscript{±0.5} & 57.7\textsubscript{±0.6} \\
+
+\bottomrule
+\end{tabular}%
+}
+\label{tab:task-iitbhgc_cv-val-regime}
+\end{table}

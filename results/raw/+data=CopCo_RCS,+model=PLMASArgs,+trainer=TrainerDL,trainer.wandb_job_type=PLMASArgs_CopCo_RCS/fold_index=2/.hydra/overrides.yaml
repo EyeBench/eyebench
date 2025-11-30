@@ -1,0 +1,6 @@
+- +model=PLMASArgs
+- +data=CopCo_RCS
+- +trainer=TrainerDL
+- data.fold_index=2
+- trainer.devices=1
+- trainer.wandb_job_type=PLMASArgs_CopCo_RCS
