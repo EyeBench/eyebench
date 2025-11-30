@@ -6,12 +6,13 @@ mkdocstrings[python]>=0.24.0
 mkdocs-gen-files>=0.5.0
 mkdocs-literate-nav>=0.6.0
 mkdocs-include-markdown-plugin>=6.0.0
+# mkdocs-include-dir-to-nav
 
 # Essential Python dependencies (lightweight versions)
-pandas
-numpy
-pyyaml
-typing-extensions
+# pandas
+# numpy
+# pyyaml
+# typing-extensions
 
 # ML libraries (will use CPU-only torch from workflow)
 # transformers
@@ -19,13 +20,13 @@ typing-extensions
 # pytorch-lightning
 
 # Other imports that appear in source code
-hydra-core
-wandb
-datasets
-beartype
-typed-argument-parser
-loguru
-pyarrow
+# hydra-core
+# wandb
+# datasets
+# beartype
+# typed-argument-parser
+# loguru
+# pyarrow
 
 
 
