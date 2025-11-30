@@ -121,7 +121,7 @@ Interactive tables sourced from the latest formatted benchmark exports. Values s
         font-size: 0.9em !important;
     }
     .eyebench-datatable thead {
-        background-color: #ffffffff !important;
+        /* background-color: #ffffffff !important; */
         /* color: white !important; */
     }
     .eyebench-datatable thead th {
