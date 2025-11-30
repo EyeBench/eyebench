@@ -1,5 +1,5 @@
 site_name: EyeBench
-docs_dir: .
+site_dir: site_build
 theme:
   name: material
   features:
