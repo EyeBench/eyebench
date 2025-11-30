@@ -121,8 +121,8 @@ Interactive tables sourced from the latest formatted benchmark exports. Values s
         font-size: 0.9em !important;
     }
     .eyebench-datatable thead {
-        background-color: var(--md-primary-fg-color, #3f51b5) !important;
-        color: white !important;
+        background-color: #ffffffff !important;
+        color: black !important;
     }
     .eyebench-datatable thead th {
         padding: 12px 8px !important;
@@ -174,13 +174,13 @@ Interactive tables sourced from the latest formatted benchmark exports. Values s
         document.querySelectorAll('table[data-datatable="true"]').forEach(function(tbl){
             if (!window.jQuery.fn.dataTable.isDataTable(tbl)){
                 window.jQuery(tbl).DataTable({
-                    paging: true,
+                    paging: false,
                     pageLength: 25,
                     lengthChange: false,
                     info: true,
-                    searching: true,
+                    searching: false,
                     order: [],
-                    autoWidth: false,
+                    autoWidth: true,
                     language: {
                         search: "Filter models:",
                         info: "Showing _START_ to _END_ of _TOTAL_ models",
