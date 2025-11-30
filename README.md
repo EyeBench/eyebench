@@ -111,8 +111,8 @@ EyeBench evaluates models under **three complementary generalization regimes**:
 Interactive tables sourced from the latest formatted benchmark exports. Values show the mean and standard deviation across folds.
 
 <!-- DataTables assets injected by gen_metric_tables.py -->
-<link rel='stylesheet' href='https://cdn.datatables.net/1.13.6/css/jquery.dataTables.min.css'>
-<!-- <style>
+<!-- <link rel='stylesheet' href='https://cdn.datatables.net/1.13.6/css/jquery.dataTables.min.css'> -->
+<style>
     /* Custom styling for DataTables in Material theme */
     .eyebench-datatable {
         width: 100% !important;
@@ -121,8 +121,8 @@ Interactive tables sourced from the latest formatted benchmark exports. Values s
         font-size: 0.9em !important;
     }
     .eyebench-datatable thead {
-        /* background-color: #ffffffff !important; */
-        /* color: white !important; */
+        background-color: #ffffffff !important;
+        color: white !important;
     }
     .eyebench-datatable thead th {
         padding: 12px 8px !important;
@@ -162,10 +162,10 @@ Interactive tables sourced from the latest formatted benchmark exports. Values s
     .dataTables_wrapper {
         margin: 2em 0 !important;
     }
-</style> -->
-<script src='https://code.jquery.com/jquery-3.7.0.min.js'></script>
-<script src='https://cdn.datatables.net/1.13.6/js/jquery.dataTables.min.js'></script>
-<script>
+</style>
+<!-- <script src='https://code.jquery.com/jquery-3.7.0.min.js'></script> -->
+<!-- <script src='https://cdn.datatables.net/1.13.6/js/jquery.dataTables.min.js'></script> -->
+<!-- <script>
 (function(){
     function initialiseTables(){
         if (!window.jQuery || !window.jQuery.fn || !window.jQuery.fn.DataTable){
@@ -175,11 +175,11 @@ Interactive tables sourced from the latest formatted benchmark exports. Values s
         document.querySelectorAll('table[data-datatable="true"]').forEach(function(tbl){
             if (!window.jQuery.fn.dataTable.isDataTable(tbl)){
                 window.jQuery(tbl).DataTable({
-                    paging: true,
+                    paging: false,
                     pageLength: 25,
                     lengthChange: true,
                     info: true,
-                    searching: true,
+                    searching: false,
                     order: [],
                     autoWidth: true,
                     language: {
@@ -206,13 +206,14 @@ Interactive tables sourced from the latest formatted benchmark exports. Values s
         setTimeout(initialiseTables, 100);
     }
 })();
-</script>
+</script> -->
 
 ## Overall Leaderboard (Test)
 
 *Macro-level comparison across every benchmark task on the held-out test folds.*
 
-<table id='aggregated_results_test_all_metrics-all' class='display compact stripe eyebench-datatable' data-datatable='true'><thead><tr><th>Model</th><th>Layout</th><th>Saccade/Fixation</th><th>Word-Level</th><th>Trial-Level</th><th>Linguistic</th><th>Embeddings</th><th>Avg Normalized Score</th><th>Mean Rank</th></tr></thead><tbody><tr><td>Majority Class / Chance</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>0.367</td><td>10.1</td></tr><tr><td>Reading Speed</td><td>-</td><td>-</td><td>-</td><td>✓</td><td>-</td><td>-</td><td>0.421</td><td>10.29</td></tr><tr><td>Text-Only Roberta</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>✓</td><td>0.672</td><td>6.1</td></tr><tr><td>Logistic Regression [meziere2023using]</td><td>-</td><td>-</td><td>-</td><td>✓</td><td>-</td><td>-</td><td>0.571</td><td>7.67</td></tr><tr><td>SVM [hollenstein2023zuco]</td><td>-</td><td>-</td><td>-</td><td>✓</td><td>-</td><td>-</td><td>0.521</td><td>7.38</td></tr><tr><td>Random Forest [makowski2024detection]</td><td>-</td><td>✓</td><td>-</td><td>✓</td><td>✓</td><td>-</td><td>0.788</td><td>4.48</td></tr><tr><td>AhnRNN [ahn2020towards]</td><td>✓</td><td>✓</td><td>-</td><td>-</td><td>-</td><td>-</td><td>0.36</td><td>9.48</td></tr><tr><td>AhnCNN [ahn2020towards]</td><td>✓</td><td>✓</td><td>-</td><td>-</td><td>-</td><td>-</td><td>0.531</td><td>6.95</td></tr><tr><td>BEyeLSTM [reich_inferring_2022]</td><td>✓</td><td>✓</td><td>✓</td><td>✓</td><td>✓</td><td>-</td><td>0.414</td><td>9.1</td></tr><tr><td>PLM-AS [Yang2023PLMASPL]</td><td>-</td><td>✓</td><td>-</td><td>-</td><td>-</td><td>✓</td><td>0.494</td><td>8.0</td></tr><tr><td>PLM-AS-RM [haller2022eye]</td><td>-</td><td>✓</td><td>✓</td><td>-</td><td>-</td><td>✓</td><td>0.475</td><td>8.95</td></tr><tr><td>RoBERTEye-W [Shubi2024Finegrained]</td><td>✓</td><td>-</td><td>✓</td><td>✓</td><td>✓</td><td>✓</td><td>0.757</td><td>4.43</td></tr><tr><td>RoBERTEye-F [Shubi2024Finegrained]</td><td>✓</td><td>✓</td><td>✓</td><td>✓</td><td>✓</td><td>✓</td><td>0.654</td><td>6.81</td></tr><tr><td>MAG-Eye [Shubi2024Finegrained]</td><td>✓</td><td>-</td><td>✓</td><td>✓</td><td>✓</td><td>✓</td><td>0.686</td><td>5.62</td></tr><tr><td>PostFusion-Eye [Shubi2024Finegrained]</td><td>✓</td><td>✓</td><td>✓</td><td>✓</td><td>✓</td><td>✓</td><td>0.546</td><td>9.81</td></tr></tbody></table>
+<table id='aggregated_results_test_all_metrics-all' class='display compact stripe eyebench-datatable' data-datatable='true'><thead>
+<tr><th>Model</th><th>Layout</th><th>Saccade/Fixation</th><th>Word-Level</th><th>Trial-Level</th><th>Linguistic</th><th>Embeddings</th><th>Avg Normalized Score</th><th>Mean Rank</th></tr></thead><tbody><tr><td>Majority Class / Chance</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>0.367</td><td>10.1</td></tr><tr><td>Reading Speed</td><td>-</td><td>-</td><td>-</td><td>✓</td><td>-</td><td>-</td><td>0.421</td><td>10.29</td></tr><tr><td>Text-Only Roberta</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>✓</td><td>0.672</td><td>6.1</td></tr><tr><td>Logistic Regression [meziere2023using]</td><td>-</td><td>-</td><td>-</td><td>✓</td><td>-</td><td>-</td><td>0.571</td><td>7.67</td></tr><tr><td>SVM [hollenstein2023zuco]</td><td>-</td><td>-</td><td>-</td><td>✓</td><td>-</td><td>-</td><td>0.521</td><td>7.38</td></tr><tr><td>Random Forest [makowski2024detection]</td><td>-</td><td>✓</td><td>-</td><td>✓</td><td>✓</td><td>-</td><td>0.788</td><td>4.48</td></tr><tr><td>AhnRNN [ahn2020towards]</td><td>✓</td><td>✓</td><td>-</td><td>-</td><td>-</td><td>-</td><td>0.36</td><td>9.48</td></tr><tr><td>AhnCNN [ahn2020towards]</td><td>✓</td><td>✓</td><td>-</td><td>-</td><td>-</td><td>-</td><td>0.531</td><td>6.95</td></tr><tr><td>BEyeLSTM [reich_inferring_2022]</td><td>✓</td><td>✓</td><td>✓</td><td>✓</td><td>✓</td><td>-</td><td>0.414</td><td>9.1</td></tr><tr><td>PLM-AS [Yang2023PLMASPL]</td><td>-</td><td>✓</td><td>-</td><td>-</td><td>-</td><td>✓</td><td>0.494</td><td>8.0</td></tr><tr><td>PLM-AS-RM [haller2022eye]</td><td>-</td><td>✓</td><td>✓</td><td>-</td><td>-</td><td>✓</td><td>0.475</td><td>8.95</td></tr><tr><td>RoBERTEye-W [Shubi2024Finegrained]</td><td>✓</td><td>-</td><td>✓</td><td>✓</td><td>✓</td><td>✓</td><td>0.757</td><td>4.43</td></tr><tr><td>RoBERTEye-F [Shubi2024Finegrained]</td><td>✓</td><td>✓</td><td>✓</td><td>✓</td><td>✓</td><td>✓</td><td>0.654</td><td>6.81</td></tr><tr><td>MAG-Eye [Shubi2024Finegrained]</td><td>✓</td><td>-</td><td>✓</td><td>✓</td><td>✓</td><td>✓</td><td>0.686</td><td>5.62</td></tr><tr><td>PostFusion-Eye [Shubi2024Finegrained]</td><td>✓</td><td>✓</td><td>✓</td><td>✓</td><td>✓</td><td>✓</td><td>0.546</td><td>9.81</td></tr></tbody></table>
 
 
 ## Results Tasks Combined
