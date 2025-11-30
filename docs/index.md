@@ -106,7 +106,7 @@ EyeBench evaluates models under **three complementary generalization regimes**:
 
 ---
 
-## EyeBench Metric Dashboards
+## EyeBench V1.0 Results
 
 Interactive tables sourced from the latest formatted benchmark exports. Values show the mean and standard deviation across folds.
 
