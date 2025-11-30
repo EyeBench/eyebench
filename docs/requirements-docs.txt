@@ -14,9 +14,9 @@ pyyaml
 typing-extensions
 
 # ML libraries (will use CPU-only torch from workflow)
-transformers
-scikit-learn
-pytorch-lightning
+# transformers
+# scikit-learn
+# pytorch-lightning
 
 # Other imports that appear in source code
 hydra-core
