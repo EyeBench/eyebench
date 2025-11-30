@@ -63,7 +63,7 @@ plugins:
             heading_level: 2
 
 nav:
-  - Home: results/eyebench_metric_tables.md
+  - Home: index.md
 
 extra:
   social:
