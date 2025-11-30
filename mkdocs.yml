@@ -3,14 +3,7 @@ theme:
   name: material
   features:
     - navigation.top
-    - navigation.path
-    - navigation.prune
-    - navigation.indexes
-    - navigation.tabs
-    - navigation.tabs.sticky
     - navigation.instant
-    - navigation.instant.prefetch
-    - navigation.instant.progress
     - navigation.tracking
   favicon: gfx/favicon.png
   icon:
@@ -21,54 +14,19 @@ extra_css:
   - stylesheets/extra.css
 
 markdown_extensions:
-  - pymdownx.blocks.tab:
-      alternate_style: true
   - admonition
   - attr_list
+  - tables
   - pymdownx.tabbed:
       alternate_style: true
-  - tables
 
 plugins:
   - search
-  - include-markdown
-  # - gen-files:
-  #     scripts:
-  #       - docs/gen_ref_pages.py
-  # - literate-nav:
-  #     nav_file: SUMMARY.md
-  - mkdocstrings:
-      handlers:
-        python:
-          paths: [src]
-          options:
-            docstring_style: google
-            show_source: false
-            show_root_heading: true
-            show_root_full_path: false
-            members_order: source
-            filters: ["!^_"]
-          import:
-            - https://docs.python.org/3/objects.inv
-            - https://pytorch.org/docs/stable/objects.inv
-            - https://docs.scipy.org/doc/numpy/objects.inv
-          selection:
-            docstring_style: google
-            filters:
-              - "!^_"
-              - "!^__init__$"
-          rendering:
-            show_source: false
-            show_root_heading: true
-            heading_level: 2
-
-nav:
-  - Home: index.md
 
 extra:
   social:
     - icon: fontawesome/brands/github-alt
-      link: https://github.com/eyebench/eyebench.github.io
+      link: https://github.com/EyeBench/
 
 copyright: |
   &copy; 2025 <a href="https://github.com/EyeBench/" target="_blank" rel="noopener">EyeBench</a>
