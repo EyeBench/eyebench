@@ -121,14 +121,15 @@ Interactive tables sourced from the latest formatted benchmark exports. Values s
         font-size: 0.9em !important;
     }
     .eyebench-datatable thead {
-        background-color: var(--md-primary-fg-color, #3f51b5) !important;
+        background-color: #3f51b5 !important;
         color: white !important;
     }
     .eyebench-datatable thead th {
         padding: 12px 8px !important;
         text-align: left !important;
         font-weight: 600 !important;
-        border-bottom: 2px solid var(--md-primary-fg-color, #3f51b5) !important;
+        border-bottom: 2px solid #3f51b5 !important;
+        color: white !important;
     }
     .eyebench-datatable tbody tr {
         border-bottom: 1px solid #ddd !important;
@@ -206,6 +207,7 @@ Interactive tables sourced from the latest formatted benchmark exports. Values s
     }
 })();
 </script>
+
 ## Overall Leaderboard (Test)
 
 *Macro-level comparison across every benchmark task on the held-out test folds.*
