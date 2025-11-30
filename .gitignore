@@ -106,6 +106,8 @@ Temporary Items
 *.scss
 *.js.map
 *.min.map
+# Exception for documentation stylesheets
+!docs/stylesheets/*.css
 
 ### Git ###
 # Created by git for backups. To disable backups in Git:
