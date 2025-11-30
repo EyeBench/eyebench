@@ -35,8 +35,8 @@ jobs:
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
-          if [ -f docs/requirements.txt ]; then pip install -r docs/requirements.txt; fi
-          pip install mkdocs mkdocs-material 'mkdocstrings[python]' mkdocs-gen-files mkdocs-literate-nav mkdocs-include-markdown-plugin
+          pip install torch --index-url https://download.pytorch.org/whl/cpu
+          pip install -r docs/requirements-docs.txt
 
       - name: Deploy docs
         run: mkdocs gh-deploy --force
