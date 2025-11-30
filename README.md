@@ -4,7 +4,7 @@
 [![Ruff](https://github.com/EyeBench/eyebench/actions/workflows/ruff.yml/badge.svg?branch=main)](https://github.com/EyeBench/eyebench/actions/workflows/ruff.yml)
 
 ---
-![EyeBench Overview](figures/eyebench_overview.png)
+![EyeBench Overview](docs/figures/eyebench_overview.png)
 *Figure 1: Overview of EyeBench v1.0. The benchmark curates multiple datasets for predicting reader properties (👩), and reader–text interactions (👩+📝) from eye movements. * marks prediction tasks newly introduced in EyeBench. The data are preprocessed and standardized into aligned text and gaze sequences, which are then used as input to models trained to predict task-specific targets. The models are systematically evaluated under three generalization regimes — unseen readers, unseen texts, or both. The benchmark supports the evaluation and addition of new models, datasets, and tasks.*
 
 ---
@@ -121,7 +121,7 @@ Interactive tables sourced from the latest formatted benchmark exports. Values s
         font-size: 0.9em !important;
     }
     .eyebench-datatable thead {
-        background-color: #3f51b5 !important;
+        background-color: #ffffffff !important;
         color: white !important;
     }
     .eyebench-datatable thead th {
@@ -129,7 +129,7 @@ Interactive tables sourced from the latest formatted benchmark exports. Values s
         text-align: left !important;
         font-weight: 600 !important;
         border-bottom: 2px solid #3f51b5 !important;
-        color: white !important;
+        color: black !important;
     }
     .eyebenb-datatable tbody tr {
         border-bottom: 1px solid #ddd !important;
