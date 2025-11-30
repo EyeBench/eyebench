@@ -112,7 +112,7 @@ Interactive tables sourced from the latest formatted benchmark exports. Values s
 
 <!-- DataTables assets injected by gen_metric_tables.py -->
 <link rel='stylesheet' href='https://cdn.datatables.net/1.13.6/css/jquery.dataTables.min.css'>
-<style>
+<!-- <style>
     /* Custom styling for DataTables in Material theme */
     .eyebench-datatable {
         width: 100% !important;
@@ -162,7 +162,7 @@ Interactive tables sourced from the latest formatted benchmark exports. Values s
     .dataTables_wrapper {
         margin: 2em 0 !important;
     }
-</style>
+</style> -->
 <script src='https://code.jquery.com/jquery-3.7.0.min.js'></script>
 <script src='https://cdn.datatables.net/1.13.6/js/jquery.dataTables.min.js'></script>
 <script>
