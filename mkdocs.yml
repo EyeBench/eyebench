@@ -65,8 +65,7 @@ plugins:
 
 nav:
   - Home: index.md
-  - Results:
-      - Metric Dashboards: results/eyebench_metric_tables.md
+  - Results: results/eyebench_metric_tables.md
   - Code Reference: reference/
 
 extra:
