@@ -208,14 +208,14 @@ class BaseModel(pl.LightningModule, SharedBaseModel):
         labels, loss, logits = self.shared_step(batch)
 
         metrics = self.get_metrics_map(step_type, dataloader_idx)
-        is_single = (labels.ndim == 0) or (logits.ndim == 0)
+        is_single = (labels.ndim == 0) or (logits.ndim == 0) 
         if logits.ndim == 0:
             logits = logits.unsqueeze(0)
 
         if self.task == TaskTypes.REGRESSION:
             if labels.ndim == 0:
                 labels = labels.unsqueeze(0)
-            if (len(labels) == 1) or (len(logits) == 1):
+            if (len(labels) == 1)  or (len(logits) == 1):
                 is_single = True
             if is_single:
                 if logits.ndim != 1:

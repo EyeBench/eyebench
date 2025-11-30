@@ -267,15 +267,15 @@ def write_placeholder(message: str) -> None:
 
 def main() -> None:
     """Generate the static metric tables markdown file."""
-
-    print(f'Looking for data in: {DATA_DIR}')
-
+    
+    print(f"Looking for data in: {DATA_DIR}")
+    
     if not DATA_DIR.exists():
         write_placeholder(
             'Metric exports are unavailable. Run the EyeBench evaluation pipeline to populate '
             '`results/formatted_eyebench_benchmark_results/` before building the docs.'
         )
-        print(f'⚠️  Data directory not found. Placeholder written to {OUTPUT_PATH}')
+        print(f"⚠️  Data directory not found. Placeholder written to {OUTPUT_PATH}")
         return
 
     metric_files = [
@@ -287,16 +287,16 @@ def main() -> None:
             'No formatted benchmark CSV files were found. Run the evaluation pipeline before '
             'building the documentation.'
         )
-        print(f'⚠️  No CSV files found. Placeholder written to {OUTPUT_PATH}')
+        print(f"⚠️  No CSV files found. Placeholder written to {OUTPUT_PATH}")
         return
 
-    print(f'Found {len(metric_files)} metric CSV files')
-
+    print(f"Found {len(metric_files)} metric CSV files")
+    
     used_ids: set[str] = set()
 
     # Ensure output directory exists
     OUTPUT_PATH.parent.mkdir(parents=True, exist_ok=True)
-
+    
     with OUTPUT_PATH.open('w', encoding='utf-8') as doc:
         doc.write(f'# {PAGE_TITLE}\n\n')
         doc.write(
@@ -352,8 +352,8 @@ def main() -> None:
 
             doc.write('\n')
 
-    print(f'✅ Successfully generated {OUTPUT_PATH}')
-    print(f'   File size: {OUTPUT_PATH.stat().st_size} bytes')
+    print(f"✅ Successfully generated {OUTPUT_PATH}")
+    print(f"   File size: {OUTPUT_PATH.stat().st_size} bytes")
 
 
 if __name__ == '__main__':
