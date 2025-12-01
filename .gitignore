@@ -1,5 +1,4 @@
 # TODO Cleanup
-!docs/stylesheets/extra.css
 old
 logs/*
 !logs/.gitkeep
@@ -387,3 +386,4 @@ rsconnect/
 !failed_runs.csv
 !parse_to_csv.py
 !logs/by_data_task
+!docs/stylesheets/extra.css
