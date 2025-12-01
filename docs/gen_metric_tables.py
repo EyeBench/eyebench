@@ -59,9 +59,9 @@ def sanitize(value: str | None) -> str:
         return ''
 
     cleaned = str(value)
-    cleaned = cleaned.replace('±', '+/-').replace('\\pm', '+/-')
+    cleaned = cleaned.replace('\\pm', '±')
     cleaned = cleaned.replace('~', ' ')
-    cleaned = cleaned.replace('\\checkmark', 'yes')
+    cleaned = cleaned.replace('\\checkmark', '✓')
     cleaned = re.sub(r'\\citep?\{([^}]+)\}', r'[\1]', cleaned)
     cleaned = re.sub(r'\\textbf\{([^}]+)\}', r'\1', cleaned)
     cleaned = re.sub(r'\\textit\{([^}]+)\}', r'\1', cleaned)
@@ -136,8 +136,8 @@ def add_assets(doc) -> None:
         font-size: 0.9em !important;
     }
     .eyebench-datatable thead {
-        background-color: var(--md-primary-fg-color, #3f51b5) !important;
-        color: white !important;
+        background-color: var(--md-primary-fg-color, white) !important;
+        color: black !important;
     }
     .eyebench-datatable thead th {
         padding: 12px 8px !important;
