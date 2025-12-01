@@ -102,7 +102,7 @@ def normalise_header(header: str) -> str:
         return 'Task'
     if lower == 'model':
         return 'Model'
-    return header_clean.replace('_', ' ').replace(r"\&", 'and')#.title()
+    return header_clean.replace('_', ' ').replace(r"\&", 'and').replace(r"\makecell{", '').replace('}', '').replace(r'\\', ' ')
 
 
 def render_table_html(
