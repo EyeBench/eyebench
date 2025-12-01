@@ -14,7 +14,7 @@ import mkdocs_gen_files
 ROOT = Path(__file__).resolve().parents[1]
 DATA_DIR = ROOT / 'results' / 'formatted_eyebench_benchmark_results'
 OUTPUT_PATH = Path('results/eyebench_metric_tables.md')
-PAGE_TITLE = 'EyeBench Metric Dashboards'
+PAGE_TITLE = 'EyeBench V1.0 Benchmark Results'
 
 
 FILE_PRIORITY: dict[str, int] = {
