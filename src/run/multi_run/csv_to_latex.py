@@ -13,7 +13,7 @@ from src.configs.constants import DiscriSupportedMetrics, RegrSupportedMetrics
 from src.run.multi_run.raw_to_processed_results import REG_TASKS
 
 # ——— CONSTANTS ———
-do_metric_level_tables = False  # todo Make a hyperparamter? delete
+do_metric_level_tables = False # todo Make a hyperparamter? delete
 #: CSV file with AUROC results
 CSV_BASE_PATH = Path('results/eyebench_benchmark_results')
 
@@ -2043,7 +2043,7 @@ def main():
             if split == 'test'
             else all_metrics_data_val_filtered
         )
-
+        
         if do_metric_level_tables:
             for reg_metric in RegrSupportedMetrics:
                 df_reg_eval = all_metrics_data[reg_metric.value][1]
@@ -2092,9 +2092,7 @@ def main():
                 )
                 if not wide_classification.empty:
                     csv_classification = prepare_dataframe_for_csv(wide_classification)
-                    non_model_cols = [
-                        c for c in csv_classification.columns if c != 'Model'
-                    ]
+                    non_model_cols = [c for c in csv_classification.columns if c != 'Model']
                     if non_model_cols:
                         csv_classification = csv_classification[
                             (csv_classification[non_model_cols] != '').any(axis=1)
@@ -2127,6 +2125,7 @@ def main():
         )
 
         if not normalized_agg.empty and not ranking_agg.empty:
+
             # Generate aggregated LaTeX table
             aggregated_latex, aggregated_table_df = generate_aggregated_latex_table(
                 normalized_agg, ranking_agg, f'{split}_all_metrics'

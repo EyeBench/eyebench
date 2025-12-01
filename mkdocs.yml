@@ -3,8 +3,16 @@ theme:
   name: material
   features:
     - navigation.top
+    - navigation.path
+    - navigation.prune
+    - navigation.indexes
+    - navigation.tabs
+    - navigation.tabs.sticky
     - navigation.instant
+    - navigation.instant.prefetch
+    - navigation.instant.progress
     - navigation.tracking
+    - navigation.sections
   favicon: gfx/favicon.png
   icon:
     repo: fontawesome/brands/github
@@ -14,19 +22,38 @@ extra_css:
   - stylesheets/extra.css
 
 markdown_extensions:
+  - pymdownx.blocks.tab:
+      alternate_style: true
   - admonition
   - attr_list
-  - tables
   - pymdownx.tabbed:
       alternate_style: true
+  - tables
 
 plugins:
   - search
+  - include-markdown
+  - gen-files:
+      scripts:
+        - docs/gen_ref_pages.py
+        - docs/gen_metric_tables.py
+  - literate-nav:
+      nav_file: SUMMARY.md
+  - mkdocstrings:
+      handlers:
+        python:
+          paths: [src]
+
+nav:
+  - Home: index.md
+  - Results:
+      - Metric Dashboards: results/eyebench_metric_tables.md
+  - Code Reference: reference/
 
 extra:
   social:
     - icon: fontawesome/brands/github-alt
-      link: https://github.com/EyeBench/
+      link: https://github.com/eyebench/eyebench.github.io
 
 copyright: |
   &copy; 2025 <a href="https://github.com/EyeBench/" target="_blank" rel="noopener">EyeBench</a>
