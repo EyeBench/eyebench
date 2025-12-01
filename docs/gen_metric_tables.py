@@ -189,13 +189,13 @@ def add_assets(doc) -> None:
         document.querySelectorAll('table[data-datatable="true"]').forEach(function(tbl){
             if (!window.jQuery.fn.dataTable.isDataTable(tbl)){
                 window.jQuery(tbl).DataTable({
-                    paging: true,
+                    paging: false,
                     pageLength: 25,
                     lengthChange: false,
                     info: true,
-                    searching: true,
+                    searching: false,
                     order: [],
-                    autoWidth: false,
+                    autoWidth: true,
                     language: {
                         search: "Filter models:",
                         info: "Showing _START_ to _END_ of _TOTAL_ models",
