@@ -122,14 +122,14 @@ Interactive tables sourced from the latest formatted benchmark exports. Values s
     }
     .eyebench-datatable thead {
         background-color: #ffffffff !important;
-        color: black !important;
+        color: #000000ff !important;
     }
     .eyebench-datatable thead th {
         padding: 12px 8px !important;
         text-align: left !important;
         font-weight: 600 !important;
-        border-bottom: 2px solid var(--md-primary-fg-color, #3f51b5) !important;
-        color: black !important;
+        border-bottom: 2px solid var(--md-primary-fg-color, #3f51b4) !important;
+        color: #000000ff !important;
     }
     .eyebench-datatable tbody tr {
         border-bottom: 1px solid #ddd !important;
