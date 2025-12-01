@@ -46,8 +46,18 @@ plugins:
 
 nav:
   - Home: index.md
-  - Results:
-      - Metric Dashboards: results/eyebench_metric_tables.md
+  - Aggregated Results:
+      - results/index.md
+  - Task-Level Results:
+      - Reading Comprehension Skill (CopCo): results/copco_rcs.md
+      - Dyslexia Detection (CopCo): results/copco_typ.md
+      - Claim Verification (IITBHGC): results/iitbhgc_cv.md
+      - Vocabulary Knowledge (MECO L2): results/mecol2_lex.md
+      - Reading Comprehension (OneStop): results/onestop_rc.md
+      - Domain Expertise (PoTeC): results/potec_de.md
+      - Reading Comprehension (PoTeC): results/potec_rc.md
+      - Reading Comprehension (SBSAT): results/sbsat_rc.md
+      - Subjective Text Difficulty (SBSAT): results/sbsat_std.md
   - Code Reference: reference/
 
 extra:

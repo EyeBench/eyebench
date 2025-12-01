@@ -13,9 +13,17 @@ import mkdocs_gen_files
 
 ROOT = Path(__file__).resolve().parents[1]
 DATA_DIR = ROOT / 'results' / 'formatted_eyebench_benchmark_results'
-OUTPUT_PATH = Path('results/eyebench_metric_tables.md')
-PAGE_TITLE = 'EyeBench V1.0 Benchmark Results'
+OUTPUT_BASE_PATH = Path('results')
+MAIN_PAGE_TITLE = 'EyeBench V1.0 Benchmark Results'
 
+# Files that should go on the main results page
+MAIN_PAGE_FILES = {
+    'aggregated_results_test_all_metrics',
+    'aggregated_results_val_all_metrics',
+    'aggregated_results_test_rankings',
+    'aggregated_results_val_rankings',
+    'results_tasks_combined',
+}
 
 FILE_PRIORITY: dict[str, int] = {
     'aggregated_results_test_all_metrics': 0,
@@ -39,6 +47,19 @@ BLURB_OVERRIDES: dict[str, str] = {
     'results_tasks_combined': (
         'Side-by-side view of the primary metric for each EyeBench task, averaged over folds.'
     ),
+}
+
+# Task-level page metadata
+TASK_DESCRIPTIONS: dict[str, str] = {
+    'CopCo_RCS': 'Reading Comprehension Skill (CopCo)',
+    'CopCo_TYP': 'Dyslexia Detection (CopCo)',
+    'IITBHGC_CV': 'Claim Verification (IITBHGC)',
+    'MECOL2_LEX': 'Vocabulary Knowledge (MECOL2)',
+    'OneStop_RC': 'Reading Comprehension (OneStop)',
+    'PoTeC_DE': 'Domain Expertise (PoTeC)',
+    'PoTeC_RC': 'Reading Comprehension (PoTeC)',
+    'SBSAT_RC': 'Reading Comprehension (SBSAT)',
+    'SBSAT_STD': 'Subjective Text Difficulty (SBSAT)',
 }
 
 TAB_LABELS: dict[str, str] = {
@@ -81,7 +102,7 @@ def normalise_header(header: str) -> str:
         return 'Task'
     if lower == 'model':
         return 'Model'
-    return header_clean.replace('_', ' ').title()
+    return header_clean.replace('_', ' ').replace(r"\&", 'and')#.title()
 
 
 def render_table_html(
@@ -136,7 +157,7 @@ def add_assets(doc) -> None:
         font-size: 0.9em !important;
     }
     .eyebench-datatable thead {
-        background-color: var(--md-primary-fg-color, white) !important;
+        background-color: white !important;
         color: black !important;
     }
     .eyebench-datatable thead th {
@@ -192,7 +213,7 @@ def add_assets(doc) -> None:
                     paging: false,
                     pageLength: 25,
                     lengthChange: false,
-                    info: true,
+                    info: false,
                     searching: false,
                     order: [],
                     autoWidth: true,
@@ -249,19 +270,80 @@ def sort_metric_files(files: Iterable[Path]) -> list[Path]:
     return sorted(files, key=sort_key)
 
 
-def write_placeholder(message: str) -> None:
+def write_placeholder(output_path: str, page_title: str, message: str) -> None:
     """Emit a lightweight placeholder page when metric exports are missing."""
 
-    with mkdocs_gen_files.open(OUTPUT_PATH, 'w') as doc:
-        doc.write(f'# {PAGE_TITLE}\n\n')
+    with mkdocs_gen_files.open(output_path, 'w') as doc:
+        doc.write(f'# {page_title}\n\n')
         doc.write(message.rstrip() + '\n')
 
-    mkdocs_gen_files.set_edit_path(OUTPUT_PATH, Path('docs/gen_metric_tables.py'))
+    mkdocs_gen_files.set_edit_path(output_path, Path('docs/gen_metric_tables.py'))
+
+
+def render_task_page(task_name: str, test_file: Path | None, val_file: Path | None) -> None:
+    """Generate a dedicated page for a specific task."""
+    
+    output_path = OUTPUT_BASE_PATH / f'{task_name.lower()}.md'
+    task_title = task_name.replace('_', ' ')
+    task_description = TASK_DESCRIPTIONS.get(task_name, f'Results for {task_title}')
+    
+    used_ids: set[str] = set()
+    
+    with mkdocs_gen_files.open(str(output_path), 'w') as doc:
+        doc.write(f'# {task_title}\n\n')
+        doc.write(f'*{task_description}*\n\n')
+        
+        add_assets(doc)
+        
+        # Process test and validation files
+        files_to_process = []
+        if test_file and test_file.exists():
+            files_to_process.append(('Test', test_file))
+        if val_file and val_file.exists():
+            files_to_process.append(('Validation', val_file))
+        
+        if not files_to_process:
+            doc.write('No results available for this task.\n')
+            mkdocs_gen_files.set_edit_path(str(output_path), Path('docs/gen_metric_tables.py'))
+            return
+        
+        for split_label, csv_path in files_to_process:
+            doc.write(f'## {split_label}\n\n')
+            
+            with csv_path.open('r', encoding='utf-8') as handle:
+                reader = csv.DictReader(handle)
+                fieldnames = reader.fieldnames or []
+                
+                # Get all rows
+                all_rows = list(reader)
+                
+                if not all_rows:
+                    doc.write('No data available.\n\n')
+                    continue
+                
+                column_keys = fieldnames
+                display_headers = [normalise_header(key) for key in column_keys]
+                
+                rows_for_table = [
+                    [sanitize(record.get(key, '')) for key in column_keys]
+                    for record in all_rows
+                ]
+                
+                table_id = unique_table_id(task_name, split_label.lower(), used_ids)
+                table_html = render_table_html(table_id, display_headers, rows_for_table)
+                doc.write(table_html)
+                doc.write('\n\n')
+    
+    mkdocs_gen_files.set_edit_path(str(output_path), Path('docs/gen_metric_tables.py'))
 
 
 def main() -> None:
+    main_output_path = OUTPUT_BASE_PATH / 'index.md'
+    
     if not DATA_DIR.exists():
         write_placeholder(
+            str(main_output_path),
+            MAIN_PAGE_TITLE,
             'Metric exports are unavailable. Run the EyeBench evaluation pipeline to populate '
             '`results/formatted_eyebench_benchmark_results/` before building the docs.'
         )
@@ -273,15 +355,44 @@ def main() -> None:
 
     if not metric_files:
         write_placeholder(
+            str(main_output_path),
+            MAIN_PAGE_TITLE,
             'No formatted benchmark CSV files were found. Run the evaluation pipeline before '
             'building the documentation.'
         )
         return
 
+    # Separate main page files from task-specific files
+    main_files = []
+    task_files: dict[str, dict[str, Path]] = {}
+    
+    for csv_path in metric_files:
+        stem = csv_path.stem
+        # Check if this is a task-specific file (e.g., CopCo_RCS_test.csv)
+        if stem.endswith('_test') or stem.endswith('_val'):
+            # Extract task name and split
+            if stem.endswith('_test'):
+                task_name = stem[:-5]  # Remove '_test'
+                split_type = 'test'
+            else:
+                task_name = stem[:-4]  # Remove '_val'
+                split_type = 'val'
+            
+            # Only process known tasks
+            if task_name in TASK_DESCRIPTIONS:
+                if task_name not in task_files:
+                    task_files[task_name] = {}
+                task_files[task_name][split_type] = csv_path
+        else:
+            # This is a main page file
+            if stem.lower() in MAIN_PAGE_FILES:
+                main_files.append(csv_path)
+    
+    # Generate main results page
     used_ids: set[str] = set()
-
-    with mkdocs_gen_files.open(OUTPUT_PATH, 'w') as doc:
-        doc.write(f'# {PAGE_TITLE}\n\n')
+    
+    with mkdocs_gen_files.open(str(main_output_path), 'w') as doc:
+        doc.write(f'# {MAIN_PAGE_TITLE}\n\n')
         doc.write(
             'Interactive tables sourced from the latest formatted benchmark exports. Values show '
             'the mean and standard deviation across folds.\n\n'
@@ -289,7 +400,7 @@ def main() -> None:
 
         add_assets(doc)
 
-        for csv_path in sort_metric_files(metric_files):
+        for csv_path in sort_metric_files(main_files):
             stem = csv_path.stem.lower()
             title = TITLE_OVERRIDES.get(stem, stem.replace('_', ' ').title())
             blurb = BLURB_OVERRIDES.get(stem)
@@ -335,7 +446,13 @@ def main() -> None:
 
             doc.write('\n')
 
-    mkdocs_gen_files.set_edit_path(OUTPUT_PATH, Path('docs/gen_metric_tables.py'))
+    mkdocs_gen_files.set_edit_path(str(main_output_path), Path('docs/gen_metric_tables.py'))
+    
+    # Generate individual task pages
+    for task_name in sorted(task_files.keys()):
+        test_file = task_files[task_name].get('test')
+        val_file = task_files[task_name].get('val')
+        render_task_page(task_name, test_file, val_file)
 
 
 # Execute main function when imported by MkDocs gen-files plugin
