@@ -190,13 +190,6 @@ class PoTeCProcessor(DatasetProcessor):
             ia_df[col] = 0
 
         fix_zero_cols = ['NEXT_SAC_AVG_VELOCITY', 'NEXT_SAC_AMPLITUDE']
-        # # TODO: delete?  assuming avg velocity of 150 pixels/ms
-        # approximate NEXT_SAC_DURATION via length of saccade between current and next fixation
-        # next_x = fix_df.groupby('unique_trial_id')['CURRENT_FIX_X'].shift(-1)
-        # next_y = fix_df.groupby('unique_trial_id')['CURRENT_FIX_Y'].shift(-1)
-        # dx = next_x - fix_df['CURRENT_FIX_X']
-        # dy = next_y - fix_df['CURRENT_FIX_Y']
-        # (dx ** 2 + dy ** 2).fillna(0) / 15
 
         for col in fix_zero_cols:
             fix_df[col] = 0
@@ -327,10 +320,6 @@ class PoTeCProcessor(DatasetProcessor):
         enriched_fix_df['normalized_ID'] = enriched_fix_df[
             'CURRENT_FIX_INTEREST_AREA_INDEX'
         ]
-        # enriched_fix_df['DE_RC'] = (
-        #     enriched_fix_df['DE'].astype(str) + '_' + enriched_fix_df['RC'].astype(str)
-        # )
-        # ia_df['DE_RC'] = ia_df['DE'].astype(str) + '_' + ia_df['RC'].astype(str)
 
         return enriched_fix_df, ia_df
 
@@ -386,6 +375,7 @@ class PoTeCProcessor(DatasetProcessor):
             validate='many_to_one',
         )
 
+        # this is equivalent to everything correct
         df['DE'] = (df['mean_acc_bq'] > 0.9).astype(int)
 
         return df

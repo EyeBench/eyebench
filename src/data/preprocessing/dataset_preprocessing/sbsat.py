@@ -36,13 +36,18 @@ class SBSATProcessor(DatasetProcessor):
 
     # AOI label corrections: (paragraph_id, aoi_id, correct_label)
     AOI_FIXES = [
+        # https://github.com/ahnchive/SB-SAT/blob/master/stimuli/reading%20screenshot/reading-dickens-3.png
         ('reading-dickens-3', 45, 'Sempere &'),
+        # https://github.com/ahnchive/SB-SAT/blob/master/stimuli/reading%20screenshot/reading-dickens-5.png
         ('reading-dickens-5', 112, 'Mr.'),
         ('reading-dickens-5', 113, 'Dickens'),
+        # https://github.com/ahnchive/SB-SAT/blob/master/stimuli/reading%20screenshot/reading-flytrap-3.png
         ('reading-flytrap-3', 30, 'Burdon-'),
         ('reading-flytrap-3', 31, "Sanderson's"),
+        # https://github.com/ahnchive/SB-SAT/blob/master/stimuli/reading%20screenshot/reading-genome-2.png
         ('reading-genome-2', 70, 'species—'),
         ('reading-genome-2', 71, 'in'),
+        # https://github.com/ahnchive/SB-SAT/blob/master/stimuli/reading%20screenshot/reading-genome-3.png
         ('reading-genome-3', 45, 'gee-'),
         ('reading-genome-3', 46, 'whiz,'),
     ]
@@ -66,7 +71,7 @@ class SBSATProcessor(DatasetProcessor):
     }
 
     def add_ia_report_features_to_fixation_data(
-        self, ia_df: pd.DataFrame, fix_df: pd.DataFrame
+        self, ia_df: pd.DataFrame, fix_df: pd.DataFrame,
     ) -> tuple[pd.DataFrame, pd.DataFrame]:
         """
         Merge per-IA (interest area) features into the fixation-level data.
@@ -97,7 +102,7 @@ class SBSATProcessor(DatasetProcessor):
         ia_df = ia_df.copy()
         ia_df['old_original_word_index'] = ia_df['word_index']
 
-        # Extract story metadata
+        # extract story metadata
         ia_df['story_name'] = ia_df['unique_paragraph_id'].str.extract(
             r'reading-(.*)-\d+'
         )[0]
@@ -105,7 +110,7 @@ class SBSATProcessor(DatasetProcessor):
             ia_df['unique_paragraph_id'].str.extract(r'reading-.*-(\d+)')[0].astype(int)
         )
 
-        # Sort and reconstruct full paragraphs
+        # sort and reconstruct full paragraphs
         ia_df = ia_df.sort_values(
             by=[
                 'participant_id',
