@@ -102,7 +102,13 @@ def normalise_header(header: str) -> str:
         return 'Task'
     if lower == 'model':
         return 'Model'
-    return header_clean.replace('_', ' ').replace(r"\&", 'and').replace(r"\makecell{", '').replace('}', '').replace(r'\\', ' ')
+    return (
+        header_clean.replace('_', ' ')
+        .replace(r'\&', 'and')
+        .replace(r'\makecell{', '')
+        .replace('}', '')
+        .replace(r'\\', ' ')
+    )
 
 
 def render_table_html(
@@ -280,72 +286,78 @@ def write_placeholder(output_path: str, page_title: str, message: str) -> None:
     mkdocs_gen_files.set_edit_path(output_path, Path('docs/gen_metric_tables.py'))
 
 
-def render_task_page(task_name: str, test_file: Path | None, val_file: Path | None) -> None:
+def render_task_page(
+    task_name: str, test_file: Path | None, val_file: Path | None
+) -> None:
     """Generate a dedicated page for a specific task."""
-    
+
     output_path = OUTPUT_BASE_PATH / f'{task_name.lower()}.md'
     task_title = task_name.replace('_', ' ')
     task_description = TASK_DESCRIPTIONS.get(task_name, f'Results for {task_title}')
-    
+
     used_ids: set[str] = set()
-    
+
     with mkdocs_gen_files.open(str(output_path), 'w') as doc:
         doc.write(f'# {task_title}\n\n')
         doc.write(f'*{task_description}*\n\n')
-        
+
         add_assets(doc)
-        
+
         # Process test and validation files
         files_to_process = []
         if test_file and test_file.exists():
             files_to_process.append(('Test', test_file))
         if val_file and val_file.exists():
             files_to_process.append(('Validation', val_file))
-        
+
         if not files_to_process:
             doc.write('No results available for this task.\n')
-            mkdocs_gen_files.set_edit_path(str(output_path), Path('docs/gen_metric_tables.py'))
+            mkdocs_gen_files.set_edit_path(
+                str(output_path), Path('docs/gen_metric_tables.py')
+            )
             return
-        
+
         for split_label, csv_path in files_to_process:
             doc.write(f'## {split_label}\n\n')
-            
+
             with csv_path.open('r', encoding='utf-8') as handle:
                 reader = csv.DictReader(handle)
                 fieldnames = reader.fieldnames or []
-                
+
                 # Get all rows
                 all_rows = list(reader)
-                
+
                 if not all_rows:
                     doc.write('No data available.\n\n')
                     continue
-                
+
                 column_keys = fieldnames
                 display_headers = [normalise_header(key) for key in column_keys]
-                
+
                 rows_for_table = [
                     [sanitize(record.get(key, '')) for key in column_keys]
                     for record in all_rows
                 ]
-                
+
                 table_id = unique_table_id(task_name, split_label.lower(), used_ids)
-                table_html = render_table_html(table_id, display_headers, rows_for_table)
+                table_html = render_table_html(
+                    table_id, display_headers, rows_for_table
+                )
                 doc.write(table_html)
                 doc.write('\n\n')
-    
+
     mkdocs_gen_files.set_edit_path(str(output_path), Path('docs/gen_metric_tables.py'))
 
 
 def main() -> None:
     main_output_path = OUTPUT_BASE_PATH / 'index.md'
-    
+
     if not DATA_DIR.exists():
         write_placeholder(
             str(main_output_path),
             MAIN_PAGE_TITLE,
             'Metric exports are unavailable. Run the EyeBench evaluation pipeline to populate '
-            '`results/formatted_eyebench_benchmark_results/` before building the docs.'
+            '`results/formatted_eyebench_benchmark_results/` before building the docs.',
         )
         return
 
@@ -358,14 +370,14 @@ def main() -> None:
             str(main_output_path),
             MAIN_PAGE_TITLE,
             'No formatted benchmark CSV files were found. Run the evaluation pipeline before '
-            'building the documentation.'
+            'building the documentation.',
         )
         return
 
     # Separate main page files from task-specific files
     main_files = []
     task_files: dict[str, dict[str, Path]] = {}
-    
+
     for csv_path in metric_files:
         stem = csv_path.stem
         # Check if this is a task-specific file (e.g., CopCo_RCS_test.csv)
@@ -377,7 +389,7 @@ def main() -> None:
             else:
                 task_name = stem[:-4]  # Remove '_val'
                 split_type = 'val'
-            
+
             # Only process known tasks
             if task_name in TASK_DESCRIPTIONS:
                 if task_name not in task_files:
@@ -387,10 +399,10 @@ def main() -> None:
             # This is a main page file
             if stem.lower() in MAIN_PAGE_FILES:
                 main_files.append(csv_path)
-    
+
     # Generate main results page
     used_ids: set[str] = set()
-    
+
     with mkdocs_gen_files.open(str(main_output_path), 'w') as doc:
         doc.write(f'# {MAIN_PAGE_TITLE}\n\n')
         doc.write(
@@ -446,8 +458,10 @@ def main() -> None:
 
             doc.write('\n')
 
-    mkdocs_gen_files.set_edit_path(str(main_output_path), Path('docs/gen_metric_tables.py'))
-    
+    mkdocs_gen_files.set_edit_path(
+        str(main_output_path), Path('docs/gen_metric_tables.py')
+    )
+
     # Generate individual task pages
     for task_name in sorted(task_files.keys()):
         test_file = task_files[task_name].get('test')

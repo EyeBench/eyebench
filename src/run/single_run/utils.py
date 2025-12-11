@@ -13,6 +13,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
 import seaborn as sns
+import wandb
 from hydra import compose
 from hydra.utils import instantiate, to_absolute_path
 from lightning.pytorch.loggers.wandb import WandbLogger
@@ -28,7 +29,6 @@ from sklearn.metrics import (
 from sklearn.preprocessing import StandardScaler
 from tqdm import tqdm
 
-import wandb
 from src.configs.constants import (
     BackboneNames,
     DatasetLanguage,

@@ -71,7 +71,9 @@ class SBSATProcessor(DatasetProcessor):
     }
 
     def add_ia_report_features_to_fixation_data(
-        self, ia_df: pd.DataFrame, fix_df: pd.DataFrame,
+        self,
+        ia_df: pd.DataFrame,
+        fix_df: pd.DataFrame,
     ) -> tuple[pd.DataFrame, pd.DataFrame]:
         """
         Merge per-IA (interest area) features into the fixation-level data.

@@ -19,12 +19,12 @@ import lightning_fabric as lf
 import numpy as np
 import pandas as pd
 import torch
+import wandb
 import yaml
 from loguru import logger
 from tap import Tap
 from tqdm import tqdm
 
-import wandb
 from src.configs.constants import REGIMES, MLModelNames, Scaler
 from src.configs.data import DATA_CONFIGS_MAPPING
 from src.configs.main_config import Args, get_model

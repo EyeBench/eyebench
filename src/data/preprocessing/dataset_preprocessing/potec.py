@@ -206,7 +206,7 @@ class PoTeCProcessor(DatasetProcessor):
         ia_df['IA_FIXATION_%'] = ia_df.groupby('unique_trial_id')[
             'IA_FIXATION_COUNT'
         ].transform(lambda x: x / np.sum(x))
-        
+
         return ia_df, fix_df
 
     def add_ia_report_features_to_fixation_data(

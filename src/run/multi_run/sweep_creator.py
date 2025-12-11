@@ -9,11 +9,11 @@ import stat
 from pathlib import Path
 from typing import Literal
 
+import wandb
 import yaml
 from loguru import logger
 from tap import Tap
 
-import wandb
 from src.run.multi_run.search_spaces import search_space_by_model
 from src.run.multi_run.utils import count_hyperparameter_configs
 

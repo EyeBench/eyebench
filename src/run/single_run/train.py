@@ -10,13 +10,13 @@ from typing import Sequence, cast
 import hydra
 import lightning_fabric as lf
 import torch
+import wandb
 from hydra.core.config_store import ConfigStore
 from hydra.core.hydra_config import HydraConfig
 from lightning.pytorch.callbacks import ModelCheckpoint
 from loguru import logger
 from omegaconf import DictConfig
 
-import wandb
 from src.configs.constants import DLModelNames, RunModes
 from src.configs.main_config import Args, get_model
 from src.configs.models.base_model import DLModelArgs
