@@ -59,6 +59,7 @@ nav:
       - Reading Comprehension (SBSAT): results/sbsat_rc.md
       - Subjective Text Difficulty (SBSAT): results/sbsat_std.md
   - Code Reference: reference/
+  - Data Notes: NOTES.md
 
 extra:
   social:

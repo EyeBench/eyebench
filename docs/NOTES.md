@@ -115,3 +115,10 @@
 * `NEXT_SAC_DURATION` set to 0
 * `start_of_line` set to 0
 * `end_of_line` set to 0
+
+## OneStop
+
+### Data Splits
+* Used participant and item splits from previous work - [Fine-Grained Prediction of Reading Comprehension from Eye Movements
+](https://aclanthology.org/2024.emnlp-main.198/)
+
