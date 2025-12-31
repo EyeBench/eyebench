@@ -70,10 +70,7 @@ def main() -> int:
     args = parser.parse_args()
     dataset = args.dataset
 
-    if dataset:
-        datasets = dataset.split(',')
-    else:
-        datasets = list(DataSets)
+    datasets = dataset.split(',') if dataset else list(DataSets)
 
     for dataset_name in datasets:
         logger.info(f'Processing {dataset_name}...')
