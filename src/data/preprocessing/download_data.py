@@ -2,7 +2,7 @@ import argparse
 from pathlib import Path
 
 import pymovements as pm
-import pyreadr
+import rdata
 import requests
 from loguru import logger
 from tqdm import tqdm
@@ -62,7 +62,7 @@ def convert_rda_to_csv(root: Path, dataset_name: str) -> None:
         return
 
     logger.info(f'Converting {rda_path} to {csv_path}')
-    rda_data = pyreadr.read_r(str(rda_path))
+    rda_data = rdata.read_rda(rda_path)
     df = rda_data['d']
     csv_path.parent.mkdir(parents=True, exist_ok=True)
     df.to_csv(csv_path, index=False)
