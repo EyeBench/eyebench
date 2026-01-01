@@ -2,6 +2,7 @@ import argparse
 from pathlib import Path
 
 import pymovements as pm
+import pyreadr
 import requests
 from loguru import logger
 from tqdm import tqdm
@@ -15,6 +16,7 @@ AUXILIARY_FILES: dict[str, dict[str, str]] = {
     DataSets.MECO_L2: {  # Hosted on MECO L2: The Multilingual Eye-movement COrpus, L2 (English) - https://osf.io/q9h43
         'MECOL2W1/demographics/joint.ind.diff.l2.rda': '4zu8d',
         'MECOL2W2/demographics/joint.ind.diff.l2.w2.rda': 'keuvm',
+        'MECOL2/stimuli/texts.meco.l2.rda': 'zwfdb',
     },
 }
 
@@ -42,6 +44,29 @@ def download_auxiliary_files(root: Path, dataset_name: str) -> None:
             for chunk in response.iter_content(chunk_size=8192):
                 if chunk:
                     fp.write(chunk)
+
+
+def convert_rda_to_csv(root: Path, dataset_name: str) -> None:
+    """Convert RDA files to CSV for specific datasets."""
+    if dataset_name != DataSets.MECO_L2:
+        return
+    rda_path = root / 'MECOL2/stimuli/texts.meco.l2.rda'
+    csv_path = root / 'MECOL2/stimuli/stimuli.csv'
+
+    if csv_path.exists():
+        logger.info(f'{csv_path} already exists. Skipping conversion...')
+        return
+
+    if not rda_path.exists():
+        logger.warning(f'{rda_path} not found. Skipping conversion...')
+        return
+
+    logger.info(f'Converting {rda_path} to {csv_path}')
+    rda_data = pyreadr.read_r(str(rda_path))
+    df = rda_data['d']
+    csv_path.parent.mkdir(parents=True, exist_ok=True)
+    df.to_csv(csv_path, index=False)
+    logger.info(f'Saved stimuli CSV to {csv_path}')
 
 
 def prepare_dataset_definition(dataset_name: str):
@@ -110,6 +135,7 @@ def main() -> int:
             load_or_download_dataset(dataset_name, data_path, download=True)
 
         download_auxiliary_files(data_path, dataset_name)
+        convert_rda_to_csv(data_path, dataset_name)
 
     return 0
 
