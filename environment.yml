@@ -39,6 +39,7 @@ dependencies:
   - peft=0.15.2
   - spacy=3.8.5
   - pytorch-metric-learning=2.9.0
+  - rdata=1.0.0
   - pip:
       - -e . # For development purposes
       - git+https://github.com/aeye-lab/pymovements.git@siqube-stack-pr
@@ -46,4 +47,3 @@ dependencies:
       - en_core_web_sm@https://github.com/explosion/spacy-models/releases/download/en_core_web_sm-3.8.0/en_core_web_sm-3.8.0-py3-none-any.whl
       - da_core_news_sm@https://github.com/explosion/spacy-models/releases/download/da_core_news_sm-3.8.0/da_core_news_sm-3.8.0-py3-none-any.whl
       - de_core_news_sm@https://github.com/explosion/spacy-models/releases/download/de_core_news_sm-3.8.0/de_core_news_sm-3.8.0-py3-none-any.whl
-      - juliacall
