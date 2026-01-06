@@ -117,6 +117,21 @@
       ],
     },
     {
+      "name": "Download data",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "src/data/preprocessing/download_data.py",
+      "console": "integratedTerminal",
+      "justMyCode": false,
+      "env": {
+        "PYDEVD_WARN_SLOW_RESOLVE_TIMEOUT": "20.0",
+      },
+      "args": [
+        "--dataset",
+        "MECOL2"
+      ],
+    },
+    {
       "name": "Union files",
       "type": "debugpy",
       "request": "launch",

@@ -72,7 +72,8 @@ def convert_rda_to_csv(root: Path, dataset_name: str) -> None:
 def prepare_dataset_definition(dataset_name: str):
     """Prepare dataset definition with gaze files disabled."""
     dataset_def = pm.DatasetLibrary.get(dataset_name)
-    dataset_def.has_files['gaze'] = False
+    # dataset_def.resources = [resource for resource in dataset_def.resources if resource.content != 'gaze']
+
     return dataset_def
 
 
