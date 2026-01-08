@@ -1,5 +1,6 @@
 # EyeBench: Predictive Modeling from Eye Movements in Reading
 
+[![paper](https://img.shields.io/static/v1?label=paper&message=NeurIPS%20paper&color=brightgreen)](https://openreview.net/pdf?id=LhbYJJ3MFd)
 [![python](https://img.shields.io/badge/Python-3.12-3776AB.svg?style=flat&logo=python&logoColor=white)](https://www.python.org)
 [![Ruff](https://github.com/EyeBench/eyebench/actions/workflows/ruff.yml/badge.svg?branch=main)](https://github.com/EyeBench/eyebench/actions/workflows/ruff.yml)
 
