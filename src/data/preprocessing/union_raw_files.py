@@ -7,6 +7,7 @@ import pandas as pd
 import polars as pl
 import pymovements as pm
 from loguru import logger
+from pymovements import ResourceDefinitions
 
 from src.configs.constants import STATS_FOLDER, DataSets
 from src.configs.data import get_data_args
@@ -130,7 +131,9 @@ def combine_dataset(dataset_name: str) -> None:
             base = lookup[f'data_args_{part}'].base_path
             logger.info(f'Processing {dataset_name}{part}...')
             dataset_def = pm.DatasetLibrary.get(f'{dataset_name}{part}')
-            dataset_def.has_files['gaze'] = False
+            dataset_def.resources = ResourceDefinitions(
+                [resource for resource in dataset_def.resources if resource.content != 'gaze']
+            )
             logger.info(f'Loading {dataset_name}{part} dataset...')
             dataset = pm.Dataset(dataset_def, f'data/{dataset_name}{part}').load()
             if part == 'W1':

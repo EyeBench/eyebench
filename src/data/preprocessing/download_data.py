@@ -5,6 +5,7 @@ import pymovements as pm
 import rdata
 import requests
 from loguru import logger
+from pymovements import ResourceDefinitions
 from tqdm import tqdm
 
 from src.configs.constants import DataSets
@@ -72,7 +73,9 @@ def convert_rda_to_csv(root: Path, dataset_name: str) -> None:
 def prepare_dataset_definition(dataset_name: str):
     """Prepare dataset definition with gaze files disabled."""
     dataset_def = pm.DatasetLibrary.get(dataset_name)
-    # dataset_def.resources = [resource for resource in dataset_def.resources if resource.content != 'gaze']
+    dataset_def.resources = ResourceDefinitions(
+        [resource for resource in dataset_def.resources if resource.content != 'gaze']
+    )
 
     return dataset_def
 
