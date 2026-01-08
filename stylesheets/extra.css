@@ -1,0 +1,39 @@
+/* Hide the right sidebar (table of contents) */
+.md-sidebar--secondary {
+    display: none;
+}
+
+/* Make content full width when TOC is hidden */
+.md-content {
+    max-width: 100%;
+}
+
+/* Adjust main container to use full available width */
+.md-grid {
+    max-width: 100%;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+/* Make tables more readable with full width */
+.md-typeset table:not([class]) {
+    display: table;
+    width: 100%;
+    overflow-x: auto;
+}
+
+/* Ensure DataTables use full width */
+.eyebench-datatable {
+    width: 100% !important;
+}
+
+/* Better table styling for wide tables */
+.md-typeset__table {
+    width: 100%;
+    overflow-x: auto;
+}
+
+/* Adjust content container */
+.md-content__inner {
+    margin-right: 0;
+}
