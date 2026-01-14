@@ -1,0 +1,1380 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../reference/run/single_run/utils/">
+      
+      
+      
+        
+      
+      
+      <link rel="icon" href="../gfx/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.1">
+    
+    
+      
+        <title>Data Notes - EyeBench</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.484c7ddc.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/_mkdocstrings.css">
+    
+      <link rel="stylesheet" href="../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#datasets" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="EyeBench" class="md-header__button md-logo" aria-label="EyeBench" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M22 21H2V3h2v16h2v-9h4v9h2V6h4v13h2v-5h4z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            EyeBench
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Data Notes
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href=".." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../results/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Aggregated Results
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../results/copco_rcs/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Task-Level Results
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../reference/configs/__init__/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Code Reference
+
+        </a>
+      </li>
+    
+  
+
+    
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    <li class="md-tabs__item md-tabs__item--active">
+      <a href="./" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Data Notes
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="EyeBench" class="md-nav__button md-logo" aria-label="EyeBench" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M22 21H2V3h2v16h2v-9h4v9h2V6h4v13h2v-5h4z"/></svg>
+
+    </a>
+    EyeBench
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../results/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Aggregated Results
+  
+
+    
+  </span>
+  
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../results/copco_rcs/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Task-Level Results
+  
+
+    
+  </span>
+  
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    
+  
+  
+  
+    <a href="../reference/configs/__init__/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Code Reference
+  
+
+    
+  </span>
+  
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Data Notes
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Data Notes
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#copco" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        CopCo
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="CopCo">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#features-and-adjustements" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Features and Adjustements
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#filtered" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Filtered
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#missing-values" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Missing values
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#iitb-hgc" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        IITB-HGC
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="IITB-HGC">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#features-and-adjustements_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Features and Adjustements
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#missing-values_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Missing values
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#mecol2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        MECOL2
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="MECOL2">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#features-and-adjustments" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Features and Adjustments
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#filtered_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Filtered
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#potec" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        PoTeC
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="PoTeC">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#filtered_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Filtered
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#missing-values_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Missing values
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sbsat" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        SBSAT
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="SBSAT">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#features-and-adjustments_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Features and Adjustments
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#missing-values_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Missing values
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#onestop" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        OneStop
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="OneStop">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#data-splits" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Data Splits
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#copco" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        CopCo
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="CopCo">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#features-and-adjustements" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Features and Adjustements
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#filtered" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Filtered
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#missing-values" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Missing values
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#iitb-hgc" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        IITB-HGC
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="IITB-HGC">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#features-and-adjustements_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Features and Adjustements
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#missing-values_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Missing values
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#mecol2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        MECOL2
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="MECOL2">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#features-and-adjustments" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Features and Adjustments
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#filtered_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Filtered
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#potec" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        PoTeC
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="PoTeC">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#filtered_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Filtered
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#missing-values_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Missing values
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sbsat" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        SBSAT
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="SBSAT">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#features-and-adjustments_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Features and Adjustments
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#missing-values_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Missing values
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#onestop" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        OneStop
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="OneStop">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#data-splits" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Data Splits
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+                
+
+
+
+  
+
+
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="datasets">Datasets</h1>
+<h2 id="copco">CopCo</h2>
+<h3 id="features-and-adjustements">Features and Adjustements</h3>
+<ul>
+<li>Accounted for non-breaking white spaces in interest areas <code>\xa0</code>.</li>
+</ul>
+<h3 id="filtered">Filtered</h3>
+<ul>
+<li>Excluded practice trials indicated via <code>paragraph_id=-1</code> and <code>speech_id=1327</code>.</li>
+<li>Excluded participants without <code>RCS score</code> for <code>Reading Comprehension Skill</code> task.</li>
+</ul>
+<h3 id="missing-values">Missing values</h3>
+<ul>
+<li><code>NEXT_SAC_ANGLE</code> set to 0.</li>
+<li><code>NEXT_FIX_ANGLE</code> set to 0.</li>
+<li><code>NEXT_FIX_DISTANCE</code> set to 0.</li>
+<li><code>PREVIOUS_FIX_ANGLE</code> set to 0.</li>
+<li><code>CURRENT_FIX_PUPIL</code> set to 0.</li>
+<li><code>NEXT_SAC_AVG_VELOCITY</code> set to 0.</li>
+</ul>
+<h2 id="iitb-hgc">IITB-HGC</h2>
+<h3 id="features-and-adjustements_1">Features and Adjustements</h3>
+<ul>
+<li>Since the dataset only published <code>word indices</code>, approximated <code>x</code> coordinated via <code>word index</code>, set and set <code>y</code> to 0. </li>
+<li>To match the <code>paragraph</code> and provided interest areas in the fixation report we adjusted:</li>
+<li>3: <code>with Andy</code> non-breaking whitespace in interest area</li>
+<li>5: <code>watch Jose</code> non-breaking whitespace in interest area</li>
+<li>9: <code>$1,750</code> vs <code>$__NBWS__1,750.00</code></li>
+<li>25: <code>£3</code> vs <code>£__NBWS__3.00</code></li>
+<li>26: <code>for Virgil</code> non-breaking whitespace in interest area</li>
+<li>33: <code>at FC</code> non-breaking whitespace in interest area</li>
+<li>53: <code>$5,000</code> vs <code>$__NBWS__5,000.00</code></li>
+<li>74: <code>$20,000</code> vs <code>$__NBWS__20,000.00</code></li>
+<li>82: <code>£750,000</code> vs <code>£__NBWS__7,50,000.00</code></li>
+<li>99: <code>$5.3</code> vs <code>$__NBWS__5.30</code></li>
+<li>102: <code>$10</code> vs <code>$__NBWS__10.00</code>, and <code>$9</code> vs <code>$__NBWS__9.00</code></li>
+<li>130: <code>$50,000</code> vs <code>$__NBWS__50,000.00</code></li>
+<li>257: <code>$10</code> vs <code>$__NBWS__10.00</code></li>
+<li>280: <code>Jedinak twisted</code> vs <code>Jedinak__NBWS__twisted</code></li>
+<li>288: <code>$2</code> vs <code>$__NBWS__2.00</code></li>
+<li>298: <code>$200</code> vs <code>$__NBWS__200.00</code></li>
+<li>325: <code>$9</code> vs <code>$__NBWS__9.00</code></li>
+<li>357: <code>$1.8</code> vs <code>$__NBWS__1.80</code>, and <code>$2.6</code> vs <code>$__NBWS__2.60</code></li>
+<li>365: <code>$25,000</code> vs <code>$__NBWS__25,000.00</code></li>
+<li>373: <code>$260</code> vs <code>$__NBWS__260.00</code>, <code>$1.7</code> vs <code>$__NBWS__1.70</code>, and <code>$1.37</code> vs <code>$__NBWS__1.37</code></li>
+<li>403: <code>hour-long</code> vs <code>hour-long hour-long</code></li>
+<li>404: <code>$2.9</code> vs <code>$__NBWS__2.90</code></li>
+<li>425: <code>- many</code> vs <code>-__NBWS__many</code>, <code>against Leicester City</code> vs <code>against__NBWS__Leicester__NBWS__City</code>, and <code>van Gaal's</code> vs <code>van__NBWS__Gaal's</code></li>
+<li>441: <code>$10,000</code> vs <code>$__NBWS__10,000.00</code></li>
+<li>460: <code>$1.6</code> vs <code>$__NBWS__1.60</code></li>
+<li>468: <code>$105</code> vs <code>$__NBWS__105.00</code></li>
+<li>483: <code>(£4,943)</code> vs <code>(£__NBWS__4,943.00)</code></li>
+<li>485: <code>long-running</code> vs <code>long-running long-running</code></li>
+</ul>
+<h3 id="missing-values_1">Missing values</h3>
+<ul>
+<li><code>NEXT_SAC_START_X</code> set to 0</li>
+<li><code>NEXT_SAC_END_X</code> set to 0</li>
+<li><code>NEXT_SAC_END_Y</code> set to 0</li>
+<li><code>NEXT_SAC_START_Y</code> set to 0</li>
+<li><code>PREVIOUS_FIX_DISTANCE</code> set to 0</li>
+<li><code>NEXT_SAC_ANGLE</code> set to 0</li>
+<li><code>NEXT_FIX_ANGLE</code> set to 0</li>
+<li><code>NEXT_FIX_DISTANCE</code> set to 0</li>
+<li><code>PREVIOUS_FIX_ANGLE</code> set to 0</li>
+</ul>
+<h2 id="mecol2">MECOL2</h2>
+<h3 id="features-and-adjustments">Features and Adjustments</h3>
+<ul>
+<li>Fixed misalignments for <code>participant_id</code> in paragraph id's (original: adjusted)</li>
+<li><code>sp_36</code> <ul>
+<li>11: 12</li>
+<li>10: 11</li>
+<li>9: 10</li>
+<li>8: 9</li>
+<li>7: 8</li>
+<li>6: 7</li>
+<li>5: 6</li>
+</ul>
+</li>
+<li><code>gr_45</code><ul>
+<li>11: 12</li>
+<li>10: 11</li>
+<li>9: 10</li>
+<li>8: 9</li>
+<li>7: 8</li>
+</ul>
+</li>
+<li><code>it_25</code><ul>
+<li>10: 11</li>
+<li>9: 10</li>
+<li>7: 8</li>
+<li>6: 7</li>
+</ul>
+</li>
+<li><code>se_38</code><ul>
+<li>11: 12</li>
+<li>10: 11</li>
+<li>9: 10</li>
+<li>8: 9</li>
+<li>7: 8</li>
+<li>6: 7</li>
+<li>5: 6</li>
+<li>4: 5</li>
+</ul>
+</li>
+</ul>
+<h3 id="filtered_1">Filtered</h3>
+<ul>
+<li>Excluded participants without Lextale score (label for VK).</li>
+</ul>
+<h2 id="potec">PoTeC</h2>
+<h3 id="filtered_2">Filtered</h3>
+<ul>
+<li>Excluded participants without background questions.</li>
+</ul>
+<h3 id="missing-values_2">Missing values</h3>
+<ul>
+<li><code>NEXT_SAC_START_X</code> set to 0</li>
+<li><code>NEXT_SAC_START_Y</code> set to 0</li>
+<li><code>NEXT_SAC_END_X</code> set to 0</li>
+<li><code>NEXT_SAC_END_Y</code> set to 0</li>
+<li><code>NEXT_SAC_AVG_VELOCITY</code> set to 0</li>
+<li><code>NEXT_SAC_AMPLITUDE</code> set to 0</li>
+</ul>
+<h2 id="sbsat">SBSAT</h2>
+<h3 id="features-and-adjustments_1">Features and Adjustments</h3>
+<ul>
+<li>Adjusted encoding inside of areas of interest to match statistical and machine learning models:</li>
+<li><code>\x92':</code>'`</li>
+<li><code>\x93</code>: <code>"</code></li>
+<li><code>\x94</code>: <code>"</code></li>
+<li><code>\x97</code>: <code>—</code></li>
+<li>Matched paragraphs to areas of interest:</li>
+<li><code>reading-dickens-3</code>: Sempere &amp; with non-breaking whitespace</li>
+<li><code>reading-dickens-5</code>: <code>Mr. Dickens</code> occupied one area of interest, split into <code>Mr.</code> and <code>Dickens</code></li>
+<li><code>reading-flytrap-3</code>: <code>Burdon-Sanderson's</code> split across two lines lines but one area of interest defined by authors. Split into two: <code>Burdon-</code> and <code>Sanderson's</code></li>
+<li><code>reading-genome-2</code>: <code>species—in</code> split across two lines but only one area of interest defined by authors. Split into two: <code>species—</code> and <code>in</code>.</li>
+<li><code>reading-genome-3</code>: <code>gee-whiz,</code> split across two lines but only one area of interest defined by authors. Split into two: <code>gee-</code> and <code>whiz,</code>.</li>
+<li>Used OCR to get the text from the original stimuli pictures, afterwards manually corrected.  (@aarbeikop)</li>
+</ul>
+<h3 id="missing-values_3">Missing values</h3>
+<ul>
+<li><code>NEXT_SAC_DURATION</code> set to 0</li>
+<li><code>start_of_line</code> set to 0</li>
+<li><code>end_of_line</code> set to 0</li>
+</ul>
+<h2 id="onestop">OneStop</h2>
+<h3 id="data-splits">Data Splits</h3>
+<ul>
+<li>Used participant and item splits from previous work - <a href="https://aclanthology.org/2024.emnlp-main.198/">Fine-Grained Prediction of Reading Comprehension from Eye Movements
+</a></li>
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      &copy; 2025 <a href="https://github.com/EyeBench/" target="_blank" rel="noopener">EyeBench</a>
+
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        
+<div class="md-social">
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://github.com/eyebench/eyebench.github.io" target="_blank" rel="noopener" title="github.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M202.1 328.7c0 20.9-10.9 55.1-36.7 55.1s-36.7-34.2-36.7-55.1 10.9-55.1 36.7-55.1 36.7 34.2 36.7 55.1M496 278.2c0 31.9-3.2 65.7-17.5 95-37.9 76.6-142.1 74.8-216.7 74.8-75.8 0-186.2 2.7-225.6-74.8-14.6-29-20.2-63.1-20.2-95 0-41.9 13.9-81.5 41.5-113.6-5.2-15.8-7.7-32.4-7.7-48.8 0-21.5 4.9-32.3 14.6-51.8 45.3 0 74.3 9 108.8 36 29-6.9 58.8-10 88.7-10 27 0 54.2 2.9 80.4 9.2 34-26.7 63-35.2 107.8-35.2 9.8 19.5 14.6 30.3 14.6 51.8 0 16.4-2.6 32.7-7.7 48.2 27.5 32.4 39 72.3 39 114.2m-64.3 50.5c0-43.9-26.7-82.6-73.5-82.6-18.9 0-37 3.4-56 6-14.9 2.3-29.8 3.2-45.1 3.2-15.2 0-30.1-.9-45.1-3.2-18.7-2.6-37-6-56-6-46.8 0-73.5 38.7-73.5 82.6 0 87.8 80.4 101.3 150.4 101.3h48.2c70.3 0 150.6-13.4 150.6-101.3m-82.6-55.1c-25.8 0-36.7 34.2-36.7 55.1s10.9 55.1 36.7 55.1 36.7-34.2 36.7-55.1-10.9-55.1-36.7-55.1"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+      <div class="md-progress" data-md-component="progress" role="progressbar"></div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["navigation.top", "navigation.path", "navigation.prune", "navigation.indexes", "navigation.tabs", "navigation.tabs.sticky", "navigation.instant", "navigation.instant.prefetch", "navigation.instant.progress", "navigation.tracking", "navigation.sections"], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+    
+  </body>
+</html>
