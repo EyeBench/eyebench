@@ -140,19 +140,19 @@ wandb login
 ### Train a Model
 
 ```bash
-python src/run/single_run/train.py +trainer=TrainerDL +model=RoBERTEyeW +data=OneStop_RC
+python src/run/single_run/train.py +trainer=TrainerDL +model=RoberteyeWord +data=OneStop_RC
 ```
 
 ### Run a Hyperparameter Sweep
 
 ```bash
-bash src/run/multi_run/sweep_wrapper.sh --data_tasks CopCo_TYP --folds 0,1,2,3 --cuda 0,1
+bash run_commands/utils/sweep_wrapper.sh --data_tasks CopCo_TYP --folds 0,1,2,3 --cuda 0,1
 ```
 
 ### Test a Model
 
 ```bash
-python src/run/single_run/test_dl.py +model=RoBERTEyeW +data=OneStop_RC
+python src/run/single_run/test_dl.py +model=RoberteyeWord +data=OneStop_RC
 ```
 
 Results are stored under:
@@ -177,7 +177,7 @@ results/eyebench_benchmark_results/{metric}.csv
 4. Verify integration:
 
 ```bash
-bash src/run/multi_run/model_checker.sh
+bash run_commands/utils/model_checker.sh
 ```
 
 ---
