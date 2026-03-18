@@ -195,12 +195,14 @@ def combine_dataset(dataset_name: str) -> None:
         base = data_args.base_path
 
         dataset_def = pm.DatasetLibrary.get(dataset_name)
-        dataset_def.has_files['gaze'] = False
+        dataset_def.resources = pm.ResourceDefinitions(
+            [resource for resource in dataset_def.resources if resource.content != 'gaze']
+        )
 
         logger.info(f'Loading {dataset_name} dataset...')
         dataset = pm.Dataset(dataset_def, f'data/{dataset_name}').load()
 
-        if dataset.definition.has_files['precomputed_events']:
+        if dataset.definition.has_content['precomputed_events']:
             logger.info('Processing precomputed events...')
             combine_files(
                 dataset=dataset.precomputed_events,
@@ -213,7 +215,7 @@ def combine_dataset(dataset_name: str) -> None:
         else:
             logger.info(f'{dataset_name} has no precomputed events...')
 
-        if dataset.definition.has_files['precomputed_reading_measures']:
+        if dataset.definition.has_content['precomputed_reading_measures']:
             logger.info('Processing precomputed reading measures...')
             combine_files(
                 dataset=dataset.precomputed_reading_measures,
