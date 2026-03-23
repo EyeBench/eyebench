@@ -202,7 +202,7 @@ def combine_dataset(dataset_name: str) -> None:
         logger.info(f'Loading {dataset_name} dataset...')
         dataset = pm.Dataset(dataset_def, f'data/{dataset_name}').load()
 
-        if dataset.definition.has_content['precomputed_events']:
+        if dataset.definition.resources.has_content('precomputed_events'):
             logger.info('Processing precomputed events...')
             combine_files(
                 dataset=dataset.precomputed_events,
@@ -215,7 +215,7 @@ def combine_dataset(dataset_name: str) -> None:
         else:
             logger.info(f'{dataset_name} has no precomputed events...')
 
-        if dataset.definition.has_content['precomputed_reading_measures']:
+        if dataset.definition.resources.has_content('precomputed_reading_measures'):
             logger.info('Processing precomputed reading measures...')
             combine_files(
                 dataset=dataset.precomputed_reading_measures,
