@@ -219,11 +219,12 @@ If you use EyeBench in your research, please cite:
 > *NeurIPS 2025.*
 
 ```bibtex
-@inproceedings{shubi2025eyebench,
-  title={EyeBench: Predictive Modeling from Eye Movements in Reading},
-  author={Omer Shubi and David R. Reich and Keren Gruteke Klein and Yuval Angel and Paul Prasse and Lena Jäger and Yevgeni Berzak},
-  booktitle={Advances in Neural Information Processing Systems},
-  year={2025}
+@inproceedings{shubireich2025eyebench,
+  title={{EyeBench}: {P}redictive Modeling from Eye Movements in Reading},
+  author={Shubi, Omer and Reich, David Robert and Gruteke Klein, Keren and Angel, Yuval and Prasse, Paul and J{\"a}ger, Lena Ann and Berzak, Yevgeni},
+  booktitle={The Thirty-ninth Annual Conference on Neural Information Processing Systems Datasets and Benchmarks Track},
+  year={2025},
+  url={https://openreview.net/forum?id=LhbYJJ3MFd}
 }
 ```
 
