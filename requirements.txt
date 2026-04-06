@@ -1,0 +1,4 @@
+mkapi
+mkdocs-include-dir-to-nav
+mkdocs-include-markdown-plugin
+mkdocs-material
