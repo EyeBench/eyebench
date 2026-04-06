@@ -175,7 +175,7 @@ results/eyebench_benchmark_results/{metric}.csv
 4. Verify integration:
 
 ```bash
-bash src/run/multi_run/model_checker.sh
+bash run_commands/utils/model_checker.sh
 ```
 
 ---

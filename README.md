@@ -169,9 +169,8 @@ results/eyebench_benchmark_results/{metric}.csv
    Implement `forward()` and `shared_step()` methods.
 2. Register it in:
 
-    - `src/configs/enums.py` → `ModelNames`
-    - `src/configs/model_args.py` → model config class
-    - `src/configs/config.py` → `ModelMapping`
+    - `src/configs/constants.py` → `DLModelNames` (or `MLModelNames` for ML models)
+    - `src/configs/models/dl/YourModel.py` → model config class decorated with `@register_model_config` (use `src/configs/models/ml/` for ML models)
 
 3. Define its default parameters and search space in `src/run/multi_run/search_spaces.py`.
 4. Verify integration:

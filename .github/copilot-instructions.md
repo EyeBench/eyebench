@@ -41,7 +41,7 @@ python src/run/single_run/train.py +trainer=TrainerDL +model=RoberteyeWord +data
 ```
 
 #### Multi-Run Pipeline (Production)
-1. **Model checker**: `src/run/multi_run/model_checker.sh` - runs train+test for all model/data combinations
+1. **Model checker**: `run_commands/utils/model_checker.sh` - runs train+test for all model/data combinations
 2. **Sweep generation**: `src/run/multi_run/sweep_wrapper.sh` - creates hyperparameter sweeps
 3. **Results processing**: `raw_to_processed_results.py` → `csv_to_latex.py` for paper tables
 
@@ -80,7 +80,7 @@ bash src/data/preprocessing/get_data.sh DATASET1,DATASET2  # Specific datasets
 ### Model Training/Testing Pipeline
 ```bash
 # Quick model validation (recommended for development)
-bash src/run/multi_run/model_checker.sh --data_tasks CopCo_TYP --folds 0,1 --cuda 0
+bash run_commands/utils/model_checker.sh --data_tasks CopCo_TYP --folds 0,1 --cuda 0
 
 # Full evaluation pipeline
 bash src/run/multi_run/test_wrapper_creator.sh  # Generates test scripts
